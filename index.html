@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Гловна стрінка</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="main-header">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <div class="d-flex">
+                <div class="wrap-logo"><a class="logo"><img src="img/logo.svg" alt="logo"/></a></div>
+                <div><a class="btn icons" herf="#">Place an offer</a></div>
+              </div>
+            </div>
+            <div class="right d-flex align-items-center">
+              <nav>
+                <ul class="main-nav">
+                  <li><a href="#">Rent</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">Closed base</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </nav><a class="btn outline" href="#">Login</a>
+              <div class="dropdown language">
+                <button class="dropdown-toggle" type="button">EN</button>
+                <ul class="dropdown-menu">
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-1">
+                    <label class="text" for="language-1">EN</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-2">
+                    <label class="text" for="language-2">FR</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-3">
+                    <label class="text" for="language-3">IT</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container">
+          <h1 class="text-center">Buying and renting property in France</h1>
+          <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+          <section>
+            <form class="main-filter">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-6">
+                  <ul class="nav-tabs">
+                    <li><a class="nav-item active" href="#filter-residential">Residential</a></li>
+                    <li><a class="nav-item" href="#filter-comercial">Comercial</a></li>
+                    <li><a class="nav-item" href="#filter-yachts">Yachts</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                  <button class="reset-form">Reset form</button>
+                </div>
+              </div>
+              <div class="tab-content">
+                <div class="active" id="filter-residential">
+                  <div class="filter-line">
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Deal type</button>
+                      <div class="dropdown-menu inner">
+                        <div class="d-flex">
+                          <div class="radiobox mr-3">
+                            <input type="radio" name="deal-type-radio" id="radiobox-1">
+                            <label for="radiobox-1">Sale</label>
+                          </div>
+                          <div class="radiobox">
+                            <input type="radio" name="deal-type-radio" id="radiobox-2">
+                            <label for="radiobox-2">Rent</label>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="chekcbox">
+                          <input type="checkbox" name="deal-type-checkbox" id="checkbox-1">
+                          <label for="checkbox-1">From the owner</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Property type</button>
+                      <div class="dropdown-menu">
+                        <div class="items-line">
+                          <input name="property-type" type="radio" checked id="property-type-1">
+                          <label class="text" for="property-type-1">Property type 1</label>
+                        </div>
+                        <div class="items-line">
+                          <input name="property-type" type="radio" id="property-type-2">
+                          <label class="text" for="property-type-2">Property type 2</label>
+                        </div>
+                        <div class="items-line">
+                          <input name="property-type" type="radio" id="property-type-3">
+                          <label class="text" for="property-type-3">Property type 3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Rooms amount</button>
+                      <ul class="dropdown-menu rooms-amount inner">
+                        <label class="description">Rooms amount</label>
+                        <div class="wrap">
+                          <div class="items-line">
+                            <input name="property-type" type="checkbox" id="rooms-amount-1">
+                            <label for="rooms-amount-1">1</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-2">
+                            <label for="rooms-amount-2">2</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-3">
+                            <label for="rooms-amount-3">3</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-4">
+                            <label for="rooms-amount-4">4</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-5">
+                            <label for="rooms-amount-5">5+</label>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="dropdown price">
+                      <div class="dropdown-toggle d-flex align-items-center">
+                        <div class="price-start strong">20 000</div>
+                        <div class="line">-</div>
+                        <div class="price-end strong">4 000 000</div>
+                      </div>
+                      <div class="dropdown-menu inner">
+                        <label class="description">Price, € EUR</label>
+                        <div class="d-flex align-items-center">
+                          <input value="20 000">
+                          <div class="line">-</div>
+                          <input value="4 000 000">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="google-location">
+                      <label for="location"></label>
+                      <input type="text" placeholder="Location" id="location">
+                    </div>
+                  </div>
+                </div>
+                <div id="filter-comercial">
+                  <div class="filter-line">
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Deal type</button>
+                      <div class="dropdown-menu inner">
+                        <div class="d-flex">
+                          <div class="radiobox mr-3">
+                            <input type="radio" name="deal-type-radio" id="radiobox-12">
+                            <label for="radiobox-12">Sale</label>
+                          </div>
+                          <div class="radiobox">
+                            <input type="radio" name="deal-type-radio" id="radiobox-22">
+                            <label for="radiobox-22">Rent</label>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="chekcbox">
+                          <input type="checkbox" name="deal-type-checkbox" id="checkbox-12">
+                          <label for="checkbox-12">From the owner</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Property type</button>
+                      <div class="dropdown-menu">
+                        <div class="items-line">
+                          <input name="property-type" type="radio" checked id="property-type-12">
+                          <label class="text" for="property-type-12">Property type 1</label>
+                        </div>
+                        <div class="items-line">
+                          <input name="property-type" type="radio" id="property-type-22">
+                          <label class="text" for="property-type-22">Property type 2</label>
+                        </div>
+                        <div class="items-line">
+                          <input name="property-type" type="radio" id="property-type-32">
+                          <label class="text" for="property-type-32">Property type 3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Rooms amount</button>
+                      <ul class="dropdown-menu rooms-amount inner">
+                        <label class="description">Rooms amount</label>
+                        <div class="wrap">
+                          <div class="items-line">
+                            <input name="property-type" type="checkbox" id="rooms-amount-12">
+                            <label for="rooms-amount-12">1</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-22">
+                            <label for="rooms-amount-22">2</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-32">
+                            <label for="rooms-amount-32">3</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-42">
+                            <label for="rooms-amount-42">4</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-52">
+                            <label for="rooms-amount-52">5+</label>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="dropdown price">
+                      <div class="dropdown-toggle d-flex align-items-center">
+                        <div class="price-start strong">20 000</div>
+                        <div class="line">-</div>
+                        <div class="price-end strong">4 000 000</div>
+                      </div>
+                      <div class="dropdown-menu inner">
+                        <label class="description">Price, € EUR</label>
+                        <div class="d-flex align-items-center">
+                          <input value="20 000">
+                          <div class="line">-</div>
+                          <input value="4 000 000">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="google-location">
+                      <label for="location2"></label>
+                      <input type="text" placeholder="Location" id="location2">
+                    </div>
+                  </div>
+                </div>
+                <div id="filter-yachts">
+                  <div class="filter-line">
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Deal type</button>
+                      <div class="dropdown-menu inner">
+                        <div class="d-flex">
+                          <div class="radiobox mr-3">
+                            <input type="radio" name="deal-type-radio" id="radiobox-13">
+                            <label for="radiobox-13">Sale</label>
+                          </div>
+                          <div class="radiobox">
+                            <input type="radio" name="deal-type-radio" id="radiobox-23">
+                            <label for="radiobox-23">Rent</label>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="chekcbox">
+                          <input type="checkbox" name="deal-type-checkbox" id="checkbox-13">
+                          <label for="checkbox-13">From the owner</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Property type</button>
+                      <div class="dropdown-menu">
+                        <div class="items-line">
+                          <input name="property-type" type="radio" checked id="property-type-13">
+                          <label class="text" for="property-type-13">Property type 1</label>
+                        </div>
+                        <div class="items-line">
+                          <input name="property-type" type="radio" id="property-type-23">
+                          <label class="text" for="property-type-23">Property type 2</label>
+                        </div>
+                        <div class="items-line">
+                          <input name="property-type" type="radio" id="property-type-33">
+                          <label class="text" for="property-type-33">Property type 3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button">Rooms amount</button>
+                      <ul class="dropdown-menu rooms-amount inner">
+                        <label class="description">Rooms amount</label>
+                        <div class="wrap">
+                          <div class="items-line">
+                            <input name="property-type" type="checkbox" id="rooms-amount-13">
+                            <label for="rooms-amount-13">1</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-23">
+                            <label for="rooms-amount-23">2</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-33">
+                            <label for="rooms-amount-33">3</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-43">
+                            <label for="rooms-amount-43">4</label>
+                          </div>
+                          <div class="items-line">
+                            <input name="rooms-amount" type="checkbox" id="rooms-amount-53">
+                            <label for="rooms-amount-53">5+</label>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="dropdown price">
+                      <div class="dropdown-toggle d-flex align-items-center">
+                        <div class="price-start strong">20 000</div>
+                        <div class="line">-</div>
+                        <div class="price-end strong">4 000 000</div>
+                      </div>
+                      <div class="dropdown-menu inner">
+                        <label class="description">Price, € EUR</label>
+                        <div class="d-flex align-items-center">
+                          <input value="20 000">
+                          <div class="line">-</div>
+                          <input value="4 000 000">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="google-location">
+                      <label for="location3"></label>
+                      <input type="text" placeholder="Location" id="location3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn">Search</button>
+              </div>
+            </form>
+          </section>
+          <section class="slider-objects">
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">4</div>
+                    <div class="item bed">2</div>
+                    <div class="item size">52</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Apa sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Pars</div>
+                        <div class="tag">Place du</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">6</div>
+                    <div class="item bed">3</div>
+                    <div class="item size">42</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>GT for sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4 000 000</div>
+                      <div class="tags">
+                        <div class="tag">Telet</div>
+                        <div class="tag">Place du Châtelet 3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">2</div>
+                    <div class="item bed">5</div>
+                    <div class="item size">67</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>For sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 6 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Care</div>
+                        <div class="tag">Place du Telet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">4</div>
+                    <div class="item bed">6</div>
+                    <div class="item size">34</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Apartment for sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4 000</div>
+                      <div class="tags">
+                        <div class="tag">Pars</div>
+                        <div class="tag">Du Châtelet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">5</div>
+                    <div class="item bed">30</div>
+                    <div class="item size">62</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Apartment &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 60 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Telet</div>
+                        <div class="tag">Châtelet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">4</div>
+                    <div class="item bed">3</div>
+                    <div class="item size">33</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Apartment</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 24 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Pars</div>
+                        <div class="tag">Place du Châtelet2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">6</div>
+                    <div class="item bed">12</div>
+                    <div class="item size">22</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Apartment for sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 320 000</div>
+                      <div class="tags">
+                        <div class="tag">Pars</div>
+                        <div class="tag">Place du Châtelet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">4</div>
+                    <div class="item bed">3</div>
+                    <div class="item size">35</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Apartment for rent</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Pars</div>
+                        <div class="tag">Place du Châtelet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">7</div>
+                    <div class="item bed">14</div>
+                    <div class="item size">75</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>For sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Place du Châtelet</div>
+                        <div class="tag">Pars</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="object-item">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">4</div>
+                    <div class="item bed">14</div>
+                    <div class="item size">32</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <h6>Sale &quot;Calypso&quot;</h6>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4 000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">Nhâtelet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="banner mt-96"><img src="img/banners/1.jpg" alt="banner 1"/>
+          </section>
+          <section class="under-banner">
+            <h2>Section title</h2>
+            <div class="row mt-48">
+              <div class="col-sm-4">
+                <div class="item">
+                  <div class="wrap-image">
+                    <div class="image" style="background-image: url(img/object-item/1.jpg)"></div>
+                  </div>
+                  <div class="text">
+                    <h6>Section title description about this item</h6>
+                    <div>
+                      <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <div class="wrap-image">
+                    <div class="image" style="background-image: url(img/object-item/2.jpg)"></div>
+                  </div>
+                  <div class="text">
+                    <h6>Short title</h6>
+                    <div>
+                      <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <div class="wrap-image">
+                    <div class="image" style="background-image: url(img/object-item/3.jpg)"></div>
+                  </div>
+                  <div class="text">
+                    <h6>Last title with description</h6>
+                    <div>
+                      <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="signs mt-96 pb-96">
+          <div class="container">
+            <h2>Our advantages</h2>
+            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            <div class="our-advantages mt-96">
+              <div class="item">
+                <div class="logo"><img src="img/icons/men-1.svg" alt="men 1"/>
+                </div>
+                <h6>Private clients</h6>
+                <ul class="list">
+                  <li>Sed porttitor lectus nibh.</li>
+                  <li>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</li>
+                  <li>Donec sollicitudin molestie malesuada.</li>
+                  <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <div class="logo"><img src="img/icons/men-2.svg" alt="men 2"/>
+                </div>
+                <h6>Private clients</h6>
+                <ul class="list">
+                  <li>Sed porttitor lectus nibh.</li>
+                  <li>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</li>
+                  <li>Donec sollicitudin molestie malesuada.</li>
+                  <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="black-and-image">
+          <div class="text">
+            <h3>Contact a specialist</h3>
+            <div>
+              <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula</p>
+            </div><a class="btn" href="#">Contact</a>
+          </div>
+          <div class="image" style="background-image: url(img/index-page/black-and-image/1.jpg)"></div>
+        </section>
+        <section class="black-and-image">
+          <div class="image right" style="background-image: url(img/index-page/black-and-image/2.jpg)"></div>
+          <div class="text left">
+            <h3>Order a photographer</h3>
+            <div>
+              <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula</p>
+            </div><a class="btn" href="#">Details</a>
+          </div>
+        </section>
+        <section class="black-and-image">
+          <div class="text">
+            <h3>Legal advice</h3>
+            <div>
+              <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula</p>
+            </div><a class="btn" href="#">Get a consultation</a>
+          </div>
+          <div class="image" style="background-image: url(img/index-page/black-and-image/3.jpg)"></div>
+        </section>
+        <div class="container">
+          <div class="form-container mtm-56">
+            <h3>Contact us</h3>
+            <p class="mb-32">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus vestibulum ac diam sit amet quam vehicula elementum.</p>
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Email" value="email@mail.com">
+              <textarea placeholder="Your message"></textarea>
+              <div class="btn-checkbox">
+                <button class="btn">Send</button>
+                <div class="chekcbox">
+                  <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
+                  <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+                </div>
+              </div>
+              <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer mt-96">
+        <div class="container">
+          <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
+            <div class="flex-grow-1">
+              <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a><a class="active" href="#">Order a photographer</a><a href="#">Contact a specialist</a><a href="#">Legal advice</a><a href="#">Package of documents</a><a href="#">Closed database</a><a href="#">About us</a><a href="#">Contact us</a></div>
+              <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="copyright">Amizbiz &copy; 2020</div>
+              <div class="d-flex align-items-center">Разработка сайта
+                <div class="ml-2"><img src="img/meta.svg" alt="meta logo"/>
+                </div>
+                <div class="dropdown language ml-4">
+                  <button class="dropdown-toggle" type="button">English</button>
+                  <ul class="dropdown-menu top">
+                    <li class="items-line">
+                      <input type="radio" name="language" id="language-footer-1">
+                      <label class="text" for="language-footer-1">English</label>
+                    </li>
+                    <li class="items-line">
+                      <input type="radio" name="language" id="language-footer-2">
+                      <label class="text" for="language-footer-2">France</label>
+                    </li>
+                    <li class="items-line">
+                      <input type="radio" name="language" id="language-footer-3">
+                      <label class="text" for="language-footer-3">Italian</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -9,16 +9,42 @@
   </head>
   <body class="index-page">
     <div class="wrapper">
+      <div class="popup-container mfp-hide" id="mobile-menu">
+        <ul class="main-nav">
+          <li><a href="#">Rent</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Closed base</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="dropdown language">
+          <button class="dropdown-toggle" type="button">EN</button>
+          <ul class="dropdown-menu">
+            <li class="items-line">
+              <input type="radio" name="language-popup" id="language-1-popup">
+              <label class="text" for="language-1-popup">EN</label>
+            </li>
+            <li class="items-line">
+              <input type="radio" name="language-popup" id="language-2-popup">
+              <label class="text" for="language-2-popup">FR</label>
+            </li>
+            <li class="items-line">
+              <input type="radio" name="language-popup" id="language-3-popup">
+              <label class="text" for="language-3-popup">IT</label>
+            </li>
+          </ul>
+        </div>
+      </div>
       <header class="main-header">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <div>
-              <div class="d-flex">
+              <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
                 <div class="wrap-logo"><a class="logo"><img src="img/logo.svg" alt="logo"/></a></div>
-                <div><a class="btn icons" herf="#">Place an offer</a></div>
+                <div><a class="btn icons book" herf="#">Place an offer</a></div>
               </div>
             </div>
-            <div class="right d-flex align-items-center">
+            <div class="right d-flex align-items-center"><a class="mobile-search popup btn icons search" href="#mobile-search"></a>
               <nav>
                 <ul class="main-nav">
                   <li><a href="#">Rent</a></li>
@@ -27,7 +53,7 @@
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Contact us</a></li>
                 </ul>
-              </nav><a class="btn outline" href="#">Login</a>
+              </nav><a class="btn outline login" href="#">Login</a>
               <div class="dropdown language">
                 <button class="dropdown-toggle" type="button">EN</button>
                 <ul class="dropdown-menu">
@@ -51,7 +77,7 @@
       </header>
       <main class="main-content">
         <div class="container">
-          <h1 class="text-center">Buying and renting property in France</h1>
+          <h1>Buying and renting property in France</h1>
           <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
           <section>
             <form class="main-filter">
@@ -64,89 +90,89 @@
                   </ul>
                 </div>
                 <div class="col-3 d-flex justify-content-end">
-                  <button class="reset-form">Reset form</button>
+                  <button class="reset-form" type="reset">Reset form</button>
                 </div>
               </div>
               <div class="tab-content">
                 <div class="active" id="filter-residential">
                   <div class="filter-line">
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Deal type</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
                       <div class="dropdown-menu inner">
                         <div class="d-flex">
-                          <div class="radiobox mr-3">
-                            <input type="radio" name="deal-type-radio" id="radiobox-1">
+                          <div class="radiobox mr-3 checked-item">
+                            <input type="radio" name="deal-type-radio" checked id="radiobox-1">
                             <label for="radiobox-1">Sale</label>
                           </div>
-                          <div class="radiobox">
+                          <div class="radiobox checked-item">
                             <input type="radio" name="deal-type-radio" id="radiobox-2">
                             <label for="radiobox-2">Rent</label>
                           </div>
                         </div>
                         <hr>
-                        <div class="chekcbox">
+                        <div class="chekcbox checked-item">
                           <input type="checkbox" name="deal-type-checkbox" id="checkbox-1">
                           <label for="checkbox-1">From the owner</label>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Property type</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
                       <div class="dropdown-menu">
-                        <div class="items-line">
+                        <div class="items-line checked-item">
                           <input name="property-type" type="radio" checked id="property-type-1">
-                          <label class="text" for="property-type-1">Property type 1</label>
+                          <label for="property-type-1">Type 1</label>
                         </div>
-                        <div class="items-line">
+                        <div class="items-line checked-item">
                           <input name="property-type" type="radio" id="property-type-2">
-                          <label class="text" for="property-type-2">Property type 2</label>
+                          <label for="property-type-2">Type 2</label>
                         </div>
-                        <div class="items-line">
+                        <div class="items-line checked-item">
                           <input name="property-type" type="radio" id="property-type-3">
-                          <label class="text" for="property-type-3">Property type 3</label>
+                          <label for="property-type-3">Type 3</label>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Rooms amount</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
                       <ul class="dropdown-menu rooms-amount inner">
                         <label class="description">Rooms amount</label>
                         <div class="wrap">
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="property-type" type="checkbox" id="rooms-amount-1">
                             <label for="rooms-amount-1">1</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-2">
                             <label for="rooms-amount-2">2</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-3">
                             <label for="rooms-amount-3">3</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-4">
                             <label for="rooms-amount-4">4</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-5">
                             <label for="rooms-amount-5">5+</label>
                           </div>
                         </div>
                       </ul>
                     </div>
-                    <div class="dropdown price">
+                    <div class="dropdown price-value">
                       <div class="dropdown-toggle d-flex align-items-center">
-                        <div class="price-start strong">20 000</div>
+                        <div class="strong input-default" id="price-start" data-default="20 000">20 000</div>
                         <div class="line">-</div>
-                        <div class="price-end strong">4 000 000</div>
+                        <div class="strong input-default" id="price-end" data-default="4 000 000">4 000 000</div>
                       </div>
                       <div class="dropdown-menu inner">
                         <label class="description">Price, € EUR</label>
                         <div class="d-flex align-items-center">
-                          <input value="20 000">
+                          <input class="price-start" value="20 000" data-id="#price-start">
                           <div class="line">-</div>
-                          <input value="4 000 000">
+                          <input class="price-end" value="4 000 000" data-id="#price-end">
                         </div>
                       </div>
                     </div>
@@ -158,83 +184,83 @@
                 </div>
                 <div id="filter-comercial">
                   <div class="filter-line">
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Deal type</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
                       <div class="dropdown-menu inner">
                         <div class="d-flex">
-                          <div class="radiobox mr-3">
-                            <input type="radio" name="deal-type-radio" id="radiobox-12">
+                          <div class="radiobox mr-3 checked-item">
+                            <input type="radio" name="deal-type-radio2" checked id="radiobox-12">
                             <label for="radiobox-12">Sale</label>
                           </div>
-                          <div class="radiobox">
-                            <input type="radio" name="deal-type-radio" id="radiobox-22">
+                          <div class="radiobox checked-item">
+                            <input type="radio" name="deal-type-radio2" id="radiobox-22">
                             <label for="radiobox-22">Rent</label>
                           </div>
                         </div>
                         <hr>
-                        <div class="chekcbox">
-                          <input type="checkbox" name="deal-type-checkbox" id="checkbox-12">
+                        <div class="chekcbox checked-item">
+                          <input type="checkbox" name="deal-type-checkbox2" id="checkbox-12">
                           <label for="checkbox-12">From the owner</label>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Property type</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
                       <div class="dropdown-menu">
-                        <div class="items-line">
-                          <input name="property-type" type="radio" checked id="property-type-12">
-                          <label class="text" for="property-type-12">Property type 1</label>
+                        <div class="items-line checked-item">
+                          <input name="property-type2" type="radio" checked id="property-type-12">
+                          <label for="property-type-12">Type 1</label>
                         </div>
-                        <div class="items-line">
-                          <input name="property-type" type="radio" id="property-type-22">
-                          <label class="text" for="property-type-22">Property type 2</label>
+                        <div class="items-line checked-item">
+                          <input name="property-type2" type="radio" id="property-type-22">
+                          <label for="property-type-22">Type 2</label>
                         </div>
-                        <div class="items-line">
-                          <input name="property-type" type="radio" id="property-type-32">
-                          <label class="text" for="property-type-32">Property type 3</label>
+                        <div class="items-line checked-item">
+                          <input name="property-type2" type="radio" id="property-type-32">
+                          <label for="property-type-32">Type 3</label>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Rooms amount</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
                       <ul class="dropdown-menu rooms-amount inner">
                         <label class="description">Rooms amount</label>
                         <div class="wrap">
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="property-type" type="checkbox" id="rooms-amount-12">
                             <label for="rooms-amount-12">1</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-22">
                             <label for="rooms-amount-22">2</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-32">
                             <label for="rooms-amount-32">3</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-42">
                             <label for="rooms-amount-42">4</label>
                           </div>
-                          <div class="items-line">
+                          <div class="items-line checked-item">
                             <input name="rooms-amount" type="checkbox" id="rooms-amount-52">
                             <label for="rooms-amount-52">5+</label>
                           </div>
                         </div>
                       </ul>
                     </div>
-                    <div class="dropdown price">
+                    <div class="dropdown price-value">
                       <div class="dropdown-toggle d-flex align-items-center">
-                        <div class="price-start strong">20 000</div>
+                        <div class="strong input-default" id="price-start2" data-default="20 000">20 000</div>
                         <div class="line">-</div>
-                        <div class="price-end strong">4 000 000</div>
+                        <div class="strong input-default" id="price-end2" data-default="4 000 000">4 000 000</div>
                       </div>
                       <div class="dropdown-menu inner">
                         <label class="description">Price, € EUR</label>
                         <div class="d-flex align-items-center">
-                          <input value="20 000">
+                          <input class="price-start" value="20 000" data-id="#price-start2">
                           <div class="line">-</div>
-                          <input value="4 000 000">
+                          <input class="price-end" value="4 000 000" data-id="#price-end2">
                         </div>
                       </div>
                     </div>
@@ -246,83 +272,58 @@
                 </div>
                 <div id="filter-yachts">
                   <div class="filter-line">
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Deal type</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
                       <div class="dropdown-menu inner">
                         <div class="d-flex">
-                          <div class="radiobox mr-3">
-                            <input type="radio" name="deal-type-radio" id="radiobox-13">
+                          <div class="radiobox mr-3 checked-item">
+                            <input type="radio" name="deal-type-radio3" checked id="radiobox-13">
                             <label for="radiobox-13">Sale</label>
                           </div>
-                          <div class="radiobox">
-                            <input type="radio" name="deal-type-radio" id="radiobox-23">
+                          <div class="radiobox checked-item">
+                            <input type="radio" name="deal-type-radio3" id="radiobox-23">
                             <label for="radiobox-23">Rent</label>
                           </div>
                         </div>
                         <hr>
-                        <div class="chekcbox">
+                        <div class="chekcbox checked-item">
                           <input type="checkbox" name="deal-type-checkbox" id="checkbox-13">
                           <label for="checkbox-13">From the owner</label>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Property type</button>
+                    <div class="dropdown search-checked-input">
+                      <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
                       <div class="dropdown-menu">
-                        <div class="items-line">
-                          <input name="property-type" type="radio" checked id="property-type-13">
-                          <label class="text" for="property-type-13">Property type 1</label>
+                        <div class="items-line checked-item">
+                          <input name="property-type3" type="radio" checked id="property-type-13">
+                          <label for="property-type-13">Type 1</label>
                         </div>
-                        <div class="items-line">
-                          <input name="property-type" type="radio" id="property-type-23">
-                          <label class="text" for="property-type-23">Property type 2</label>
+                        <div class="items-line checked-item">
+                          <input name="property-type3" type="radio" id="property-type-23">
+                          <label for="property-type-23">Type 2</label>
                         </div>
-                        <div class="items-line">
-                          <input name="property-type" type="radio" id="property-type-33">
-                          <label class="text" for="property-type-33">Property type 3</label>
+                        <div class="items-line checked-item">
+                          <input name="property-type3" type="radio" id="property-type-33">
+                          <label for="property-type-33">Type 3</label>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button">Rooms amount</button>
-                      <ul class="dropdown-menu rooms-amount inner">
-                        <label class="description">Rooms amount</label>
-                        <div class="wrap">
-                          <div class="items-line">
-                            <input name="property-type" type="checkbox" id="rooms-amount-13">
-                            <label for="rooms-amount-13">1</label>
-                          </div>
-                          <div class="items-line">
-                            <input name="rooms-amount" type="checkbox" id="rooms-amount-23">
-                            <label for="rooms-amount-23">2</label>
-                          </div>
-                          <div class="items-line">
-                            <input name="rooms-amount" type="checkbox" id="rooms-amount-33">
-                            <label for="rooms-amount-33">3</label>
-                          </div>
-                          <div class="items-line">
-                            <input name="rooms-amount" type="checkbox" id="rooms-amount-43">
-                            <label for="rooms-amount-43">4</label>
-                          </div>
-                          <div class="items-line">
-                            <input name="rooms-amount" type="checkbox" id="rooms-amount-53">
-                            <label for="rooms-amount-53">5+</label>
-                          </div>
-                        </div>
-                      </ul>
+                    <div class="area">
+                      <input type="number" placeholder="Area">m<sup>2</sup>
                     </div>
-                    <div class="dropdown price">
+                    <div class="dropdown price-value">
                       <div class="dropdown-toggle d-flex align-items-center">
-                        <div class="price-start strong">20 000</div>
+                        <div class="strong input-default" id="price-start3" data-default="20 000">20 000</div>
                         <div class="line">-</div>
-                        <div class="price-end strong">4 000 000</div>
+                        <div class="strong input-default" id="price-end3" data-default="4 000 000">4 000 000</div>
                       </div>
                       <div class="dropdown-menu inner">
                         <label class="description">Price, € EUR</label>
                         <div class="d-flex align-items-center">
-                          <input value="20 000">
+                          <input class="price-start" value="20 000" data-id="#price-start3">
                           <div class="line">-</div>
-                          <input value="4 000 000">
+                          <input class="price-end" value="4 000 000" data-id="#price-end3">
                         </div>
                       </div>
                     </div>
@@ -339,8 +340,7 @@
             </form>
           </section>
           <section class="slider-objects">
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -364,11 +364,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -390,11 +388,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -418,11 +414,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -444,11 +438,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -472,11 +464,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -500,11 +490,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -526,11 +514,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -554,11 +540,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -582,11 +566,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div>
-              <div class="object-item">
+            <div><a class="object-item" href="#">
                 <div class="image-numbers">
                   <div class="image" style="background-image: url(img/object-item/1.jpg)">
                     <button class="like"></button>
@@ -609,20 +591,18 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
           </section>
-          <section class="banner mt-96"><img src="img/banners/1.jpg" alt="banner 1"/>
+          <section class="mt-96"><img src="img/banners/1.jpg" alt="banner 1"/>
           </section>
-          <section class="under-banner">
+          <section class="under-banner mt-96">
             <h2>Section title</h2>
             <div class="row mt-48">
               <div class="col-sm-4">
                 <div class="item">
-                  <div class="wrap-image">
-                    <div class="image" style="background-image: url(img/object-item/1.jpg)"></div>
-                  </div>
+                  <div class="wrap-image"><a class="image" href="#" style="background-image: url(img/object-item/1.jpg)">
+                      <div class="overlay"></div></a></div>
                   <div class="text">
                     <h6>Section title description about this item</h6>
                     <div>
@@ -633,9 +613,8 @@
               </div>
               <div class="col-sm-4">
                 <div class="item">
-                  <div class="wrap-image">
-                    <div class="image" style="background-image: url(img/object-item/2.jpg)"></div>
-                  </div>
+                  <div class="wrap-image"><a class="image" href="#" style="background-image: url(img/object-item/2.jpg)">
+                      <div class="overlay"></div></a></div>
                   <div class="text">
                     <h6>Short title</h6>
                     <div>
@@ -646,9 +625,8 @@
               </div>
               <div class="col-sm-4">
                 <div class="item">
-                  <div class="wrap-image">
-                    <div class="image" style="background-image: url(img/object-item/3.jpg)"></div>
-                  </div>
+                  <div class="wrap-image"><a class="image" href="#" style="background-image: url(img/object-item/3.jpg)">
+                      <div class="overlay"></div></a></div>
                   <div class="text">
                     <h6>Last title with description</h6>
                     <div>

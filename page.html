@@ -9,16 +9,42 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="popup-container mfp-hide" id="mobile-menu">
+        <ul class="main-nav">
+          <li><a href="#">Rent</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Closed base</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="dropdown language">
+          <button class="dropdown-toggle" type="button">EN</button>
+          <ul class="dropdown-menu">
+            <li class="items-line">
+              <input type="radio" name="language-popup" id="language-1-popup">
+              <label class="text" for="language-1-popup">EN</label>
+            </li>
+            <li class="items-line">
+              <input type="radio" name="language-popup" id="language-2-popup">
+              <label class="text" for="language-2-popup">FR</label>
+            </li>
+            <li class="items-line">
+              <input type="radio" name="language-popup" id="language-3-popup">
+              <label class="text" for="language-3-popup">IT</label>
+            </li>
+          </ul>
+        </div>
+      </div>
       <header class="main-header">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <div>
-              <div class="d-flex">
+              <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
                 <div class="wrap-logo"><a class="logo"><img src="img/logo.svg" alt="logo"/></a></div>
-                <div><a class="btn icons" herf="#">Place an offer</a></div>
+                <div><a class="btn icons book" herf="#">Place an offer</a></div>
               </div>
             </div>
-            <div class="right d-flex align-items-center">
+            <div class="right d-flex align-items-center"><a class="mobile-search popup btn icons search" href="#mobile-search"></a>
               <nav>
                 <ul class="main-nav">
                   <li><a href="#">Rent</a></li>
@@ -27,7 +53,7 @@
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Contact us</a></li>
                 </ul>
-              </nav><a class="btn outline" href="#">Login</a>
+              </nav><a class="btn outline login" href="#">Login</a>
               <div class="dropdown language">
                 <button class="dropdown-toggle" type="button">EN</button>
                 <ul class="dropdown-menu">

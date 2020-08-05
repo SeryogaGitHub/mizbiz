@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body class="catalog-page">
+    <div class="popup-container mfp-hide" id="mobile-menu">
+      <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <ul class="main-nav">
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Closed base</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="dropdown language">
+        <button class="dropdown-toggle" type="button">EN</button>
+        <ul class="dropdown-menu">
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-1-popup">
+            <label class="text" for="language-1-popup">EN</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-2-popup">
+            <label class="text" for="language-2-popup">FR</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-3-popup">
+            <label class="text" for="language-3-popup">IT</label>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center"><a class="btn book" herf="#">Place an offer</a></div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
+              <div class="wrap-logo"><a class="logo"><img src="img/logo.svg" alt="logo"/></a></div>
+              <div><a class="btn book" herf="#">Place an offer</a></div>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center"><a class="mobile-search popup btn search" href="#mobile-search"></a>
+            <nav>
+              <ul class="main-nav">
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Closed base</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </nav><a class="btn outline small login" href="#">Login</a>
+            <div class="dropdown language">
+              <button class="dropdown-toggle" type="button">EN</button>
+              <ul class="dropdown-menu">
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-1">
+                  <label class="text" for="language-1">EN</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-2">
+                  <label class="text" for="language-2">FR</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-3">
+                  <label class="text" for="language-3">IT</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <div class="popup-container mfp-hide" id="search-filter"></div>
+        <section>
+          <form class="main-filter">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <ul class="nav-tabs">
+                  <li><a class="nav-item active" href="#filter-residential">Residential</a></li>
+                  <li><a class="nav-item" href="#filter-comercial">Comercial</a></li>
+                  <li><a class="nav-item" href="#filter-yachts">Yachts</a></li>
+                </ul>
+              </div>
+              <div class="col-3 d-flex justify-content-end">
+                <button class="reset-form" type="reset">Reset form</button>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="active" id="filter-residential">
+                <div class="filter-line">
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                    <div class="dropdown-menu inner">
+                      <div class="d-flex">
+                        <div class="radiobox mr-3 checked-item">
+                          <input type="radio" name="deal-type-radio" checked id="radiobox-1">
+                          <label for="radiobox-1">Sale</label>
+                        </div>
+                        <div class="radiobox checked-item">
+                          <input type="radio" name="deal-type-radio" id="radiobox-2">
+                          <label for="radiobox-2">Rent</label>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="chekcbox checked-item">
+                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-1">
+                        <label for="checkbox-1">From the owner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                    <div class="dropdown-menu">
+                      <div class="items-line checked-item">
+                        <input name="property-type" type="radio" checked id="property-type-1">
+                        <label for="property-type-1">Type 1</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type" type="radio" id="property-type-2">
+                        <label for="property-type-2">Type 2</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type" type="radio" id="property-type-3">
+                        <label for="property-type-3">Type 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                    <ul class="dropdown-menu rooms-amount inner">
+                      <label class="description">Rooms amount</label>
+                      <div class="wrap">
+                        <div class="items-line checked-item">
+                          <input name="property-type" type="checkbox" id="rooms-amount-1">
+                          <label for="rooms-amount-1">1</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-2">
+                          <label for="rooms-amount-2">2</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-3">
+                          <label for="rooms-amount-3">3</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-4">
+                          <label for="rooms-amount-4">4</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-5">
+                          <label for="rooms-amount-5">5+</label>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="dropdown price-value">
+                    <div class="dropdown-toggle d-flex align-items-center">
+                      <div class="strong input-default" id="price-start" data-default="20 000">20 000</div>
+                      <div class="line">-</div>
+                      <div class="strong input-default" id="price-end" data-default="4 000 000">4 000 000</div>
+                    </div>
+                    <div class="dropdown-menu inner">
+                      <label class="description">Price, € EUR</label>
+                      <div class="d-flex align-items-center">
+                        <input class="price-start" value="20 000" data-id="#price-start">
+                        <div class="line">-</div>
+                        <input class="price-end" value="4 000 000" data-id="#price-end">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="google-location">
+                    <label for="location"></label>
+                    <input type="text" placeholder="Location" id="location">
+                  </div>
+                </div>
+              </div>
+              <div id="filter-comercial">
+                <div class="filter-line">
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                    <div class="dropdown-menu inner">
+                      <div class="d-flex">
+                        <div class="radiobox mr-3 checked-item">
+                          <input type="radio" name="deal-type-radio2" checked id="radiobox-12">
+                          <label for="radiobox-12">Sale</label>
+                        </div>
+                        <div class="radiobox checked-item">
+                          <input type="radio" name="deal-type-radio2" id="radiobox-22">
+                          <label for="radiobox-22">Rent</label>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="chekcbox checked-item">
+                        <input type="checkbox" name="deal-type-checkbox2" id="checkbox-12">
+                        <label for="checkbox-12">From the owner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                    <div class="dropdown-menu">
+                      <div class="items-line checked-item">
+                        <input name="property-type2" type="radio" checked id="property-type-12">
+                        <label for="property-type-12">Type 1</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type2" type="radio" id="property-type-22">
+                        <label for="property-type-22">Type 2</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type2" type="radio" id="property-type-32">
+                        <label for="property-type-32">Type 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                    <ul class="dropdown-menu rooms-amount inner">
+                      <label class="description">Rooms amount</label>
+                      <div class="wrap">
+                        <div class="items-line checked-item">
+                          <input name="property-type" type="checkbox" id="rooms-amount-12">
+                          <label for="rooms-amount-12">1</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-22">
+                          <label for="rooms-amount-22">2</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-32">
+                          <label for="rooms-amount-32">3</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-42">
+                          <label for="rooms-amount-42">4</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-52">
+                          <label for="rooms-amount-52">5+</label>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="dropdown price-value">
+                    <div class="dropdown-toggle d-flex align-items-center">
+                      <div class="strong input-default" id="price-start2" data-default="20 000">20 000</div>
+                      <div class="line">-</div>
+                      <div class="strong input-default" id="price-end2" data-default="4 000 000">4 000 000</div>
+                    </div>
+                    <div class="dropdown-menu inner">
+                      <label class="description">Price, € EUR</label>
+                      <div class="d-flex align-items-center">
+                        <input class="price-start" value="20 000" data-id="#price-start2">
+                        <div class="line">-</div>
+                        <input class="price-end" value="4 000 000" data-id="#price-end2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="google-location">
+                    <label for="location2"></label>
+                    <input type="text" placeholder="Location" id="location2">
+                  </div>
+                </div>
+              </div>
+              <div id="filter-yachts">
+                <div class="filter-line">
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                    <div class="dropdown-menu inner">
+                      <div class="d-flex">
+                        <div class="radiobox mr-3 checked-item">
+                          <input type="radio" name="deal-type-radio3" checked id="radiobox-13">
+                          <label for="radiobox-13">Sale</label>
+                        </div>
+                        <div class="radiobox checked-item">
+                          <input type="radio" name="deal-type-radio3" id="radiobox-23">
+                          <label for="radiobox-23">Rent</label>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="chekcbox checked-item">
+                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-13">
+                        <label for="checkbox-13">From the owner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                    <div class="dropdown-menu">
+                      <div class="items-line checked-item">
+                        <input name="property-type3" type="radio" checked id="property-type-13">
+                        <label for="property-type-13">Type 1</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type3" type="radio" id="property-type-23">
+                        <label for="property-type-23">Type 2</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type3" type="radio" id="property-type-33">
+                        <label for="property-type-33">Type 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="area">
+                    <input type="number" placeholder="Area">m<sup>2</sup>
+                  </div>
+                  <div class="dropdown price-value">
+                    <div class="dropdown-toggle d-flex align-items-center">
+                      <div class="strong input-default" id="price-start3" data-default="20 000">20 000</div>
+                      <div class="line">-</div>
+                      <div class="strong input-default" id="price-end3" data-default="4 000 000">4 000 000</div>
+                    </div>
+                    <div class="dropdown-menu inner">
+                      <label class="description">Price, € EUR</label>
+                      <div class="d-flex align-items-center">
+                        <input class="price-start" value="20 000" data-id="#price-start3">
+                        <div class="line">-</div>
+                        <input class="price-end" value="4 000 000" data-id="#price-end3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="google-location">
+                    <label for="location3"></label>
+                    <input type="text" placeholder="Location" id="location3">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn">Search</button>
+            </div>
+          </form>
+          <div class="text-center"><a class="btn search popup" href="#search-filter">Search options</a></div>
+        </section>
+        <section>
+          <div class="text-center">
+            <ul class="list-map-nav nav-tabs">
+              <li><a class="nav-item active" href="#filter-list">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.6665 12.3333H14.6665" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 7H14.6667" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.33325 1.66666H14.6666" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  List</a></li>
+              <li><a class="nav-item" href="#filter-map">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3334 6.78789C13.3334 11.0303 8.00008 14.6667 8.00008 14.6667C8.00008 14.6667 2.66675 11.0303 2.66675 6.78789C2.66675 5.34125 3.22865 3.95387 4.22884 2.93094C5.22904 1.90802 6.58559 1.33334 8.00008 1.33334C9.41457 1.33334 10.7711 1.90802 11.7713 2.93094C12.7715 3.95387 13.3334 5.34125 13.3334 6.78789Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 8.66666C9.10457 8.66666 10 7.77123 10 6.66666C10 5.56209 9.10457 4.66666 8 4.66666C6.89543 4.66666 6 5.56209 6 6.66666C6 7.77123 6.89543 8.66666 8 8.66666Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  Map</a></li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="active" id="filter-list">
+              <div class="row">
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-12 mb-32"><img src="img/banners/1.jpg" alt="banner 1"/>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-12 mb-32"><img src="img/banners/1.jpg" alt="banner 1"/>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/1.jpg)">
+                        <button class="like"></button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div id="filter-map"></div>
+          </div>
+        </section>
+        <section class="form-container">
+          <h3>Contact us</h3>
+          <p class="mb-32">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus vestibulum ac diam sit amet quam vehicula elementum.</p>
+          <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email" value="email@mail.com">
+            <textarea placeholder="Your message"></textarea>
+            <div class="btn-group">
+              <button class="btn">Send</button>
+              <div class="chekcbox">
+                <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
+                <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+              </div>
+            </div>
+            <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer mt-96">
+      <div class="container">
+        <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
+          <div class="flex-grow-1">
+            <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a><a class="active" href="#">Order a photographer</a><a href="#">Contact a specialist</a><a href="#">Legal advice</a><a href="#">Package of documents</a><a href="#">Closed database</a></div>
+            <div class="group-links"><a href="#">About us</a><a href="#">Contact us</a></div>
+            <div class="group-links mobile-top-line"><a href="#">Ad policies</a><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="copyright-meta">
+            <div class="copyright">Amizbiz &copy; 2020</div>
+            <div class="meta-language">
+              <div class="d-flex">
+                <div>Разработка сайта</div>
+                <div class="ml-2"><img src="img/meta.svg" alt="meta logo"/>
+                </div>
+              </div>
+              <div class="dropdown language ml-4">
+                <button class="dropdown-toggle" type="button">English</button>
+                <ul class="dropdown-menu top">
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-1">
+                    <label class="text" for="language-footer-1">English</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-2">
+                    <label class="text" for="language-footer-2">France</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-3">
+                    <label class="text" for="language-footer-3">Italian</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

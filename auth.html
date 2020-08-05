@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Внутрішня стрінка</title><!--[if IE]>
+    <title>Авторизація</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-  <body>
+  <body class="form-page">
     <div class="popup-container mfp-hide" id="mobile-menu">
       <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <ul class="main-nav">
@@ -77,26 +77,21 @@
       </div>
     </header>
     <main class="main-content">
-      <div class="center">
-        <button class="btn">Button</button>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda aut ex maiores</span></p>
-        <hr/>
-        <h1 class="title">Новина 1</h1>
-        <div class="text">
-          <p>- Новина пуста</p>
+      <div class="container">
+        <div class="form-container mt-96">
+          <h3 class="mb-32">Log In</h3>
+          <form>
+            <input type="text" placeholder="Name">
+            <div class="toggle-password">
+              <div class="eye"></div>
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="btn-group">
+              <button class="btn">Log In</button><a class="link-underline" href="#">Forgot password?</a>
+            </div>
+            <div class="btn-group bdt-line"><a href="#"><strong>Don’t have account?</strong></a><a class="btn small outline" href="#">Create account</a></div>
+          </form>
         </div>
-        <hr/>
-        <h1 class="title">Новина 2</h1>
-        <div class="text">
-          <p>Текст новини</p>
-        </div><a href="google.com">Google</a><a href="link.com">Link</a>
-        <hr/>
-        <ul class="network-footer">
-          <li class="link link-vk">vk</li>
-          <li class="link link-fb">fb</li>
-          <li class="link link-tw">tw</li>
-        </ul>You put the em
-        <p class="text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></p><br><br><br>Text<img src="image/img.jpg" alt="img"/>
       </div>
     </main>
     <footer class="main-footer mt-96">

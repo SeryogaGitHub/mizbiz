@@ -106,7 +106,7 @@ $(function () {
   $priceValue.on('keypress', 'input', function (e) {
     var key = e.originalEvent.key;
 
-    if (!Number(key) > 0) {
+    if (Number(key) >= 0) {} else {
       e.preventDefault();
     }
   });
@@ -136,5 +136,27 @@ $(function () {
     midClick: true,
     removalDelay: 300,
     mainClass: 'my-mfp-zoom-in'
+  });
+  /***************************
+  переаикач відображення пароля
+   */
+
+  var $togglepassword = $(".toggle-password");
+  $togglepassword.on('click', '.eye', function () {
+    var $this = $(this);
+    var $parent = $this.parents('.toggle-password');
+    var input = $parent.find('input');
+
+    if (input.attr("type") === "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
+  $togglepassword.on('mouseout', '.eye', function () {
+    var $this = $(this);
+    var $parent = $this.parents('.toggle-password');
+    var input = $parent.find('input');
+    input.attr("type", "password");
   });
 });

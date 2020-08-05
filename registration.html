@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Внутрішня стрінка</title><!--[if IE]>
+    <title>Пароля змінено</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-  <body>
+  <body class="form-page">
     <div class="popup-container mfp-hide" id="mobile-menu">
       <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <ul class="main-nav">
@@ -77,26 +77,28 @@
       </div>
     </header>
     <main class="main-content">
-      <div class="center">
-        <button class="btn">Button</button>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda aut ex maiores</span></p>
-        <hr/>
-        <h1 class="title">Новина 1</h1>
-        <div class="text">
-          <p>- Новина пуста</p>
+      <div class="container">
+        <div class="form-container mt-96 mb-32">
+          <div class="text-center mb-32"><img src="img/icons/password-changed.svg" alt="success"/>
+          </div>
+          <h3>Password changed</h3>
+          <form>
+            <input type="text" placeholder="Email">
+            <div class="toggle-password">
+              <div class="eye"></div>
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="chekcbox">
+              <input type="checkbox" name="deal-type-checkbox" checked id="checkbox-form-1">
+              <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+            </div>
+            <div class="text-center mt-3 mb-32">
+              <button class="btn">Send</button>
+            </div>
+            <div class="btn-group bdt-line"><a href="#"><strong>Don’t have account?</strong></a><a class="btn small outline" href="#">Login</a></div>
+            <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+          </form>
         </div>
-        <hr/>
-        <h1 class="title">Новина 2</h1>
-        <div class="text">
-          <p>Текст новини</p>
-        </div><a href="google.com">Google</a><a href="link.com">Link</a>
-        <hr/>
-        <ul class="network-footer">
-          <li class="link link-vk">vk</li>
-          <li class="link link-fb">fb</li>
-          <li class="link link-tw">tw</li>
-        </ul>You put the em
-        <p class="text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></p><br><br><br>Text<img src="image/img.jpg" alt="img"/>
       </div>
     </main>
     <footer class="main-footer mt-96">

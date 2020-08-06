@@ -43,9 +43,13 @@ $(function () {
     var id = $this.attr('href');
     $this.parents('.nav-tabs').find('.nav-item').removeClass("active");
     $this.addClass('active');
-    $(id).parents('.tab-content').children().removeClass('active');
+    $(id).parent().children().removeClass('active');
     $(id).addClass('active');
   });
+  /*********************
+   *       sliders      *
+   *********************/
+
   $('.slider-objects').slick({
     slidesToShow: 3,
     slidesToScroll: 3,

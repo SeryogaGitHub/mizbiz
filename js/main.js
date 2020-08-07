@@ -6,6 +6,7 @@ $(function () {
   ******************/
   var $dropdown = $(".dropdown");
   $dropdown.on("click", '.dropdown-toggle', function (e) {
+    e.preventDefault();
     var $this = $(this);
     var $parent = $this.parents('.dropdown');
 
@@ -142,7 +143,7 @@ $(function () {
     mainClass: 'my-mfp-zoom-in'
   });
   /***************************
-  переаикач відображення пароля
+  переаикач відображення пароля password
    */
 
   var $togglepassword = $(".toggle-password");
@@ -162,5 +163,33 @@ $(function () {
     var $parent = $this.parents('.toggle-password');
     var input = $parent.find('input');
     input.attr("type", "password");
+  });
+  /************************
+  кнопка відображення інформації "i"
+   */
+
+  var $inputInfo = $('.input-info');
+  $inputInfo.on("click", '.info-btn', function () {
+    var $this = $(this);
+    var $parent = $this.parents('.input-info');
+
+    if ($parent.hasClass("active")) {
+      $parent.removeClass('active');
+    } else {
+      $('.input-info').removeClass('active');
+      $parent.addClass('active');
+    }
+  });
+  $(document).mouseup(function (e) {
+    if (!$inputInfo.is(e.target) && $inputInfo.has(e.target).length === 0) {
+      $('.input-info').removeClass('active');
+    }
+  });
+  $inputInfo.on("mouseout", '.info-btn', function () {
+    var $this = $(this);
+
+    if ($this.parents('.input-info').hasClass('active')) {
+      $this.parents('.input-info').removeClass('active');
+    }
   });
 });

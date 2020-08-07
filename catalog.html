@@ -8,6 +8,267 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body class="catalog-page">
+    <div class="popup-container mfp-hide" id="search-filter">
+      <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <form class="main-filter">
+        <div class="scroll-horizontal">
+          <div class="d-flex align-items-center">
+            <ul class="nav-tabs">
+              <li><a class="nav-item active" href="#filter-residential-popup">Residential</a></li>
+              <li><a class="nav-item" href="#filter-comercial-popup">Comercial</a></li>
+              <li><a class="nav-item" href="#filter-yachts-popup">Yachts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="active" id="filter-residential-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio-popup" checked id="radiobox-1-popup">
+                      <label for="radiobox-1-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio-popup" id="radiobox-2-popup">
+                      <label for="radiobox-2-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-1-popup">
+                    <label for="checkbox-1-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" checked id="property-type-1-popup">
+                    <label for="property-type-1-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-2-popup">
+                    <label for="property-type-2-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-3-popup">
+                    <label for="property-type-3-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-1-popup">
+                      <label for="rooms-amount-1-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-2-popup">
+                      <label for="rooms-amount-2-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-3-popup">
+                      <label for="rooms-amount-3-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-4-popup">
+                      <label for="rooms-amount-4-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-5-popup">
+                      <label for="rooms-amount-5-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location-popup"></label>
+                <input type="text" placeholder="Location" id="location-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-comercial-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" checked id="radiobox-12-popup">
+                      <label for="radiobox-12-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" id="radiobox-22-popup">
+                      <label for="radiobox-22-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox2-popup" id="checkbox-12-popup">
+                    <label for="checkbox-12-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" checked id="property-type-12-popup">
+                    <label for="property-type-12-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-22-popup">
+                    <label for="property-type-22-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-32-popup">
+                    <label for="property-type-32-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
+                      <label for="rooms-amount-12-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
+                      <label for="rooms-amount-22-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
+                      <label for="rooms-amount-32-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
+                      <label for="rooms-amount-42-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
+                      <label for="rooms-amount-52-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end2-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start2-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end2-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location2-popup"></label>
+                <input type="text" placeholder="Location" id="location2-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-yachts-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" checked id="radiobox-13-popup">
+                      <label for="radiobox-13-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" id="radiobox-23-popup">
+                      <label for="radiobox-23-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-13-popup">
+                    <label for="checkbox-13-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" checked id="property-type-13-popup">
+                    <label for="property-type-13-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-23-popup">
+                    <label for="property-type-23-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-33-popup">
+                    <label for="property-type-33-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
+              </div>
+              <div class="dropdown price-value mt-16">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start3-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end3-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start3-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end3-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location3-popup"></label>
+                <input type="text" placeholder="Location" id="location3-popup">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn" type="reset">Search</button>
+        </div>
+        <div class="text-center mt-16">
+          <button class="reset-form" type="reset">Reset form</button>
+        </div>
+      </form>
+    </div>
     <div class="popup-container mfp-hide" id="mobile-menu">
       <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <ul class="main-nav">
@@ -109,267 +370,6 @@
     </header>
     <main class="main-content">
       <div class="container">
-        <div class="popup-container mfp-hide" id="search-filter">
-          <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
-          <form class="main-filter">
-            <div class="scroll-horizontal">
-              <div class="d-flex align-items-center">
-                <ul class="nav-tabs">
-                  <li><a class="nav-item active" href="#filter-residential-popup">Residential</a></li>
-                  <li><a class="nav-item" href="#filter-comercial-popup">Comercial</a></li>
-                  <li><a class="nav-item" href="#filter-yachts-popup">Yachts</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="tab-content">
-              <div class="active" id="filter-residential-popup">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio-popup" checked id="radiobox-1-popup">
-                          <label for="radiobox-1-popup">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio-popup" id="radiobox-2-popup">
-                          <label for="radiobox-2-popup">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-1-popup">
-                        <label for="checkbox-1-popup">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type-popup" type="radio" checked id="property-type-1-popup">
-                        <label for="property-type-1-popup">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type-popup" type="radio" id="property-type-2-popup">
-                        <label for="property-type-2-popup">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type-popup" type="radio" id="property-type-3-popup">
-                        <label for="property-type-3-popup">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                    <ul class="dropdown-menu rooms-amount inner">
-                      <label class="description">Rooms amount</label>
-                      <div class="wrap">
-                        <div class="items-line checked-item">
-                          <input name="property-type-popup" type="checkbox" id="rooms-amount-1-popup">
-                          <label for="rooms-amount-1-popup">1</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-2-popup">
-                          <label for="rooms-amount-2-popup">2</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-3-popup">
-                          <label for="rooms-amount-3-popup">3</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-4-popup">
-                          <label for="rooms-amount-4-popup">4</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-5-popup">
-                          <label for="rooms-amount-5-popup">5+</label>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start-popup" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end-popup" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start-popup">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end-popup">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location-popup"></label>
-                    <input type="text" placeholder="Location" id="location-popup">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-comercial-popup">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio2-popup" checked id="radiobox-12-popup">
-                          <label for="radiobox-12-popup">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio2-popup" id="radiobox-22-popup">
-                          <label for="radiobox-22-popup">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox2-popup" id="checkbox-12-popup">
-                        <label for="checkbox-12-popup">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type2-popup" type="radio" checked id="property-type-12-popup">
-                        <label for="property-type-12-popup">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type2-popup" type="radio" id="property-type-22-popup">
-                        <label for="property-type-22-popup">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type2-popup" type="radio" id="property-type-32-popup">
-                        <label for="property-type-32-popup">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                    <ul class="dropdown-menu rooms-amount inner">
-                      <label class="description">Rooms amount</label>
-                      <div class="wrap">
-                        <div class="items-line checked-item">
-                          <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
-                          <label for="rooms-amount-12-popup">1</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
-                          <label for="rooms-amount-22-popup">2</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
-                          <label for="rooms-amount-32-popup">3</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
-                          <label for="rooms-amount-42-popup">4</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
-                          <label for="rooms-amount-52-popup">5+</label>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end2-popup" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start2-popup">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end2-popup">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location2-popup"></label>
-                    <input type="text" placeholder="Location" id="location2-popup">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-yachts-popup">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio3-popup" checked id="radiobox-13-popup">
-                          <label for="radiobox-13-popup">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio3-popup" id="radiobox-23-popup">
-                          <label for="radiobox-23-popup">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-13-popup">
-                        <label for="checkbox-13-popup">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type3-popup" type="radio" checked id="property-type-13-popup">
-                        <label for="property-type-13-popup">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type3-popup" type="radio" id="property-type-23-popup">
-                        <label for="property-type-23-popup">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type3-popup" type="radio" id="property-type-33-popup">
-                        <label for="property-type-33-popup">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="area">
-                    <input type="number" placeholder="Area">m<sup>2</sup>
-                  </div>
-                  <div class="dropdown price-value mt-16">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start3-popup" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end3-popup" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start3-popup">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end3-popup">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location3-popup"></label>
-                    <input type="text" placeholder="Location" id="location3-popup">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center">
-              <button class="btn" type="reset">Search</button>
-            </div>
-            <div class="text-center mt-16">
-              <button class="reset-form" type="reset">Reset form</button>
-            </div>
-          </form>
-        </div>
         <section>
           <form class="main-filter">
             <div class="row align-items-center justify-content-between">
@@ -657,6 +657,7 @@
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -672,8 +673,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -684,6 +683,7 @@
                       <div class="image" style="background-image: url(img/object-item/2.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -699,8 +699,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -711,6 +709,7 @@
                       <div class="image" style="background-image: url(img/object-item/3.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -726,8 +725,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -738,6 +735,7 @@
                       <div class="image" style="background-image: url(img/object-item/5.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -753,8 +751,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -765,6 +761,7 @@
                       <div class="image" style="background-image: url(img/object-item/6.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -780,8 +777,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -792,6 +787,7 @@
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -807,8 +803,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -819,6 +813,7 @@
                       <div class="image" style="background-image: url(img/object-item/4.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -834,8 +829,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -846,6 +839,7 @@
                       <div class="image" style="background-image: url(img/object-item/6.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -861,8 +855,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -873,6 +865,7 @@
                       <div class="image" style="background-image: url(img/object-item/5.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -888,8 +881,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -902,6 +893,7 @@
                       <div class="image" style="background-image: url(img/object-item/2.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -917,8 +909,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -929,6 +919,7 @@
                       <div class="image" style="background-image: url(img/object-item/4.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -944,8 +935,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -956,6 +945,7 @@
                       <div class="image" style="background-image: url(img/object-item/2.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -971,8 +961,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -983,6 +971,7 @@
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -998,8 +987,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1010,6 +997,7 @@
                       <div class="image" style="background-image: url(img/object-item/2.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1025,8 +1013,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1037,6 +1023,7 @@
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1052,8 +1039,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1064,6 +1049,7 @@
                       <div class="image" style="background-image: url(img/object-item/4.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1079,8 +1065,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1091,6 +1075,7 @@
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1106,8 +1091,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1118,6 +1101,7 @@
                       <div class="image" style="background-image: url(img/object-item/6.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1133,8 +1117,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1147,6 +1129,7 @@
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1162,8 +1145,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1174,6 +1155,7 @@
                       <div class="image" style="background-image: url(img/object-item/2.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1189,8 +1171,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1201,6 +1181,7 @@
                       <div class="image" style="background-image: url(img/object-item/4.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1216,8 +1197,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1228,6 +1207,7 @@
                       <div class="image" style="background-image: url(img/object-item/5.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1243,8 +1223,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1255,6 +1233,7 @@
                       <div class="image" style="background-image: url(img/object-item/6.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1270,8 +1249,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>
@@ -1282,6 +1259,7 @@
                       <div class="image" style="background-image: url(img/object-item/3.jpg)">
                         <div class="overlay"></div>
                         <button class="like"></button>
+                        <div class="badges Pars">Place du</div>
                       </div>
                       <div class="numbers">
                         <div class="item door">4</div>
@@ -1297,8 +1275,6 @@
                             <div class="month">/ month</div>
                           </div>
                           <div class="tags">
-                            <div class="tag">Pars</div>
-                            <div class="tag">Place du</div>
                           </div>
                         </div>
                       </div>

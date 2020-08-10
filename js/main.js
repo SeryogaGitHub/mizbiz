@@ -1,9 +1,28 @@
 "use strict";
 
 $(function () {
+  /************************
+         slow scroll
+   */
+  $(".go-to").on('click', function (e) {
+    e.preventDefault();
+    var mainHeader = $('.main-header');
+    var anchor = $(this).attr("href"),
+        height = mainHeader.height();
+
+    if ($(anchor).length) {
+      var run = $(anchor).offset().top - height;
+      $('body,html').stop().animate({
+        scrollTop: run
+      }, 1500);
+    } else {
+      console.warn("ID don't search!");
+    }
+  });
   /*****************
   *    dropdown    *
   ******************/
+
   var $dropdown = $(".dropdown");
   $dropdown.on("click", '.dropdown-toggle', function (e) {
     e.preventDefault();
@@ -55,6 +74,7 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
+    focusOnSelect: true,
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.625 12.25L16.875 7l-5.25-5.25M1.125 7h15.75" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.625 12.25L16.875 7l-5.25-5.25M1.125 7h15.75" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
     responsive: [{
@@ -71,6 +91,41 @@ $(function () {
         dots: false
       }
     }]
+  });
+  $('.single-slider').slick({
+    arrows: false,
+    fade: true,
+    asNavFor: '.choose-slider'
+  });
+  $('.gallery-products').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    asNavFor: '.choose-slider',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.625 12.25L16.875 7l-5.25-5.25M1.125 7h15.75" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.625 12.25L16.875 7l-5.25-5.25M1.125 7h15.75" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true
+      }
+    }]
+  });
+  $('.detail-products').slick({
+    arrows: false,
+    asNavFor: '.choose-slider',
+    focusOnSelect: true
   });
   /*******************
   *     main filter

@@ -415,175 +415,386 @@
           </ul>
         </div>
         <div class="wrap-objects-item">
-          <h1 class="text-left mobile-hide">New offer</h1>
-          <p>Once published, your offer will be available on Amibiz.com</p>
-          <form class="box-white br-8">
-            <h4 class="title-box">
-              <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="title-top mb-32">
+            <h1 class="text-left">New offer</h1>
+            <p>Once published, your offer will be available on Amibiz.com</p>
+          </div>
+          <div class="d-grid">
+            <form>
+              <div class="box-white br-8 mb-32 mb-32">
+                <h4 class="title-box">
+                  <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1.66602 1H9.66602C11.0805 1 12.4371 1.5619 13.4373 2.5621C14.4374 3.56229 14.9993 4.91885 14.9993 6.33333V25C14.9993 23.9391 14.5779 22.9217 13.8278 22.1716C13.0776 21.4214 12.0602 21 10.9993 21H1.66602V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M28.3333 1H20.3333C18.9188 1 17.5623 1.5619 16.5621 2.5621C15.5619 3.56229 15 4.91885 15 6.33333V25C15 23.9391 15.4214 22.9217 16.1716 22.1716C16.9217 21.4214 17.9391 21 19 21H28.3333V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-              Offer type
-            </h4>
-            <h6>Who do you represent?</h6>
-            <div class="d-flex">
-              <div class="radiobox mr-3 checked-item">
-                <input type="radio" name="male-f" checked id="male-f-1">
-                <label for="male-f-1">Agent</label>
+                  Offer type
+                </h4>
+                <h6>Who do you represent?</h6>
+                <div class="d-flex flex-wrap">
+                  <div class="radiobox mr-3">
+                    <input type="radio" name="male-f" checked id="male-f-1">
+                    <label for="male-f-1">Agent</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="male-f" id="male-f-2">
+                    <label for="male-f-2">Owner</label>
+                  </div>
+                </div>
+                <h6>Property type</h6>
+                <div class="d-flex flex-wrap">
+                  <div class="radiobox mr-3">
+                    <input type="radio" name="agent-owner" checked id="agent-owner-1">
+                    <label for="agent-owner-1">Residential</label>
+                  </div>
+                  <div class="radiobox mr-3">
+                    <input type="radio" name="agent-owner" id="agent-owner-2">
+                    <label for="agent-owner-2">Commercial</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="agent-owner" id="agent-owner-Yachts">
+                    <label for="agent-owner-Yachts">Yachts</label>
+                  </div>
+                </div>
+                <h6>Transaction type</h6>
+                <div class="d-flex flex-wrap">
+                  <div class="radiobox mr-3">
+                    <input type="radio" name="sale-o" checked id="sale-o-1">
+                    <label for="sale-o-1">Sale</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="sale-o" id="sale-o-2">
+                    <label for="sale-o-2">Rent</label>
+                  </div>
+                </div>
+                <h6>An object</h6>
+                <div class="column-radiobox">
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-1">
+                    <label for="home-1">Flat</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-2">
+                    <label for="home-2">House | Cottage</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-3">
+                    <label for="home-3">Plot</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-4">
+                    <label for="home-4">Cottage</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-5">
+                    <label for="home-5">Apartment in a new building</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-6">
+                    <label for="home-6">Yacht</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-7">
+                    <label for="home-7">Share in the apartment</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-8">
+                    <label for="home-8">Townhouse</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-9">
+                    <label for="home-9">Room</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="home" id="home-10">
+                    <label for="home-10">Part of the house</label>
+                  </div>
+                </div>
               </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="male-f" id="male-f-2">
-                <label for="male-f-2">Owner</label>
-              </div>
-            </div>
-            <h6>Property type</h6>
-            <div class="d-flex">
-              <div class="radiobox mr-3 checked-item">
-                <input type="radio" name="agent-owner" checked id="agent-owner-1">
-                <label for="agent-owner-1">Residential</label>
-              </div>
-              <div class="radiobox mr-3 checked-item">
-                <input type="radio" name="agent-owner" id="agent-owner-2">
-                <label for="agent-owner-2">Commercial</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="agent-owner" id="agent-owner-Yachts">
-                <label for="agent-owner-Yachts">Yachts</label>
-              </div>
-            </div>
-            <h6>Transaction type</h6>
-            <div class="d-flex">
-              <div class="radiobox mr-3 checked-item">
-                <input type="radio" name="sale-o" checked id="sale-o-1">
-                <label for="sale-o-1">Sale</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="sale-o" id="sale-o-2">
-                <label for="sale-o-2">Rent</label>
-              </div>
-            </div>
-            <h6>An object</h6>
-            <div class="column-radiobox">
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-1">
-                <label for="home-1">Flat</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-2">
-                <label for="home-2">House | Cottage</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-3">
-                <label for="home-3">Plot</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-4">
-                <label for="home-4">Cottage</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-5">
-                <label for="home-5">Apartment in a new building</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-6">
-                <label for="home-6">Yacht</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-7">
-                <label for="home-7">Share in the apartment</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-8">
-                <label for="home-8">Townhouse</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-9">
-                <label for="home-9">Room</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="home" id="home-10">
-                <label for="home-10">Part of the house</label>
-              </div>
-            </div>
-          </form>
-          <div class="box-white br-8">
-            <h4 class="title-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="box-white br-8 mb-32">
+                <h4 class="title-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#69C0AC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12 16V12" stroke="#69C0AC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12 8L12 7" stroke="#69C0AC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-              About the object
-            </h4>
-            <h6>Number of rooms</h6>
-            <div class="d-flex flex-wrap">
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="rooms" checked id="rooms-1">
-                <label for="rooms-1">1</label>
+                  About the object
+                </h4>
+                <h6>Number of rooms</h6>
+                <div class="d-flex flex-wrap">
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="rooms" checked id="rooms-1">
+                    <label for="rooms-1">1</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="rooms" id="rooms-2">
+                    <label for="rooms-2">2</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="rooms" id="rooms-3">
+                    <label for="rooms-3">3</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="rooms" id="rooms-4">
+                    <label for="rooms-4">4</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="rooms" checked id="rooms-5">
+                    <label for="rooms-5">5+</label>
+                  </div>
+                </div>
+                <h6>Number of bedrooms</h6>
+                <div class="d-flex flex-wrap">
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="bedrooms" checked id="bedrooms-0">
+                    <label for="bedrooms-0">0</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="bedrooms" checked id="bedrooms-1">
+                    <label for="bedrooms-1">1</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="bedrooms" id="bedrooms-2">
+                    <label for="bedrooms-2">2</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="bedrooms" id="bedrooms-3">
+                    <label for="bedrooms-3">3</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="bedrooms" id="bedrooms-4">
+                    <label for="bedrooms-4">4</label>
+                  </div>
+                  <div class="radiobox">
+                    <input type="radio" name="bedrooms" checked id="bedrooms-5">
+                    <label for="rooms-5">5+</label>
+                  </div>
+                </div>
+                <h6>Repairs</h6>
+                <div class="d-flex flex-wrap">
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="repairs" checked id="repairs-0">
+                    <label for="repairs-0">Cosmetic</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="repairs" checked id="repairs-1">
+                    <label for="repairs-1">Cosmetic</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="repairs" id="repairs-2">
+                    <label for="repairs-2">Designer</label>
+                  </div>
+                  <div class="radiobox mr-4">
+                    <input type="radio" name="repairs" id="repairs-3">
+                    <label for="repairs-3">Without repair</label>
+                  </div>
+                </div>
+                <h6>Total area</h6>
+                <div class="size-input">
+                  <input type="number" placeholder="Size">m<sup>2</sup>
+                </div>
+                <h6>Garden area</h6>
+                <div class="size-input">
+                  <input type="number" placeholder="Size">m<sup>2</sup>
+                </div>
+                <h6>Ceiling height</h6>
+                <div class="size-input">
+                  <input type="number" placeholder="Size">m<sup>2</sup>
+                </div>
+                <h6>Additionally</h6>
+                <div class="column">
+                  <div class="item">
+                    <h6>General</h6>
+                    <div class="radiobox mr-4">
+                      <input type="radio" name="general" id="general-0">
+                      <label for="general-0">Windows to the courtyard</label>
+                    </div>
+                    <div class="radiobox mr-4">
+                      <input type="radio" name="general" id="general-1">
+                      <label for="general-1">Windows to the courtyard</label>
+                    </div>
+                    <div class="radiobox mr-4">
+                      <input type="radio" name="general" id="general-2">
+                      <label for="general-2">Balcony</label>
+                    </div>
+                    <div class="radiobox mr-4">
+                      <input type="radio" name="general" id="general-3">
+                      <label for="general-3">Terrace</label>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h6>Comfort</h6>
+                    <div class="radiobox mr-4">
+                      <input type="radio" name="separate-bathroom" id="separate-bathroom-2">
+                      <label for="separate-bathroom-2">Separate bathroom</label>
+                    </div>
+                    <div class="radiobox mr-4">
+                      <input type="radio" name="separate-bathroom" id="separate-bathroom-3">
+                      <label for="separate-bathroom-3">Combined bathroom</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="rooms" id="rooms-2">
-                <label for="rooms-2">2</label>
+              <div class="box-white br-8 mb-32">
+                <div class="title-box d-flex justify-content-between">
+                  <h4>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1H3C1.89543 1 1 1.89543 1 3V17C1 18.1046 1.89543 19 3 19H17C18.1046 19 19 18.1046 19 17V3C19 1.89543 18.1046 1 17 1Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 13L14 8L3 19" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Photos
+                  </h4>
+                  <div class="tooltip">
+                    <button class="info-btn" type="button">About posting photos</button>
+                    <div class="info-text">
+                      <ul>
+                        <li>Photos with watermarks, other people's objects and advertising banners are<a href="#">not allowed to be placed</a></li>
+                        <li>Image formats<a href="#">JPG</a>or<a href="#">PNG</a></li>
+                        <li>Maximum file size<a href="#">1 mb</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="photo-gallery">
+                  <div class="item" style="background-image: url(img/object-item/1.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <div class="item" style="background-image: url(img/object-item/2.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <div class="item" style="background-image: url(img/object-item/4.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <div class="item" style="background-image: url(img/object-item/5.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <div class="item" style="background-image: url(img/object-item/6.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <div class="item" style="background-image: url(img/object-item/1.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <div class="item" style="background-image: url(img/object-item/2.jpg)">
+                    <div class="tooltip">
+                      <button class="info-btn toggle-primary" type="button"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00065 1.33325L10.0607 5.50659L14.6673 6.17992L11.334 9.42659L12.1207 14.0133L8.00065 11.8466L3.88065 14.0133L4.66732 9.42659L1.33398 6.17992L5.94065 5.50659L8.00065 1.33325Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      </button>
+                      <div class="info-text">Make primary</div>
+                    </div>
+                    <button class="remove" type="button"></button>
+                  </div>
+                  <label class="item file"><span class="inner"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1H3C1.89543 1 1 1.89543 1 3V17C1 18.1046 1.89543 19 3 19H17C18.1046 19 19 18.1046 19 17V3C19 1.89543 18.1046 1 17 1Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 13L14 8L3 19" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                      <input type="file"><span>Add photo</span></span></label>
+                </div>
               </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="rooms" id="rooms-3">
-                <label for="rooms-3">3</label>
+              <div class="box-white br-8 mb-32">
+                <h4 class="title-box">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.54 3.42C22.4212 2.94541 22.1793 2.51057 21.8387 2.15941C21.498 1.80824 21.0708 1.55318 20.6 1.42C18.88 1 12 1 12 1C12 1 5.12002 1 3.40002 1.46C2.92927 1.59318 2.502 1.84824 2.16137 2.19941C1.82074 2.55057 1.57881 2.98541 1.46002 3.46C1.14524 5.20556 0.991258 6.97631 1.00002 8.75C0.988802 10.537 1.14279 12.3213 1.46002 14.08C1.59098 14.5398 1.83833 14.9581 2.17817 15.2945C2.518 15.6308 2.93884 15.8738 3.40002 16C5.12002 16.46 12 16.46 12 16.46C12 16.46 18.88 16.46 20.6 16C21.0708 15.8668 21.498 15.6118 21.8387 15.2606C22.1793 14.9094 22.4212 14.4746 22.54 14C22.8524 12.2676 23.0063 10.5103 23 8.75C23.0112 6.96295 22.8573 5.1787 22.54 3.42V3.42Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.75 12.02L15.5 8.75L9.75 5.48V12.02Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  Video
+                </h4>
+                <input class="youtube" value="https://www.youtube.com/watch?v=Qthr9KkVcRU">
+                <div class="iframe">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Qthr9KkVcRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="rooms" id="rooms-4">
-                <label for="rooms-4">4</label>
+              <div class="box-white br-8 mb-32">
+                <h4 class="title-box mb-32">
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 1L16 5L5 16H1V12L12 1Z" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 21H19" stroke="#171A1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  Title and description
+                </h4>
+                <input value="Apartment for sale “Calypso”">
+                <div class="textarea-count">
+                  <textarea maxlength="3000" placeholder="Tell us in what condition the floors, windows, plumbing, whether counters are installed; whether there was a redevelopment; how long the apartment is owned and how many owners; what are your neighbors."></textarea>
+                  <div class="count-item"><span class="count">0</span><span class="max-count">/ 3000</span></div>
+                </div>
               </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="rooms" checked id="rooms-5">
-                <label for="rooms-5">5+</label>
+            </form>
+            <aside class="aside-profile">
+              <div class="box-white br-8">
+                <h6 class="title-box">
+                  <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.66602 1H9.66602C11.0805 1 12.4371 1.5619 13.4373 2.5621C14.4374 3.56229 14.9993 4.91885 14.9993 6.33333V25C14.9993 23.9391 14.5779 22.9217 13.8278 22.1716C13.0776 21.4214 12.0602 21 10.9993 21H1.66602V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.3333 1H20.3333C18.9188 1 17.5623 1.5619 16.5621 2.5621C15.5619 3.56229 15 4.91885 15 6.33333V25C15 23.9391 15.4214 22.9217 16.1716 22.1716C16.9217 21.4214 17.9391 21 19 21H28.3333V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  Posting Rules
+                </h6>
+                <ul class="list-aside">
+                  <li>
+                    <h6>1. First rule title</h6>
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                  </li>
+                  <li>
+                    <h6>2. Second rule title</h6>
+                    <p>Varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                  </li>
+                  <li>
+                    <h6>3. Third rule title</h6>
+                    <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                  </li><a class="link-underline" href="#">Read all rules</a>
+                </ul>
               </div>
-            </div>
-            <h6>Number of bedrooms</h6>
-            <div class="d-flex flex-wrap">
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="bedrooms" checked id="bedrooms-0">
-                <label for="bedrooms-0">0</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="bedrooms" checked id="bedrooms-1">
-                <label for="bedrooms-1">1</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="bedrooms" id="bedrooms-2">
-                <label for="bedrooms-2">2</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="bedrooms" id="bedrooms-3">
-                <label for="bedrooms-3">3</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="bedrooms" id="bedrooms-4">
-                <label for="bedrooms-4">4</label>
-              </div>
-              <div class="radiobox checked-item">
-                <input type="radio" name="bedrooms" checked id="bedrooms-5">
-                <label for="rooms-5">5+</label>
-              </div>
-            </div>
-            <h6>Repairs</h6>
-            <div class="d-flex flex-wrap">
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="repairs" checked id="repairs-0">
-                <label for="repairs-0">Cosmetic</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="repairs" checked id="repairs-1">
-                <label for="repairs-1">Cosmetic</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="repairs" id="repairs-2">
-                <label for="repairs-2">Designer</label>
-              </div>
-              <div class="radiobox mr-4 checked-item">
-                <input type="radio" name="repairs" id="repairs-3">
-                <label for="repairs-3">Without repair</label>
-              </div>
-            </div>
+            </aside>
           </div>
         </div>
       </div>

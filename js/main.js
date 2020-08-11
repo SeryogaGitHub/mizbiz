@@ -223,28 +223,47 @@ $(function () {
   кнопка відображення інформації "i"
    */
 
-  var $inputInfo = $('.input-info');
+  var $inputInfo = $('.tooltip');
   $inputInfo.on("click", '.info-btn', function () {
     var $this = $(this);
-    var $parent = $this.parents('.input-info');
-
-    if ($parent.hasClass("active")) {
-      $parent.removeClass('active');
-    } else {
-      $('.input-info').removeClass('active');
-      $parent.addClass('active');
-    }
+    var $parent = $this.parents('.tooltip');
+    $('.tooltip').removeClass('active');
+    $parent.addClass('active');
   });
   $(document).mouseup(function (e) {
     if (!$inputInfo.is(e.target) && $inputInfo.has(e.target).length === 0) {
-      $('.input-info').removeClass('active');
+      $('.tooltip').removeClass('active');
     }
   });
   $inputInfo.on("mouseout", '.info-btn', function () {
     var $this = $(this);
 
-    if ($this.parents('.input-info').hasClass('active')) {
-      $this.parents('.input-info').removeClass('active');
+    if ($this.parents('.tooltip').hasClass('active')) {
+      $this.parents('.tooltip').removeClass('active');
     }
+  });
+  /****************
+  make private
+   */
+
+  $(".toggle-primary").on('click', function () {
+    $(this).toggleClass('active');
+  });
+  /****************
+  delete gallery image
+   */
+
+  $('.photo-gallery .remove').on("click", function () {
+    $(this).parent().remove();
+  });
+  /****************
+  count textarea
+  */
+
+  var $textareaCount = $('.textarea-count textarea');
+  $textareaCount.on('keyup mousemove mousedown change', function () {
+    var $this = $(this);
+    var parent = $this.parents(".textarea-count");
+    parent.find('.count').text($this.val().length);
   });
 });

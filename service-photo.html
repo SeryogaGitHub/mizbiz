@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Каталог немає результата пошуку</title><!--[if IE]>
+    <title>Сервіс фотограф</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-  <body class="catalog-page">
+  <body>
     <div class="popup-container mfp-hide" id="search-filter">
       <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <form class="main-filter">
@@ -315,7 +315,38 @@
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
-            </nav><a class="btn outline small login" href="#">Login</a>
+            </nav>
+            <div class="dropdown user-dropdown">
+              <button class="dropdown-toggle" type="button">
+                <div class="person" style="background-image: url(img/person.jpg)"></div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="link-icon" href="#">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Favorite</a></li>
+                <li><a class="link-icon active" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.33334 2H5.33334C6.04059 2 6.71886 2.28095 7.21896 2.78105C7.71906 3.28115 8.00001 3.95942 8.00001 4.66667V14C8.00001 13.4696 7.7893 12.9609 7.41422 12.5858C7.03915 12.2107 6.53044 12 6.00001 12H1.33334V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6667 2H10.6667C9.95942 2 9.28115 2.28095 8.78105 2.78105C8.28095 3.28115 8 3.95942 8 4.66667V14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12H14.6667V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    My offers</a></li>
+                <li><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3333 14V12.6667C13.3333 11.9594 13.0524 11.2811 12.5523 10.781C12.0522 10.281 11.3739 10 10.6667 10H5.33332C4.62608 10 3.9478 10.281 3.4477 10.781C2.94761 11.2811 2.66666 11.9594 2.66666 12.6667V14" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00001 7.33333C9.47277 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.47277 2 8.00001 2C6.52725 2 5.33334 3.19391 5.33334 4.66667C5.33334 6.13943 6.52725 7.33333 8.00001 7.33333Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Profile</a></li>
+                <li class="profile"><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6667 11.3333L14 8L10.6667 4.66666" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 8H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Log out</a></li>
+              </ul>
+            </div>
             <div class="dropdown language">
               <button class="dropdown-toggle" type="button">EN</button>
               <ul class="dropdown-menu">
@@ -338,295 +369,155 @@
       </div>
     </header>
     <main class="main-content">
-      <div class="container">
-        <section>
-          <form class="main-filter">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-6">
-                <ul class="nav-tabs">
-                  <li><a class="nav-item active" href="#filter-residential">Residential</a></li>
-                  <li><a class="nav-item" href="#filter-comercial">Comercial</a></li>
-                  <li><a class="nav-item" href="#filter-yachts">Yachts</a></li>
-                </ul>
-              </div>
-              <div class="col-3 d-flex justify-content-end">
-                <button class="reset-form" type="reset">Reset form</button>
-              </div>
-            </div>
-            <div class="tab-content">
-              <div class="active" id="filter-residential">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio" checked id="radiobox-1">
-                          <label for="radiobox-1">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio" id="radiobox-2">
-                          <label for="radiobox-2">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-1">
-                        <label for="checkbox-1">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type" type="radio" checked id="property-type-1">
-                        <label for="property-type-1">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type" type="radio" id="property-type-2">
-                        <label for="property-type-2">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type" type="radio" id="property-type-3">
-                        <label for="property-type-3">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                    <ul class="dropdown-menu rooms-amount inner">
-                      <label class="description">Rooms amount</label>
-                      <div class="wrap">
-                        <div class="items-line checked-item">
-                          <input name="property-type" type="checkbox" id="rooms-amount-1">
-                          <label for="rooms-amount-1">1</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-2">
-                          <label for="rooms-amount-2">2</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-3">
-                          <label for="rooms-amount-3">3</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-4">
-                          <label for="rooms-amount-4">4</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-5">
-                          <label for="rooms-amount-5">5+</label>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location"></label>
-                    <input type="text" placeholder="Location" id="location">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-comercial">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio2" checked id="radiobox-12">
-                          <label for="radiobox-12">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio2" id="radiobox-22">
-                          <label for="radiobox-22">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox2" id="checkbox-12">
-                        <label for="checkbox-12">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type2" type="radio" checked id="property-type-12">
-                        <label for="property-type-12">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type2" type="radio" id="property-type-22">
-                        <label for="property-type-22">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type2" type="radio" id="property-type-32">
-                        <label for="property-type-32">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                    <ul class="dropdown-menu rooms-amount inner">
-                      <label class="description">Rooms amount</label>
-                      <div class="wrap">
-                        <div class="items-line checked-item">
-                          <input name="property-type" type="checkbox" id="rooms-amount-12">
-                          <label for="rooms-amount-12">1</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-22">
-                          <label for="rooms-amount-22">2</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-32">
-                          <label for="rooms-amount-32">3</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-42">
-                          <label for="rooms-amount-42">4</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-52">
-                          <label for="rooms-amount-52">5+</label>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start2" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end2" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start2">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end2">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location2"></label>
-                    <input type="text" placeholder="Location" id="location2">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-yachts">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio3" checked id="radiobox-13">
-                          <label for="radiobox-13">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio3" id="radiobox-23">
-                          <label for="radiobox-23">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-13">
-                        <label for="checkbox-13">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type3" type="radio" checked id="property-type-13">
-                        <label for="property-type-13">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type3" type="radio" id="property-type-23">
-                        <label for="property-type-23">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type3" type="radio" id="property-type-33">
-                        <label for="property-type-33">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="area">
-                    <input type="number" placeholder="Area">m<sup>2</sup>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start3" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end3" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start3">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end3">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location3"></label>
-                    <input type="text" placeholder="Location" id="location3">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center">
-              <button class="btn">Search</button>
-            </div>
-          </form>
-          <div class="text-center"><a class="btn search popup" href="#search-filter">Search options</a></div>
-        </section>
-      </div>
-      <div class="no-result signs">
+      <section class="top-block" style="background-image: url(img/service-page/top-block/1.jpg)">
         <div class="container">
-          <div class="text-center mb-32"><img src="img/icons/catalog-no-result.svg"/>
+          <div class="text">
+            <h1>Order a photographer</h1>
+            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="btn" href="#">I need a photograpger</a>
           </div>
-          <h2>There are no results for your request yet.</h2>
-          <p class="description">Please leave us your wishes and your contact details, we will select the necessary object for you.</p>
+        </div>
+      </section>
+      <div class="container">
+        <h2>Scheme of work</h2>
+        <div class="row scheme-work mb-32">
+          <div class="col-md-6 col-lg-3 item">
+            <div class="image">
+              <div class="number-icon">1</div><svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M60.5 8.52002V6.5C60.5 3.73858 58.2614 1.5 55.5 1.5H22.5C19.7386 1.5 17.5 3.73858 17.5 6.5V29.401M60.5 33.243V74.184C60.5 76.9454 58.2614 79.184 55.5 79.184H22.5C19.7386 79.184 17.5 76.9454 17.5 74.184V53.9569" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M17.5757 65.7942H60.5047" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="39.3658" cy="72.5" r="3.80087" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M1.5 34.658C1.5 31.8965 3.73858 29.658 6.5 29.658H31.5871C34.3485 29.658 36.5871 31.8965 36.5871 34.658V50.6181C36.5871 52.5079 35.0551 54.0398 33.1653 54.0398V54.0398C31.0857 54.0398 29.4869 55.8796 29.777 57.9388L29.8693 58.5943C29.9806 59.385 28.9917 59.8324 28.4713 59.2267L25.5113 55.7815C24.5615 54.6759 23.1764 54.0398 21.7188 54.0398H6.5C3.73857 54.0398 1.5 51.8013 1.5 49.0398V34.658Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M7.04785 36.3572H23.1973M27.8991 36.3572H32.192M7.04785 41.7744H10.2164M14.9182 41.7744H31.6809M7.04785 47.1916H23.1973M27.8991 47.1916H32.192" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M79.377 13.7031C79.377 10.9417 77.1384 8.70312 74.377 8.70312H49.2899C46.5285 8.70312 44.2899 10.9417 44.2899 13.7031V29.6632C44.2899 31.553 45.8219 33.085 47.7117 33.085V33.085C49.7913 33.085 51.39 34.9247 51.1 36.984L51.0077 37.6395C50.8963 38.4301 51.8853 38.8775 52.4056 38.2719L55.3656 34.8267C56.3155 33.7211 57.7005 33.085 59.1581 33.085H74.377C77.1384 33.085 79.377 30.8464 79.377 28.085V13.7031Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="62.1104" cy="21.7784" r="3.80087" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M51.5542 17.2157C51.5542 16.6634 52.0019 16.2157 52.5542 16.2157H56.3873C56.6705 16.2157 56.9405 16.0955 57.1301 15.8851L59.1734 13.6178C59.363 13.4074 59.633 13.2872 59.9162 13.2872H62.1103H64.3043C64.5876 13.2872 64.8576 13.4074 65.0472 13.6178L67.0904 15.8851C67.2801 16.0955 67.55 16.2157 67.8333 16.2157H71.6664C72.2186 16.2157 72.6664 16.6634 72.6664 17.2157V27.5424C72.6664 28.0947 72.2186 28.5424 71.6664 28.5424H52.5542C52.0019 28.5424 51.5542 28.0947 51.5542 27.5424V17.2157Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="80" height="80" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+
+            </div>
+            <p>You leave a request<br>for photography</p>
+          </div>
+          <div class="col-md-6 col-lg-3 item">
+            <div class="image">
+              <div class="number-icon">2</div><svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<circle cx="20.0511" cy="52.577" r="5.51256" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="60.5184" cy="52.577" r="5.51256" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.2871 69.341C10.2871 63.8612 14.7294 59.4189 20.2092 59.4189V59.4189C25.689 59.4189 30.1312 63.8612 30.1312 69.341V74.0308H10.2871V69.341Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.9366 6.96924H41.6803M47.2954 6.96924H73.4543C76.768 6.96924 79.4543 9.65553 79.4543 12.9692V30.7673C79.4543 34.081 76.768 36.7673 73.4543 36.7673H62.4815V36.7673C61.7767 36.7673 61.2054 37.3387 61.2054 38.0435V40.1126C61.2054 40.9753 60.2678 41.5112 59.5244 41.0734L53.6214 37.5972C52.6988 37.0539 51.6475 36.7673 50.5768 36.7673H31.59C30.5907 36.7673 29.6073 37.0169 28.729 37.4934L21.976 41.1567C21.222 41.5658 20.3048 41.0199 20.3048 40.1621V37.852C20.3048 37.253 19.8192 36.7673 19.2201 36.7673V36.7673H7.54541C4.2317 36.7673 1.54541 34.081 1.54541 30.7673V12.9692C1.54541 9.65553 4.2317 6.96924 7.54541 6.96924H33.2577" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.4805 22.5382H27.2959M40.0483 22.5382H40.7394M52.5361 22.5382H53.2467" stroke="#13AD89" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50.7544 69.341C50.7544 63.8612 55.1967 59.4189 60.6765 59.4189V59.4189C66.1563 59.4189 70.5985 63.8612 70.5985 69.341V74.0308H50.7544V69.341Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="80" height="80" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+
+            </div>
+            <p>We agree on the volume and<br>terms of work</p>
+          </div>
+          <div class="col-md-6 col-lg-3 item">
+            <div class="image">
+              <div class="number-icon">3</div><svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect x="1.95898" y="27.528" width="76.6058" height="51.6443" rx="6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M39.4874 17.8877L34.1509 27.1837H66.3425L61.0059 17.8877H39.4874Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M13.8706 24.513C13.8706 22.2801 15.6807 20.47 17.9136 20.47V20.47C20.1465 20.47 21.9567 22.2801 21.9567 24.513V27.1837H13.8706V24.513Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="50.2467" cy="53.2892" r="11.2516" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M55.5553 53.2892C55.5553 50.3572 53.1785 47.9805 50.2466 47.9805" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M33.5774 44.9647C31.6064 48.9123 31.1003 53.4313 32.1493 57.7171C33.1983 62.003 35.7343 65.7774 39.3058 68.3685C42.8772 70.9595 47.2524 72.1989 51.6521 71.8661C56.0519 71.5332 60.1908 69.6497 63.3318 66.5508C66.4728 63.452 68.4121 59.3389 68.8043 54.9441C69.1966 50.5492 68.0164 46.1577 65.4739 42.5516C62.9313 38.9454 59.1915 36.3586 54.9202 35.2518C50.649 34.145 46.1235 34.59 42.1496 36.5075" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M12.5356 40.5468H23.2142" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M50.1651 11.1552V1.08679M56.8774 11.1552L63.9964 4.03612M43.2494 11.1552L36.1304 4.03612" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="80" height="80" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+
+            </div>
+            <p>Photographer holds a photo<br>session</p>
+          </div>
+          <div class="col-md-6 col-lg-3 item">
+            <div class="image">
+              <div class="number-icon">4</div><svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M78.9681 30.5645V26.2917C78.9681 24.6349 77.6249 23.2917 75.9681 23.2917H30.2324C28.5756 23.2917 27.2324 24.6349 27.2324 26.2917V72.854C27.2324 74.5108 28.5756 75.854 30.2324 75.854H75.9681C77.6249 75.854 78.9681 74.5108 78.9681 72.854V41.694M78.9681 34.3111V37.0659" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.6354 35.9431L23.8649 8.1479C24.4856 6.61168 26.234 5.86947 27.7703 6.49011L68.7422 23.0432M10.2668 41.8058L8.56501 46.0179M6.46508 51.2156L3.48815 58.5841C2.86749 60.1203 3.60974 61.8688 5.146 62.4895L27.2117 71.4036" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="34.3398" y="30.5126" width="37.521" height="38.1204" rx="3" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.4971 68.2505L45.9887 50.1767C47.1509 48.1746 50.0468 48.1875 51.1911 50.1999L51.8057 51.2807M47.398 68.2505L56.9957 50.6833C58.1557 48.56 61.2228 48.6128 62.309 50.7748L64.2085 54.5553M71.0895 68.2505L64.2085 54.5553M64.2085 54.5553H58.6377" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="64.4775" cy="37.9474" r="4.01758" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            <p>You get ready-made photos</p>
+          </div>
         </div>
       </div>
-      <div class="container">
-        <section class="form-container mtm-56">
-          <h2>Fill the form</h2>
-          <p class="mb-32 description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus vestibulum ac diam sit amet quam vehicula elementum.</p>
-          <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email" value="email@mail.com">
-            <textarea placeholder="Your message"></textarea>
-            <div class="btn-group">
-              <button class="btn">Send</button>
-              <div class="chekcbox">
-                <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
-                <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+      <div class="container signs">
+        <h2>Why good photos matter</h2>
+        <p class="description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+        <div class="row why-good-photos">
+          <div class="col-md-6">
+            <div class="item good">
+              <div class="image" style="background-image: url(img/service-page/why-good-photos/1.jpg)">
+                <div class="badge good">
+                  <div class="inner">
+                    <div class="icon"></div>Good
+                  </div>
+                </div>
               </div>
+              <ul>
+                <li>Correct color grading, shades and corrections</li>
+                <li>Correct proportions and sizes. Vivamus magna justo</li>
+                <li>Correct shades, grading</li>
+                <li>The right angle, magna justo, lacinia eget consectetur sed</li>
+              </ul>
             </div>
-            <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
-          </form>
-        </section>
+          </div>
+          <div class="col-md-6">
+            <div class="item bad">
+              <div class="image" style="background-image: url(img/service-page/why-good-photos/2.jpg)">
+                <div class="badge bad">
+                  <div class="inner">
+                    <div class="icon"></div>Good
+                  </div>
+                </div>
+              </div>
+              <ul>
+                <li>Correct color grading, shades and corrections</li>
+                <li>Correct proportions and sizes. Vivamus magna justo</li>
+                <li>Correct shades, grading</li>
+                <li>The right angle, magna justo, lacinia eget consectetur sed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-container mt-96">
+        <h3>Fill form to get photographer</h3>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="tel" placeholder="Phone">
+          <input type="text" placeholder="Email" value="email@mail.com">
+          <textarea placeholder="Your message"></textarea>
+          <div class="btn-group">
+            <button class="btn">Send</button>
+            <div class="chekcbox">
+              <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
+              <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+            </div>
+          </div>
+          <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+        </form>
       </div>
     </main>
     <footer class="main-footer mt-96">

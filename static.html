@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Каталог немає результата пошуку</title><!--[if IE]>
+    <title>Текстова стрінка</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-  <body class="catalog-page">
+  <body>
     <div class="popup-container mfp-hide" id="search-filter">
       <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <form class="main-filter">
@@ -338,295 +338,34 @@
       </div>
     </header>
     <main class="main-content">
-      <div class="container">
-        <section>
-          <form class="main-filter">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-6">
-                <ul class="nav-tabs">
-                  <li><a class="nav-item active" href="#filter-residential">Residential</a></li>
-                  <li><a class="nav-item" href="#filter-comercial">Comercial</a></li>
-                  <li><a class="nav-item" href="#filter-yachts">Yachts</a></li>
-                </ul>
-              </div>
-              <div class="col-3 d-flex justify-content-end">
-                <button class="reset-form" type="reset">Reset form</button>
-              </div>
-            </div>
-            <div class="tab-content">
-              <div class="active" id="filter-residential">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio" checked id="radiobox-1">
-                          <label for="radiobox-1">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio" id="radiobox-2">
-                          <label for="radiobox-2">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-1">
-                        <label for="checkbox-1">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type" type="radio" checked id="property-type-1">
-                        <label for="property-type-1">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type" type="radio" id="property-type-2">
-                        <label for="property-type-2">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type" type="radio" id="property-type-3">
-                        <label for="property-type-3">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                    <ul class="dropdown-menu rooms-amount inner">
-                      <label class="description">Rooms amount</label>
-                      <div class="wrap">
-                        <div class="items-line checked-item">
-                          <input name="property-type" type="checkbox" id="rooms-amount-1">
-                          <label for="rooms-amount-1">1</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-2">
-                          <label for="rooms-amount-2">2</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-3">
-                          <label for="rooms-amount-3">3</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-4">
-                          <label for="rooms-amount-4">4</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-5">
-                          <label for="rooms-amount-5">5+</label>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location"></label>
-                    <input type="text" placeholder="Location" id="location">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-comercial">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio2" checked id="radiobox-12">
-                          <label for="radiobox-12">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio2" id="radiobox-22">
-                          <label for="radiobox-22">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox2" id="checkbox-12">
-                        <label for="checkbox-12">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type2" type="radio" checked id="property-type-12">
-                        <label for="property-type-12">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type2" type="radio" id="property-type-22">
-                        <label for="property-type-22">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type2" type="radio" id="property-type-32">
-                        <label for="property-type-32">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                    <ul class="dropdown-menu rooms-amount inner">
-                      <label class="description">Rooms amount</label>
-                      <div class="wrap">
-                        <div class="items-line checked-item">
-                          <input name="property-type" type="checkbox" id="rooms-amount-12">
-                          <label for="rooms-amount-12">1</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-22">
-                          <label for="rooms-amount-22">2</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-32">
-                          <label for="rooms-amount-32">3</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-42">
-                          <label for="rooms-amount-42">4</label>
-                        </div>
-                        <div class="items-line checked-item">
-                          <input name="rooms-amount" type="checkbox" id="rooms-amount-52">
-                          <label for="rooms-amount-52">5+</label>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start2" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end2" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start2">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end2">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location2"></label>
-                    <input type="text" placeholder="Location" id="location2">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-yachts">
-                <div class="filter-line">
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
-                    <div class="dropdown-menu inner">
-                      <div class="d-flex">
-                        <div class="radiobox mr-3 checked-item">
-                          <input type="radio" name="deal-type-radio3" checked id="radiobox-13">
-                          <label for="radiobox-13">Sale</label>
-                        </div>
-                        <div class="radiobox checked-item">
-                          <input type="radio" name="deal-type-radio3" id="radiobox-23">
-                          <label for="radiobox-23">Rent</label>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="chekcbox checked-item">
-                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-13">
-                        <label for="checkbox-13">From the owner</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown search-checked-input">
-                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
-                    <div class="dropdown-menu">
-                      <div class="items-line checked-item">
-                        <input name="property-type3" type="radio" checked id="property-type-13">
-                        <label for="property-type-13">Type 1</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type3" type="radio" id="property-type-23">
-                        <label for="property-type-23">Type 2</label>
-                      </div>
-                      <div class="items-line checked-item">
-                        <input name="property-type3" type="radio" id="property-type-33">
-                        <label for="property-type-33">Type 3</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="area">
-                    <input type="number" placeholder="Area">m<sup>2</sup>
-                  </div>
-                  <div class="dropdown price-value">
-                    <div class="dropdown-toggle d-flex align-items-center">
-                      <div class="strong input-default" id="price-start3" data-default="20 000">20 000</div>
-                      <div class="line">-</div>
-                      <div class="strong input-default" id="price-end3" data-default="4 000 000">4 000 000</div>
-                    </div>
-                    <div class="dropdown-menu inner">
-                      <label class="description">Price, € EUR</label>
-                      <div class="d-flex align-items-center">
-                        <input class="price-start" value="20 000" data-id="#price-start3">
-                        <div class="line">-</div>
-                        <input class="price-end" value="4 000 000" data-id="#price-end3">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="google-location">
-                    <label for="location3"></label>
-                    <input type="text" placeholder="Location" id="location3">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center">
-              <button class="btn">Search</button>
-            </div>
-          </form>
-          <div class="text-center"><a class="btn search popup" href="#search-filter">Search options</a></div>
-        </section>
-      </div>
-      <div class="no-result signs">
+      <div class="signs">
         <div class="container">
-          <div class="text-center mb-32"><img src="img/icons/catalog-no-result.svg"/>
+          <div class="static-page">
+            <h1>h1 • This is large title</h1>
+            <p>Lorem ipsum dolor sit amet,<strong>consectetur adipiscing</strong>elit. Aenean augue massa, pulvinar<a class="link-underline">non ipsum</a>elementum, semper aliquam ante. Duis porta pulvinar nisi. Maecenas vel imperdiet dui. Sed ut molestie mi. Phasellus risus nibh, finibus et convallis consequat, efficitur ornare turpis.</p>
+            <p>Phasellus pellentesque sodales tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum pulvinar elit ut molestie maximus. Sed rutrum scelerisque imperdiet. Nulla leo eros, maximus sed magna non, volutpat iaculis lacus.</p>
+            <p>Suspendisse rutrum odio at purus laoreet molestie. Aenean quis metus non turpis auctor consectetur eget sit amet massa. Nulla vulputate nulla ut gravida porta.</p>
+            <h2>h2 • This is large title</h2>
+            <h3>h3 • This is large title</h3>
+            <h4>h4 • This is large title</h4>
+            <h5>h5 • This is large title</h5>
+            <h6>h6 • This is large title</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante ipsum, gravida sit amet libero ut, eleifend imperdiet magna. Nullam ipsum nisl, dignissim nec lorem vitae, venenatis tristique dolor. Quisque sed pharetra tellus. Aliquam nisl massa, finibus vitae finibus ac, vestibulum eu diam. Vivamus purus dui, condimentum quis scelerisque non, congue vel lorem. Praesent mi diam, tempor egestas sodales nec, pellentesque sit amet eros. Curabitur ac pellentesque nibh, et venenatis eros.</p>
+            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce semper massa a mi vestibulum aliquet. Nulla sit amet nisl purus. Maecenas risus velit, volutpat quis nisl vitae, sagittis interdum ipsum. Morbi sagittis fringilla dapibus. Ut sit amet ante nec dolor imperdiet laoreet sagittis sed libero. Proin enim diam, congue sed est vitae, volutpat scelerisque justo.</p>
+            <div class="image-full" style="background-image: url(img/static.jpg)"></div>
+            <ul>
+              <li>List item with short description</li>
+              <li>Phasellus pellentesque sodales tincidunt. Interdum et malesuada fames ac ante ipsum</li>
+              <li>Vestibulum pulvinar elit ut molestie maximus. Sed rutrum scelerisque imperdiet.</li>
+            </ul>
+            <ol>
+              <li><span>List item with short description</span></li>
+              <li><span>Phasellus pellentesque sodales tincidunt. Interdum et malesuada fames ac ante ipsum</span></li>
+              <li><span>Vestibulum pulvinar elit ut molestie maximus. Sed rutrum scelerisque imperdiet.</span></li>
+            </ol>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante ipsum, gravida sit amet libero ut, eleifend imperdiet magna. Nullam ipsum nisl, dignissim nec lorem vitae, venenatis tristique dolor. Quisque sed pharetra tellus. Aliquam nisl massa, finibus vitae finibus ac, vestibulum eu diam. Vivamus purus dui, condimentum quis scelerisque non, congue vel lorem. Praesent mi diam, tempor egestas sodales nec, pellentesque sit amet eros. Curabitur ac pellentesque nibh, et venenatis eros.</p>
           </div>
-          <h2>There are no results for your request yet.</h2>
-          <p class="description">Please leave us your wishes and your contact details, we will select the necessary object for you.</p>
         </div>
-      </div>
-      <div class="container">
-        <section class="form-container mtm-56">
-          <h2>Fill the form</h2>
-          <p class="mb-32 description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus vestibulum ac diam sit amet quam vehicula elementum.</p>
-          <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email" value="email@mail.com">
-            <textarea placeholder="Your message"></textarea>
-            <div class="btn-group">
-              <button class="btn">Send</button>
-              <div class="chekcbox">
-                <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
-                <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
-              </div>
-            </div>
-            <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
-          </form>
-        </section>
       </div>
     </main>
     <footer class="main-footer mt-96">

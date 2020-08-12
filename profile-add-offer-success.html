@@ -370,7 +370,7 @@
     </header>
     <main class="main-content">
       <div class="container profile-container">
-        <div class="person-info">
+        <div class="person-info mobile-hide">
           <div class="mobile-show">
             <h1 class="text-center">Profile</h1>
           </div>
@@ -415,97 +415,71 @@
           </ul>
         </div>
         <div class="wrap-objects-item">
-          <h1 class="text-left mobile-hide">Profile</h1>
-          <ul class="nav-tabs tabs-settings-profile">
-            <li><a class="nav-item active" href="#personal-data-profile">Personal data</a></li>
-            <li><a class="nav-item" href="#settings-profile">Settings</a></li>
-          </ul>
-          <div class="tab-content">
-            <div class="active" id="personal-data-profile">
-              <form class="settings-profile">
-                <div class="inner">
-                  <div>
-                    <h6>Enter your gender</h6>
-                    <div class="d-flex">
-                      <div class="radiobox mr-3 checked-item">
-                        <input type="radio" name="male-f" checked id="male-f-1">
-                        <label for="male-f-1">Male</label>
-                      </div>
-                      <div class="radiobox checked-item">
-                        <input type="radio" name="male-f" id="male-f-2">
-                        <label for="male-f-2">Female</label>
-                      </div>
-                    </div>
-                    <h6>Who do you represent?</h6>
-                    <div class="d-flex">
-                      <div class="radiobox mr-3 checked-item">
-                        <input type="radio" name="agent-owner" checked id="agent-owner-1">
-                        <label for="agent-owner-1">Agent</label>
-                      </div>
-                      <div class="radiobox checked-item">
-                        <input type="radio" name="agent-owner" id="agent-owner-2">
-                        <label for="agent-owner-2">Owner</label>
-                      </div>
-                    </div>
-                    <h6>What is your name?</h6>
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Second name">
-                  </div>
-                  <div>
-                    <h6>Where do you live?</h6>
-                    <input type="text" placeholder="Country">
-                    <input type="text" placeholder="City">
-                    <h6>Contacts</h6>
-                    <div class="tooltip input-info">
-                      <input type="text" placeholder="Phone number" style="background-image: url(img/icons/phone-call-filled.svg)">
-                      <button class="info-btn" type="button"></button>
-                      <div class="info-text">Orci varius natoque penatibus et magnis dis parturient mont, nascetur ridiculus mus nat penatibus varius.</div>
-                    </div><br>
-                    <div class="tooltip input-info">
-                      <input type="text" placeholder="WhatsApp" style="background-image: url(img/icons/whats-app.svg)">
-                      <button class="info-btn" type="button"></button>
-                      <div class="info-text">Nascetur ridiculus mus nat penatibus varius.</div>
-                    </div><br>
-                    <div class="tooltip input-info">
-                      <input type="text" placeholder="Telegram" style="background-image: url(img/icons/telega.svg)">
-                      <button class="info-btn" type="button"></button>
-                      <div class="info-text">Dis parturient mont, nascetur ridiculus mus nat</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-success">
-                  <button class="btn">Save changes</button>
-                  <div class="saved">Saved successfully</div>
-                </div>
-              </form>
+          <div class="title-top mb-32">
+            <h1 class="text-left">New offer</h1>
+            <p>Once published, your offer will be available on Amibiz.com</p>
+          </div>
+          <div class="popup-container mfp-hide" id="posting-rules">
+            <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+            <div class="aside-profile">
+              <h6 class="title-box mb-32">
+                <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.66602 1H9.66602C11.0805 1 12.4371 1.5619 13.4373 2.5621C14.4374 3.56229 14.9993 4.91885 14.9993 6.33333V25C14.9993 23.9391 14.5779 22.9217 13.8278 22.1716C13.0776 21.4214 12.0602 21 10.9993 21H1.66602V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.3333 1H20.3333C18.9188 1 17.5623 1.5619 16.5621 2.5621C15.5619 3.56229 15 4.91885 15 6.33333V25C15 23.9391 15.4214 22.9217 16.1716 22.1716C16.9217 21.4214 17.9391 21 19 21H28.3333V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                Posting Rules
+              </h6>
+              <ul class="list-aside">
+                <li>
+                  <h6>1. First rule title</h6>
+                  <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                </li>
+                <li>
+                  <h6>2. Second rule title</h6>
+                  <p>Varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                </li>
+                <li>
+                  <h6>3. Third rule title</h6>
+                  <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                </li><a class="link-underline" href="#">Read all rules</a>
+              </ul>
             </div>
-            <div id="settings-profile">
-              <form class="settings-profile">
-                <div class="inner">
-                  <div>
-                    <h6>Password</h6>
-                    <div class="toggle-password">
-                      <div class="eye"></div>
-                      <input type="password" placeholder="Password">
-                    </div>
-                    <div class="toggle-password">
-                      <div class="eye"></div>
-                      <input type="password" placeholder="New password">
-                    </div>
-                    <div>
-                      <button class="btn mt-0">Save</button>
-                    </div>
-                  </div>
-                  <div>
-                    <h6>Email</h6>
-                    <input type="email" placeholder="name@gmail.com">
-                    <div>
-                      <button class="btn mt-0">Save</button>
-                    </div>
-                  </div>
+          </div><a class="posting-rules popup" href="#posting-rules">
+            <h6>Posting Rules</h6></a>
+          <div class="d-grid">
+            <div class="text-center">
+              <div class="info-block">
+                <div class="mb-32"><img src="img/icons/offer-created.svg" alt="no favorites"/>
                 </div>
-              </form>
+                <h4>Offer created!</h4>
+                <p>Your offer added and waiting to be approved</p><a class="btn" href="#">My offers</a>
+              </div>
             </div>
+            <aside class="aside-profile">
+              <div class="box-white br-8">
+                <h6 class="title-box">
+                  <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.66602 1H9.66602C11.0805 1 12.4371 1.5619 13.4373 2.5621C14.4374 3.56229 14.9993 4.91885 14.9993 6.33333V25C14.9993 23.9391 14.5779 22.9217 13.8278 22.1716C13.0776 21.4214 12.0602 21 10.9993 21H1.66602V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.3333 1H20.3333C18.9188 1 17.5623 1.5619 16.5621 2.5621C15.5619 3.56229 15 4.91885 15 6.33333V25C15 23.9391 15.4214 22.9217 16.1716 22.1716C16.9217 21.4214 17.9391 21 19 21H28.3333V1Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  Posting Rules
+                </h6>
+                <ul class="list-aside">
+                  <li>
+                    <h6>1. First rule title</h6>
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                  </li>
+                  <li>
+                    <h6>2. Second rule title</h6>
+                    <p>Varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                  </li>
+                  <li>
+                    <h6>3. Third rule title</h6>
+                    <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus natoque varius</p>
+                  </li><a class="link-underline" href="#">Read all rules</a>
+                </ul>
+              </div>
+            </aside>
           </div>
         </div>
       </div>

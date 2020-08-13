@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Package of documents</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
+      <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <form class="main-filter">
+        <div class="scroll-horizontal">
+          <div class="d-flex align-items-center">
+            <ul class="nav-tabs">
+              <li><a class="nav-item active" href="#filter-residential-popup">Residential</a></li>
+              <li><a class="nav-item" href="#filter-comercial-popup">Comercial</a></li>
+              <li><a class="nav-item" href="#filter-yachts-popup">Yachts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="active" id="filter-residential-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio-popup" checked id="radiobox-1-popup">
+                      <label for="radiobox-1-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio-popup" id="radiobox-2-popup">
+                      <label for="radiobox-2-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-1-popup">
+                    <label for="checkbox-1-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" checked id="property-type-1-popup">
+                    <label for="property-type-1-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-2-popup">
+                    <label for="property-type-2-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-3-popup">
+                    <label for="property-type-3-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-1-popup">
+                      <label for="rooms-amount-1-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-2-popup">
+                      <label for="rooms-amount-2-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-3-popup">
+                      <label for="rooms-amount-3-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-4-popup">
+                      <label for="rooms-amount-4-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-5-popup">
+                      <label for="rooms-amount-5-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location-popup"></label>
+                <input type="text" placeholder="Location" id="location-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-comercial-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" checked id="radiobox-12-popup">
+                      <label for="radiobox-12-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" id="radiobox-22-popup">
+                      <label for="radiobox-22-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox2-popup" id="checkbox-12-popup">
+                    <label for="checkbox-12-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" checked id="property-type-12-popup">
+                    <label for="property-type-12-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-22-popup">
+                    <label for="property-type-22-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-32-popup">
+                    <label for="property-type-32-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
+                      <label for="rooms-amount-12-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
+                      <label for="rooms-amount-22-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
+                      <label for="rooms-amount-32-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
+                      <label for="rooms-amount-42-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
+                      <label for="rooms-amount-52-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end2-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start2-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end2-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location2-popup"></label>
+                <input type="text" placeholder="Location" id="location2-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-yachts-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" checked id="radiobox-13-popup">
+                      <label for="radiobox-13-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" id="radiobox-23-popup">
+                      <label for="radiobox-23-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-13-popup">
+                    <label for="checkbox-13-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" checked id="property-type-13-popup">
+                    <label for="property-type-13-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-23-popup">
+                    <label for="property-type-23-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-33-popup">
+                    <label for="property-type-33-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
+              </div>
+              <div class="dropdown price-value mt-16">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start3-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end3-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start3-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end3-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location3-popup"></label>
+                <input type="text" placeholder="Location" id="location3-popup">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn" type="reset">Search</button>
+        </div>
+        <div class="text-center mt-16">
+          <button class="reset-form" type="reset">Reset form</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup-container mfp-hide mfp-with-anim" id="mobile-menu">
+      <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <ul class="main-nav">
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Closed base</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="dropdown language">
+        <button class="dropdown-toggle" type="button">EN</button>
+        <ul class="dropdown-menu">
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-1-popup">
+            <label class="text" for="language-1-popup">EN</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-2-popup">
+            <label class="text" for="language-2-popup">FR</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-3-popup">
+            <label class="text" for="language-3-popup">IT</label>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center"><a class="btn book" herf="#">Place an offer</a></div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
+              <div class="wrap-logo"><a class="logo" href="/"><img src="img/logo.svg" alt="logo"/></a></div>
+              <div><a class="btn book" herf="#">Place an offer</a></div>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center"><a class="mobile-search popup btn search" href="#search-filter"></a>
+            <nav>
+              <ul class="main-nav">
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Closed base</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="dropdown user-dropdown">
+              <button class="dropdown-toggle" type="button">
+                <div class="person" style="background-image: url(img/person.jpg)"></div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="link-icon" href="#">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Favorite</a></li>
+                <li><a class="link-icon active" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.33334 2H5.33334C6.04059 2 6.71886 2.28095 7.21896 2.78105C7.71906 3.28115 8.00001 3.95942 8.00001 4.66667V14C8.00001 13.4696 7.7893 12.9609 7.41422 12.5858C7.03915 12.2107 6.53044 12 6.00001 12H1.33334V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6667 2H10.6667C9.95942 2 9.28115 2.28095 8.78105 2.78105C8.28095 3.28115 8 3.95942 8 4.66667V14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12H14.6667V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    My offers</a></li>
+                <li><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3333 14V12.6667C13.3333 11.9594 13.0524 11.2811 12.5523 10.781C12.0522 10.281 11.3739 10 10.6667 10H5.33332C4.62608 10 3.9478 10.281 3.4477 10.781C2.94761 11.2811 2.66666 11.9594 2.66666 12.6667V14" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00001 7.33333C9.47277 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.47277 2 8.00001 2C6.52725 2 5.33334 3.19391 5.33334 4.66667C5.33334 6.13943 6.52725 7.33333 8.00001 7.33333Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Profile</a></li>
+                <li class="profile"><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6667 11.3333L14 8L10.6667 4.66666" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 8H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Log out</a></li>
+              </ul>
+            </div>
+            <div class="dropdown language">
+              <button class="dropdown-toggle" type="button">EN</button>
+              <ul class="dropdown-menu">
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-1">
+                  <label class="text" for="language-1">EN</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-2">
+                  <label class="text" for="language-2">FR</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-3">
+                  <label class="text" for="language-3">IT</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="wrap-top-block">
+        <div class="top-block" style="background-image: url(img/service-page/top-block/4.jpg)">
+          <div class="container">
+            <div class="text">
+              <h1>Package of documents</h1>
+              <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="signs">
+        <div class="container">
+          <h2>Examples</h2>
+          <div class="examples-section row mt-16">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12"><a class="box-white br-8" href="file/ECMAScript-6.pdf" download="Rental contract example">
+                <div class="image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M26.3302 1.43634H54.4184C55.523 1.43634 56.4184 2.33177 56.4184 3.43634V33M26.3302 1.43634L9.58203 17.9421M26.3302 1.43634V15.9421C26.3302 17.0467 25.4348 17.9421 24.3302 17.9421H9.58203M9.58203 17.9421V62.5636C9.58203 63.6682 10.4775 64.5636 11.582 64.5636H54.4184C55.523 64.5636 56.4184 63.6682 56.4184 62.5636V56.5521" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.9031 50.3916C31.3844 50.3916 30.9639 49.9711 30.9639 49.4523V41.7007C30.9639 40.5961 31.8593 39.7007 32.9639 39.7007H35.1791C36.4213 39.7007 37.409 40.0265 38.142 40.6781C38.8751 41.3298 39.2417 42.2054 39.2417 43.305C39.2417 44.4556 38.8344 45.3516 38.0199 45.993C37.2155 46.6345 36.1973 46.9552 34.9653 46.9552H32.8424V49.4523C32.8424 49.9711 32.4219 50.3916 31.9031 50.3916ZM32.8424 45.26H35.0264C35.729 45.26 36.289 45.0818 36.7064 44.7254C37.1239 44.369 37.3326 43.9007 37.3326 43.3203C37.3326 42.7094 37.1239 42.241 36.7064 41.9152C36.2991 41.5792 35.7391 41.4112 35.0264 41.4112H32.8424V45.26Z" fill="#13AD89"/>
+<path d="M45.4565 50.3916C44.3519 50.3916 43.4565 49.4962 43.4565 48.3916V41.7007C43.4565 40.5961 44.3519 39.7007 45.4565 39.7007H47.4427C49.1125 39.7007 50.4768 40.2098 51.5358 41.228C52.5947 42.236 53.1241 43.5087 53.1241 45.0461C53.1241 46.5734 52.5896 47.8461 51.5205 48.8643C50.4616 49.8825 49.1023 50.3916 47.4427 50.3916H45.4565ZM45.335 48.681H47.4427C48.5525 48.681 49.4485 48.345 50.1307 47.673C50.8128 46.9909 51.1539 46.1152 51.1539 45.0461C51.1539 43.9872 50.8128 43.1167 50.1307 42.4345C49.4485 41.7523 48.5525 41.4112 47.4427 41.4112H45.335V48.681Z" fill="#13AD89"/>
+<path d="M58.6334 50.3916C58.1146 50.3916 57.6941 49.9711 57.6941 49.4523V41.7007C57.6941 40.5961 58.5896 39.7007 59.6941 39.7007H64.7959C65.2683 39.7007 65.6512 40.0836 65.6512 40.556C65.6512 41.0283 65.2683 41.4112 64.7959 41.4112H59.5727V44.3283H64.1087C64.581 44.3283 64.9639 44.7112 64.9639 45.1836C64.9639 45.6559 64.581 46.0389 64.1087 46.0389H59.5727V49.4523C59.5727 49.9711 59.1521 50.3916 58.6334 50.3916Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65.1636" height="65.1636" fill="white" transform="translate(0.417969 0.418152)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <h6>Rental contract example</h6>
+                <div class="size">File size: 2,5 Mb</div></a></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12"><a class="box-white br-8" href="file/ECMAScript-6.pdf" download="Example 2">
+                <div class="image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M26.3302 1.43634H54.4184C55.523 1.43634 56.4184 2.33177 56.4184 3.43634V33M26.3302 1.43634L9.58203 17.9421M26.3302 1.43634V15.9421C26.3302 17.0467 25.4348 17.9421 24.3302 17.9421H9.58203M9.58203 17.9421V62.5636C9.58203 63.6682 10.4775 64.5636 11.582 64.5636H54.4184C55.523 64.5636 56.4184 63.6682 56.4184 62.5636V56.5521" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.5529 50.3091C25.8426 50.3091 25.4299 49.5058 25.8435 48.9283L28.749 44.872L26.0189 41.0386C25.595 40.4435 26.0205 39.6182 26.7511 39.6182C27.0459 39.6182 27.322 39.7627 27.4899 40.005L29.8792 43.4516L32.2911 39.9923C32.4545 39.7579 32.7223 39.6182 33.0081 39.6182C33.7188 39.6182 34.1324 40.4213 33.7196 40.9999L30.9789 44.8415L33.8493 48.8872C34.2725 49.4836 33.846 50.3091 33.1147 50.3091C32.8196 50.3091 32.5432 50.1645 32.3749 49.9221L29.8334 46.2618L27.2684 49.936C27.1052 50.1698 26.838 50.3091 26.5529 50.3091Z" fill="#13AD89"/>
+<path d="M39.0958 50.3091C37.9913 50.3091 37.0958 49.4137 37.0958 48.3091V40.5575C37.0958 40.0387 37.5163 39.6182 38.0351 39.6182C38.5538 39.6182 38.9744 40.0387 38.9744 40.5575V47.5985C38.9744 48.1508 39.4221 48.5985 39.9744 48.5985H43.7395C44.2118 48.5985 44.5947 48.9815 44.5947 49.4538C44.5947 49.9262 44.2118 50.3091 43.7395 50.3091H39.0958Z" fill="#13AD89"/>
+<path d="M50.5991 50.4618C49.189 50.4618 47.926 50.0697 46.81 49.2855C46.4189 49.0106 46.3838 48.4607 46.6914 48.0948C47.0093 47.7168 47.5714 47.6793 47.9835 47.9516C48.8366 48.5153 49.7237 48.7971 50.6449 48.7971C51.2252 48.7971 51.6834 48.6749 52.0194 48.4305C52.3656 48.176 52.5387 47.84 52.5387 47.4225C52.5387 47.0255 52.3758 46.7098 52.05 46.4756C51.7242 46.2313 51.0827 45.9971 50.1256 45.7731C48.8834 45.4778 47.9772 45.1062 47.4071 44.6582C46.8471 44.2 46.5671 43.5025 46.5671 42.5658C46.5671 41.6495 46.9081 40.9062 47.5903 40.336C48.2725 39.7556 49.1482 39.4655 50.2172 39.4655C51.3934 39.4655 52.4581 39.7537 53.4115 40.3303C53.8133 40.5733 53.8842 41.1087 53.6124 41.4916C53.3249 41.8967 52.764 41.9785 52.3301 41.7367C51.6044 41.3323 50.8899 41.1302 50.1867 41.1302C49.6471 41.1302 49.2194 41.2524 48.9038 41.4967C48.5983 41.7411 48.4456 42.0516 48.4456 42.4284C48.4456 42.8458 48.6136 43.1716 48.9496 43.4058C49.2958 43.6298 49.9729 43.864 50.9809 44.1084C52.162 44.3935 53.0274 44.7753 53.5772 45.2538C54.1372 45.7324 54.4172 46.4044 54.4172 47.2698C54.4172 48.2575 54.066 49.0364 53.3634 49.6065C52.6609 50.1767 51.7394 50.4618 50.5991 50.4618Z" fill="#13AD89"/>
+<path d="M57.4331 50.3091C56.7228 50.3091 56.31 49.5058 56.7237 48.9283L59.6292 44.872L56.899 41.0386C56.4752 40.4435 56.9006 39.6182 57.6313 39.6182C57.926 39.6182 58.2021 39.7627 58.37 40.005L60.7594 43.4516L63.1712 39.9923C63.3347 39.7579 63.6024 39.6182 63.8882 39.6182C64.5989 39.6182 65.0125 40.4213 64.5998 40.9999L61.859 44.8415L64.7294 48.8872C65.1526 49.4836 64.7262 50.3091 63.9949 50.3091C63.6997 50.3091 63.4233 50.1645 63.255 49.9221L60.7135 46.2618L58.1486 49.936C57.9853 50.1698 57.7182 50.3091 57.4331 50.3091Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65.1636" height="65.1636" fill="white" transform="translate(0.417969 0.418152)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <h6>Rental contract example</h6>
+                <div class="size">File size: 2,5 Mb</div></a></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12"><a class="box-white br-8" href="file/ECMAScript-6.pdf" download="Example 3">
+                <div class="image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M26.3302 1.43634H54.4184C55.523 1.43634 56.4184 2.33177 56.4184 3.43634V33M26.3302 1.43634L9.58203 17.9421M26.3302 1.43634V15.9421C26.3302 17.0467 25.4348 17.9421 24.3302 17.9421H9.58203M9.58203 17.9421V62.5636C9.58203 63.6682 10.4775 64.5636 11.582 64.5636H54.4184C55.523 64.5636 56.4184 63.6682 56.4184 62.5636V56.5521" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7812 50.3091C21.6767 50.3091 20.7812 49.4137 20.7812 48.3091V41.6182C20.7812 40.5136 21.6767 39.6182 22.7812 39.6182H24.7674C26.4373 39.6182 27.8016 40.1273 28.8605 41.1455C29.9194 42.1535 30.4489 43.4262 30.4489 44.9637C30.4489 46.4909 29.9143 47.7637 28.8453 48.7818C27.7863 49.8 26.4271 50.3091 24.7674 50.3091H22.7812ZM22.6598 48.5986H24.7674C25.8773 48.5986 26.7733 48.2626 27.4554 47.5906C28.1376 46.9084 28.4787 46.0328 28.4787 44.9637C28.4787 43.9048 28.1376 43.0342 27.4554 42.352C26.7733 41.6698 25.8773 41.3288 24.7674 41.3288H22.6598V48.5986Z" fill="#13AD89"/>
+<path d="M41.6931 48.8735C40.6342 49.9528 39.2953 50.4924 37.6763 50.4924C36.0574 50.4924 34.7236 49.9578 33.6749 48.8888C32.6262 47.8197 32.1018 46.5113 32.1018 44.9637C32.1018 43.4364 32.6313 42.1331 33.6902 41.0538C34.7491 39.9746 36.088 39.4349 37.7069 39.4349C39.3258 39.4349 40.6596 39.9695 41.7083 41.0386C42.7571 42.1077 43.2814 43.416 43.2814 44.9637C43.2814 46.4909 42.752 47.7942 41.6931 48.8735ZM35.0953 47.6669C35.7876 48.4 36.6582 48.7666 37.7069 48.7666C38.7556 48.7666 39.616 48.4 40.288 47.6669C40.9702 46.9338 41.3113 46.0328 41.3113 44.9637C41.3113 43.9048 40.9651 43.0088 40.2727 42.2757C39.5905 41.5324 38.7251 41.1608 37.6763 41.1608C36.6276 41.1608 35.7622 41.5273 35.08 42.2604C34.408 42.9935 34.072 43.8946 34.072 44.9637C34.072 46.0226 34.4131 46.9237 35.0953 47.6669Z" fill="#13AD89"/>
+<path d="M50.362 50.4924C48.8144 50.4924 47.5213 49.9629 46.4827 48.904C45.4442 47.8349 44.9249 46.5215 44.9249 44.9637C44.9249 43.416 45.4442 42.1077 46.4827 41.0386C47.5213 39.9695 48.8398 39.4349 50.4384 39.4349C51.3649 39.4349 52.1489 39.5775 52.7904 39.8626C53.1904 40.0376 53.575 40.2605 53.9443 40.5314C54.3436 40.8243 54.3671 41.3946 54.0424 41.7686C53.7 42.163 53.1043 42.1862 52.671 41.8946C51.9442 41.4054 51.1949 41.1608 50.4231 41.1608C49.4049 41.1608 48.5598 41.5273 47.8878 42.2604C47.226 42.9935 46.8951 43.8946 46.8951 44.9637C46.8951 46.0226 47.2311 46.9237 47.9031 47.6669C48.5751 48.4 49.4151 48.7666 50.4231 48.7666C51.034 48.7666 51.5737 48.6546 52.042 48.4306C52.3019 48.3006 52.5665 48.1346 52.8358 47.9326C53.219 47.6451 53.7614 47.6486 54.0979 47.9894C54.4331 48.3289 54.4423 48.8789 54.0769 49.1856C53.6637 49.5324 53.2348 49.8102 52.7904 50.0189C52.1184 50.3346 51.3089 50.4924 50.362 50.4924Z" fill="#13AD89"/>
+<path d="M57.261 50.3091C56.5508 50.3091 56.138 49.5058 56.5516 48.9284L59.4572 44.872L56.727 41.0387C56.3032 40.4436 56.7286 39.6182 57.4592 39.6182C57.754 39.6182 58.0301 39.7627 58.198 40.005L60.5873 43.4517L62.9992 39.9924C63.1627 39.7579 63.4304 39.6182 63.7162 39.6182C64.4269 39.6182 64.8405 40.4214 64.4277 40.9999L61.687 44.8415L64.5574 48.8872C64.9806 49.4837 64.5541 50.3091 63.8228 50.3091C63.5277 50.3091 63.2513 50.1645 63.083 49.9221L60.5415 46.2618L57.9765 49.936C57.8133 50.1698 57.5462 50.3091 57.261 50.3091Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65.1636" height="65.1636" fill="white" transform="translate(0.417969 0.418152)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <h6>Name of specialist</h6>
+                <div class="size">File size: 2,5 Mb</div></a></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12"><a class="box-white br-8" href="file/ECMAScript-6.pdf" download="Example 12">
+                <div class="image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M26.3302 1.43634H54.4184C55.523 1.43634 56.4184 2.33177 56.4184 3.43634V33M26.3302 1.43634L9.58203 17.9421M26.3302 1.43634V15.9421C26.3302 17.0467 25.4348 17.9421 24.3302 17.9421H9.58203M9.58203 17.9421V62.5636C9.58203 63.6682 10.4775 64.5636 11.582 64.5636H54.4184C55.523 64.5636 56.4184 63.6682 56.4184 62.5636V56.5521" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.5529 50.3091C25.8426 50.3091 25.4299 49.5058 25.8435 48.9283L28.749 44.872L26.0189 41.0386C25.595 40.4435 26.0205 39.6182 26.7511 39.6182C27.0459 39.6182 27.322 39.7627 27.4899 40.005L29.8792 43.4516L32.2911 39.9923C32.4545 39.7579 32.7223 39.6182 33.0081 39.6182C33.7188 39.6182 34.1324 40.4213 33.7196 40.9999L30.9789 44.8415L33.8493 48.8872C34.2725 49.4836 33.846 50.3091 33.1147 50.3091C32.8196 50.3091 32.5432 50.1645 32.3749 49.9221L29.8334 46.2618L27.2684 49.936C27.1052 50.1698 26.838 50.3091 26.5529 50.3091Z" fill="#13AD89"/>
+<path d="M39.0958 50.3091C37.9913 50.3091 37.0958 49.4137 37.0958 48.3091V40.5575C37.0958 40.0387 37.5163 39.6182 38.0351 39.6182C38.5538 39.6182 38.9744 40.0387 38.9744 40.5575V47.5985C38.9744 48.1508 39.4221 48.5985 39.9744 48.5985H43.7395C44.2118 48.5985 44.5947 48.9815 44.5947 49.4538C44.5947 49.9262 44.2118 50.3091 43.7395 50.3091H39.0958Z" fill="#13AD89"/>
+<path d="M50.5991 50.4618C49.189 50.4618 47.926 50.0697 46.81 49.2855C46.4189 49.0106 46.3838 48.4607 46.6914 48.0948C47.0093 47.7168 47.5714 47.6793 47.9835 47.9516C48.8366 48.5153 49.7237 48.7971 50.6449 48.7971C51.2252 48.7971 51.6834 48.6749 52.0194 48.4305C52.3656 48.176 52.5387 47.84 52.5387 47.4225C52.5387 47.0255 52.3758 46.7098 52.05 46.4756C51.7242 46.2313 51.0827 45.9971 50.1256 45.7731C48.8834 45.4778 47.9772 45.1062 47.4071 44.6582C46.8471 44.2 46.5671 43.5025 46.5671 42.5658C46.5671 41.6495 46.9081 40.9062 47.5903 40.336C48.2725 39.7556 49.1482 39.4655 50.2172 39.4655C51.3934 39.4655 52.4581 39.7537 53.4115 40.3303C53.8133 40.5733 53.8842 41.1087 53.6124 41.4916C53.3249 41.8967 52.764 41.9785 52.3301 41.7367C51.6044 41.3323 50.8899 41.1302 50.1867 41.1302C49.6471 41.1302 49.2194 41.2524 48.9038 41.4967C48.5983 41.7411 48.4456 42.0516 48.4456 42.4284C48.4456 42.8458 48.6136 43.1716 48.9496 43.4058C49.2958 43.6298 49.9729 43.864 50.9809 44.1084C52.162 44.3935 53.0274 44.7753 53.5772 45.2538C54.1372 45.7324 54.4172 46.4044 54.4172 47.2698C54.4172 48.2575 54.066 49.0364 53.3634 49.6065C52.6609 50.1767 51.7394 50.4618 50.5991 50.4618Z" fill="#13AD89"/>
+<path d="M57.4331 50.3091C56.7228 50.3091 56.31 49.5058 56.7237 48.9283L59.6292 44.872L56.899 41.0386C56.4752 40.4435 56.9006 39.6182 57.6313 39.6182C57.926 39.6182 58.2021 39.7627 58.37 40.005L60.7594 43.4516L63.1712 39.9923C63.3347 39.7579 63.6024 39.6182 63.8882 39.6182C64.5989 39.6182 65.0125 40.4213 64.5998 40.9999L61.859 44.8415L64.7294 48.8872C65.1526 49.4836 64.7262 50.3091 63.9949 50.3091C63.6997 50.3091 63.4233 50.1645 63.255 49.9221L60.7135 46.2618L58.1486 49.936C57.9853 50.1698 57.7182 50.3091 57.4331 50.3091Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65.1636" height="65.1636" fill="white" transform="translate(0.417969 0.418152)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <h6>Rental contract example</h6>
+                <div class="size">File size: 2,5 Mb</div></a></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12"><a class="box-white br-8" href="file/ECMAScript-6.pdf" download="Example 52">
+                <div class="image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M26.3302 1.43634H54.4184C55.523 1.43634 56.4184 2.33177 56.4184 3.43634V33M26.3302 1.43634L9.58203 17.9421M26.3302 1.43634V15.9421C26.3302 17.0467 25.4348 17.9421 24.3302 17.9421H9.58203M9.58203 17.9421V62.5636C9.58203 63.6682 10.4775 64.5636 11.582 64.5636H54.4184C55.523 64.5636 56.4184 63.6682 56.4184 62.5636V56.5521" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.5529 50.3091C25.8426 50.3091 25.4299 49.5058 25.8435 48.9283L28.749 44.872L26.0189 41.0386C25.595 40.4435 26.0205 39.6182 26.7511 39.6182C27.0459 39.6182 27.322 39.7627 27.4899 40.005L29.8792 43.4516L32.2911 39.9923C32.4545 39.7579 32.7223 39.6182 33.0081 39.6182C33.7188 39.6182 34.1324 40.4213 33.7196 40.9999L30.9789 44.8415L33.8493 48.8872C34.2725 49.4836 33.846 50.3091 33.1147 50.3091C32.8196 50.3091 32.5432 50.1645 32.3749 49.9221L29.8334 46.2618L27.2684 49.936C27.1052 50.1698 26.838 50.3091 26.5529 50.3091Z" fill="#13AD89"/>
+<path d="M39.0958 50.3091C37.9913 50.3091 37.0958 49.4137 37.0958 48.3091V40.5575C37.0958 40.0387 37.5163 39.6182 38.0351 39.6182C38.5538 39.6182 38.9744 40.0387 38.9744 40.5575V47.5985C38.9744 48.1508 39.4221 48.5985 39.9744 48.5985H43.7395C44.2118 48.5985 44.5947 48.9815 44.5947 49.4538C44.5947 49.9262 44.2118 50.3091 43.7395 50.3091H39.0958Z" fill="#13AD89"/>
+<path d="M50.5991 50.4618C49.189 50.4618 47.926 50.0697 46.81 49.2855C46.4189 49.0106 46.3838 48.4607 46.6914 48.0948C47.0093 47.7168 47.5714 47.6793 47.9835 47.9516C48.8366 48.5153 49.7237 48.7971 50.6449 48.7971C51.2252 48.7971 51.6834 48.6749 52.0194 48.4305C52.3656 48.176 52.5387 47.84 52.5387 47.4225C52.5387 47.0255 52.3758 46.7098 52.05 46.4756C51.7242 46.2313 51.0827 45.9971 50.1256 45.7731C48.8834 45.4778 47.9772 45.1062 47.4071 44.6582C46.8471 44.2 46.5671 43.5025 46.5671 42.5658C46.5671 41.6495 46.9081 40.9062 47.5903 40.336C48.2725 39.7556 49.1482 39.4655 50.2172 39.4655C51.3934 39.4655 52.4581 39.7537 53.4115 40.3303C53.8133 40.5733 53.8842 41.1087 53.6124 41.4916C53.3249 41.8967 52.764 41.9785 52.3301 41.7367C51.6044 41.3323 50.8899 41.1302 50.1867 41.1302C49.6471 41.1302 49.2194 41.2524 48.9038 41.4967C48.5983 41.7411 48.4456 42.0516 48.4456 42.4284C48.4456 42.8458 48.6136 43.1716 48.9496 43.4058C49.2958 43.6298 49.9729 43.864 50.9809 44.1084C52.162 44.3935 53.0274 44.7753 53.5772 45.2538C54.1372 45.7324 54.4172 46.4044 54.4172 47.2698C54.4172 48.2575 54.066 49.0364 53.3634 49.6065C52.6609 50.1767 51.7394 50.4618 50.5991 50.4618Z" fill="#13AD89"/>
+<path d="M57.4331 50.3091C56.7228 50.3091 56.31 49.5058 56.7237 48.9283L59.6292 44.872L56.899 41.0386C56.4752 40.4435 56.9006 39.6182 57.6313 39.6182C57.926 39.6182 58.2021 39.7627 58.37 40.005L60.7594 43.4516L63.1712 39.9923C63.3347 39.7579 63.6024 39.6182 63.8882 39.6182C64.5989 39.6182 65.0125 40.4213 64.5998 40.9999L61.859 44.8415L64.7294 48.8872C65.1526 49.4836 64.7262 50.3091 63.9949 50.3091C63.6997 50.3091 63.4233 50.1645 63.255 49.9221L60.7135 46.2618L58.1486 49.936C57.9853 50.1698 57.7182 50.3091 57.4331 50.3091Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65.1636" height="65.1636" fill="white" transform="translate(0.417969 0.418152)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <h6>Name of specialist</h6>
+                <div class="size">File size: 2,5 Mb</div></a></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12"><a class="box-white br-8" href="file/ECMAScript-6.pdf" download="Example">
+                <div class="image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M26.3302 1.43634H54.4184C55.523 1.43634 56.4184 2.33177 56.4184 3.43634V33M26.3302 1.43634L9.58203 17.9421M26.3302 1.43634V15.9421C26.3302 17.0467 25.4348 17.9421 24.3302 17.9421H9.58203M9.58203 17.9421V62.5636C9.58203 63.6682 10.4775 64.5636 11.582 64.5636H54.4184C55.523 64.5636 56.4184 63.6682 56.4184 62.5636V56.5521" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.5529 50.3091C25.8426 50.3091 25.4299 49.5058 25.8435 48.9283L28.749 44.872L26.0189 41.0386C25.595 40.4435 26.0205 39.6182 26.7511 39.6182C27.0459 39.6182 27.322 39.7627 27.4899 40.005L29.8792 43.4516L32.2911 39.9923C32.4545 39.7579 32.7223 39.6182 33.0081 39.6182C33.7188 39.6182 34.1324 40.4213 33.7196 40.9999L30.9789 44.8415L33.8493 48.8872C34.2725 49.4836 33.846 50.3091 33.1147 50.3091C32.8196 50.3091 32.5432 50.1645 32.3749 49.9221L29.8334 46.2618L27.2684 49.936C27.1052 50.1698 26.838 50.3091 26.5529 50.3091Z" fill="#13AD89"/>
+<path d="M39.0958 50.3091C37.9913 50.3091 37.0958 49.4137 37.0958 48.3091V40.5575C37.0958 40.0387 37.5163 39.6182 38.0351 39.6182C38.5538 39.6182 38.9744 40.0387 38.9744 40.5575V47.5985C38.9744 48.1508 39.4221 48.5985 39.9744 48.5985H43.7395C44.2118 48.5985 44.5947 48.9815 44.5947 49.4538C44.5947 49.9262 44.2118 50.3091 43.7395 50.3091H39.0958Z" fill="#13AD89"/>
+<path d="M50.5991 50.4618C49.189 50.4618 47.926 50.0697 46.81 49.2855C46.4189 49.0106 46.3838 48.4607 46.6914 48.0948C47.0093 47.7168 47.5714 47.6793 47.9835 47.9516C48.8366 48.5153 49.7237 48.7971 50.6449 48.7971C51.2252 48.7971 51.6834 48.6749 52.0194 48.4305C52.3656 48.176 52.5387 47.84 52.5387 47.4225C52.5387 47.0255 52.3758 46.7098 52.05 46.4756C51.7242 46.2313 51.0827 45.9971 50.1256 45.7731C48.8834 45.4778 47.9772 45.1062 47.4071 44.6582C46.8471 44.2 46.5671 43.5025 46.5671 42.5658C46.5671 41.6495 46.9081 40.9062 47.5903 40.336C48.2725 39.7556 49.1482 39.4655 50.2172 39.4655C51.3934 39.4655 52.4581 39.7537 53.4115 40.3303C53.8133 40.5733 53.8842 41.1087 53.6124 41.4916C53.3249 41.8967 52.764 41.9785 52.3301 41.7367C51.6044 41.3323 50.8899 41.1302 50.1867 41.1302C49.6471 41.1302 49.2194 41.2524 48.9038 41.4967C48.5983 41.7411 48.4456 42.0516 48.4456 42.4284C48.4456 42.8458 48.6136 43.1716 48.9496 43.4058C49.2958 43.6298 49.9729 43.864 50.9809 44.1084C52.162 44.3935 53.0274 44.7753 53.5772 45.2538C54.1372 45.7324 54.4172 46.4044 54.4172 47.2698C54.4172 48.2575 54.066 49.0364 53.3634 49.6065C52.6609 50.1767 51.7394 50.4618 50.5991 50.4618Z" fill="#13AD89"/>
+<path d="M57.4331 50.3091C56.7228 50.3091 56.31 49.5058 56.7237 48.9283L59.6292 44.872L56.899 41.0386C56.4752 40.4435 56.9006 39.6182 57.6313 39.6182C57.926 39.6182 58.2021 39.7627 58.37 40.005L60.7594 43.4516L63.1712 39.9923C63.3347 39.7579 63.6024 39.6182 63.8882 39.6182C64.5989 39.6182 65.0125 40.4213 64.5998 40.9999L61.859 44.8415L64.7294 48.8872C65.1526 49.4836 64.7262 50.3091 63.9949 50.3091C63.6997 50.3091 63.4233 50.1645 63.255 49.9221L60.7135 46.2618L58.1486 49.936C57.9853 50.1698 57.7182 50.3091 57.4331 50.3091Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65.1636" height="65.1636" fill="white" transform="translate(0.417969 0.418152)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <h6>Rental contract example</h6>
+                <div class="size">File size: 2,5 Mb</div></a></div>
+          </div>
+          <div class="form-container mt-96">
+            <h3>Fill the form</h3>
+            <p class="mb-32 description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus vestibulum ac diam sit amet quam vehicula elementum.</p>
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Email" value="email@mail.com">
+              <textarea placeholder="Your message"></textarea>
+              <div class="btn-group">
+                <button class="btn">Send</button>
+                <div class="chekcbox">
+                  <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
+                  <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+                </div>
+              </div>
+              <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer mt-96">
+      <div class="container">
+        <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
+          <div class="flex-grow-1">
+            <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a><a class="active" href="#">Order a photographer</a><a href="#">Contact a specialist</a><a href="#">Legal advice</a><a href="#">Package of documents</a><a href="#">Closed database</a></div>
+            <div class="group-links"><a href="#">About us</a><a href="#">Contact us</a></div>
+            <div class="group-links mobile-top-line"><a href="#">Ad policies</a><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="copyright-meta">
+            <div class="copyright">Amizbiz &copy; 2020</div>
+            <div class="meta-language">
+              <div class="d-flex">
+                <div>Разработка сайта</div>
+                <div class="ml-2"><img src="img/meta.svg" alt="meta logo"/>
+                </div>
+              </div>
+              <div class="dropdown language ml-4">
+                <button class="dropdown-toggle" type="button">English</button>
+                <ul class="dropdown-menu top">
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-1">
+                    <label class="text" for="language-footer-1">English</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-2">
+                    <label class="text" for="language-footer-2">France</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-3">
+                    <label class="text" for="language-footer-3">Italian</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

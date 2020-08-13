@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <div class="popup-container mfp-hide" id="search-filter">
+    <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
       <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <form class="main-filter">
         <div class="scroll-horizontal">
@@ -269,7 +269,7 @@
         </div>
       </form>
     </div>
-    <div class="popup-container mfp-hide" id="mobile-menu">
+    <div class="popup-container mfp-hide mfp-with-anim" id="mobile-menu">
       <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <ul class="main-nav">
         <li><a href="#">Rent</a></li>
@@ -502,22 +502,24 @@
           </div>
         </div>
       </div>
-      <div class="form-container mt-96">
-        <h3>Fill form to get photographer</h3>
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="tel" placeholder="Phone">
-          <input type="text" placeholder="Email" value="email@mail.com">
-          <textarea placeholder="Your message"></textarea>
-          <div class="btn-group">
-            <button class="btn">Send</button>
-            <div class="chekcbox">
-              <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
-              <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+      <div class="container">
+        <div class="form-container mt-96">
+          <h3>Fill form to get photographer</h3>
+          <form>
+            <input type="text" placeholder="Name">
+            <input type="tel" placeholder="Phone">
+            <input type="text" placeholder="Email" value="email@mail.com">
+            <textarea placeholder="Your message"></textarea>
+            <div class="btn-group">
+              <button class="btn">Send</button>
+              <div class="chekcbox">
+                <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
+                <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+              </div>
             </div>
-          </div>
-          <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
-        </form>
+            <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+          </form>
+        </div>
       </div>
     </main>
     <footer class="main-footer mt-96">

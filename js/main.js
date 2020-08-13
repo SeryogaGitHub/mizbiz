@@ -2,7 +2,7 @@
 
 $(function () {
   /************************
-         slow scroll
+   slow scroll
    */
   $(".go-to").on('click', function (e) {
     e.preventDefault();
@@ -20,8 +20,8 @@ $(function () {
     }
   });
   /*****************
-  *    dropdown    *
-  ******************/
+   *    dropdown    *
+   ******************/
 
   var $dropdown = $(".dropdown");
   $dropdown.on("click", '.dropdown-toggle', function (e) {
@@ -128,7 +128,7 @@ $(function () {
     focusOnSelect: true
   });
   /*******************
-  *     main filter
+   *     main filter
    ********************/
 
   $('.reset-form').on('click', function () {
@@ -183,7 +183,7 @@ $(function () {
     $('body').find(id).text(val);
   });
   /****************
-  *     popup     *
+   *     popup     *
    ***************/
 
   $('.popup').magnificPopup({
@@ -195,10 +195,21 @@ $(function () {
     preloader: false,
     midClick: true,
     removalDelay: 300,
-    mainClass: 'my-mfp-zoom-in'
+    mainClass: 'mfp-zoom-in',
+    callbacks: {
+      afterClose: function afterClose() {
+        $('body').removeClass("popup-color");
+      }
+    }
+  });
+  $('.close-popup').on('click', function () {
+    $.magnificPopup.close();
+  });
+  $('.catalog-specialists .popup').on('click', function () {
+    $('body').addClass("popup-color");
   });
   /***************************
-  переаикач відображення пароля password
+   переаикач відображення пароля password
    */
 
   var $togglepassword = $(".toggle-password");
@@ -220,7 +231,7 @@ $(function () {
     input.attr("type", "password");
   });
   /************************
-  кнопка відображення інформації "i"
+   кнопка відображення інформації "i"
    */
 
   var $inputInfo = $('.tooltip');
@@ -243,22 +254,22 @@ $(function () {
     }
   });
   /****************
-  make private
+   make private
    */
 
   $(".toggle-primary").on('click', function () {
     $(this).toggleClass('active');
   });
   /****************
-  delete gallery image
+   delete gallery image
    */
 
   $('.photo-gallery .remove').on("click", function () {
     $(this).parent().remove();
   });
   /****************
-  count textarea
-  */
+   count textarea
+   */
 
   var $textareaCount = $('.textarea-count textarea');
   $textareaCount.on('keyup mousemove mousedown change', function () {

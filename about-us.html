@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Сторінка користувача</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
+      <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <form class="main-filter">
+        <div class="scroll-horizontal">
+          <div class="d-flex align-items-center">
+            <ul class="nav-tabs">
+              <li><a class="nav-item active" href="#filter-residential-popup">Residential</a></li>
+              <li><a class="nav-item" href="#filter-comercial-popup">Comercial</a></li>
+              <li><a class="nav-item" href="#filter-yachts-popup">Yachts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="active" id="filter-residential-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio-popup" checked id="radiobox-1-popup">
+                      <label for="radiobox-1-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio-popup" id="radiobox-2-popup">
+                      <label for="radiobox-2-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-1-popup">
+                    <label for="checkbox-1-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" checked id="property-type-1-popup">
+                    <label for="property-type-1-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-2-popup">
+                    <label for="property-type-2-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-3-popup">
+                    <label for="property-type-3-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-1-popup">
+                      <label for="rooms-amount-1-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-2-popup">
+                      <label for="rooms-amount-2-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-3-popup">
+                      <label for="rooms-amount-3-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-4-popup">
+                      <label for="rooms-amount-4-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-5-popup">
+                      <label for="rooms-amount-5-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location-popup"></label>
+                <input type="text" placeholder="Location" id="location-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-comercial-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" checked id="radiobox-12-popup">
+                      <label for="radiobox-12-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" id="radiobox-22-popup">
+                      <label for="radiobox-22-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox2-popup" id="checkbox-12-popup">
+                    <label for="checkbox-12-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" checked id="property-type-12-popup">
+                    <label for="property-type-12-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-22-popup">
+                    <label for="property-type-22-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-32-popup">
+                    <label for="property-type-32-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
+                      <label for="rooms-amount-12-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
+                      <label for="rooms-amount-22-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
+                      <label for="rooms-amount-32-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
+                      <label for="rooms-amount-42-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
+                      <label for="rooms-amount-52-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end2-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start2-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end2-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location2-popup"></label>
+                <input type="text" placeholder="Location" id="location2-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-yachts-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" checked id="radiobox-13-popup">
+                      <label for="radiobox-13-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" id="radiobox-23-popup">
+                      <label for="radiobox-23-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-13-popup">
+                    <label for="checkbox-13-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" checked id="property-type-13-popup">
+                    <label for="property-type-13-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-23-popup">
+                    <label for="property-type-23-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-33-popup">
+                    <label for="property-type-33-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
+              </div>
+              <div class="dropdown price-value mt-16">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start3-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end3-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start3-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end3-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location3-popup"></label>
+                <input type="text" placeholder="Location" id="location3-popup">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn" type="reset">Search</button>
+        </div>
+        <div class="text-center mt-16">
+          <button class="reset-form" type="reset">Reset form</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup-container mfp-hide mfp-with-anim" id="mobile-menu">
+      <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <ul class="main-nav">
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Closed base</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="dropdown language">
+        <button class="dropdown-toggle" type="button">EN</button>
+        <ul class="dropdown-menu">
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-1-popup">
+            <label class="text" for="language-1-popup">EN</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-2-popup">
+            <label class="text" for="language-2-popup">FR</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-3-popup">
+            <label class="text" for="language-3-popup">IT</label>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center"><a class="btn book" herf="#">Place an offer</a></div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
+              <div class="wrap-logo"><a class="logo" href="/"><img src="img/logo.svg" alt="logo"/></a></div>
+              <div><a class="btn book" herf="#">Place an offer</a></div>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center"><a class="mobile-search popup btn search" href="#search-filter"></a>
+            <nav>
+              <ul class="main-nav">
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Closed base</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="dropdown user-dropdown">
+              <button class="dropdown-toggle" type="button">
+                <div class="person" style="background-image: url(img/person.jpg)"></div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="link-icon" href="#">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Favorite</a></li>
+                <li><a class="link-icon active" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.33334 2H5.33334C6.04059 2 6.71886 2.28095 7.21896 2.78105C7.71906 3.28115 8.00001 3.95942 8.00001 4.66667V14C8.00001 13.4696 7.7893 12.9609 7.41422 12.5858C7.03915 12.2107 6.53044 12 6.00001 12H1.33334V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6667 2H10.6667C9.95942 2 9.28115 2.28095 8.78105 2.78105C8.28095 3.28115 8 3.95942 8 4.66667V14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12H14.6667V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    My offers</a></li>
+                <li><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3333 14V12.6667C13.3333 11.9594 13.0524 11.2811 12.5523 10.781C12.0522 10.281 11.3739 10 10.6667 10H5.33332C4.62608 10 3.9478 10.281 3.4477 10.781C2.94761 11.2811 2.66666 11.9594 2.66666 12.6667V14" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00001 7.33333C9.47277 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.47277 2 8.00001 2C6.52725 2 5.33334 3.19391 5.33334 4.66667C5.33334 6.13943 6.52725 7.33333 8.00001 7.33333Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Profile</a></li>
+                <li class="profile"><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6667 11.3333L14 8L10.6667 4.66666" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 8H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Log out</a></li>
+              </ul>
+            </div>
+            <div class="dropdown language">
+              <button class="dropdown-toggle" type="button">EN</button>
+              <ul class="dropdown-menu">
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-1">
+                  <label class="text" for="language-1">EN</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-2">
+                  <label class="text" for="language-2">FR</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-3">
+                  <label class="text" for="language-3">IT</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <div class="top-about-us">
+          <div class="images">
+            <div class="image big" style="background-image: url(img/about-us-page/top-1.jpg)"></div>
+            <div class="image small" style="background-image: url(img/about-us-page/top-2.jpg)"></div>
+          </div>
+          <div class="text">
+            <h1 class="text-left">About us</h1>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec</p>
+          </div>
+        </div>
+      </div>
+      <div class="city-bg">
+        <div class="container">
+          <div class="why-comfortable">
+            <h2>Why is it comfortable to work<br>with us?</h2>
+            <p class="description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementumi.</p>
+            <div class="row justify-content-center text-center mt-48 items">
+              <div class="col-xl-3 col-lg-6 col-12"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M12.4722 51.1196L10.3286 47.4063L8.185 51.1196L10.3286 52.6361L12.4722 51.1196ZM36.8853 60.9914C39.7659 56.0024 42.6501 51.0099 45.5308 46.0209L38.7915 34.3493L32.6191 38.7111C32.3144 38.9379 31.8856 38.9556 31.5561 38.7253L25.3626 34.3458C21.9505 40.2595 18.5384 46.1733 15.1226 52.0871C16.8375 55.0529 18.5525 58.0221 20.2674 60.9914H36.8853ZM18.1698 60.9914C16.5718 58.2276 14.9809 55.4638 13.3829 52.7L10.8671 54.4788C10.5624 54.7055 10.1336 54.7233 9.80412 54.4929L7.27075 52.7C5.67625 55.4638 4.08187 58.2275 2.48738 60.9914H18.1698ZM61.5144 60.9914C59.2041 56.991 56.8975 52.9906 54.5909 48.9938L50.789 51.6796C50.4843 51.9064 50.0555 51.9241 49.726 51.6903L45.9099 48.9938C43.5998 52.9906 41.293 56.9945 38.9829 60.9914H61.5144ZM6.82438 26.848C7.3275 26.848 7.735 27.2555 7.735 27.7586C7.735 28.2618 7.3275 28.6693 6.82438 28.6693H5.0845C3.685 28.6693 2.41287 28.0988 1.49162 27.1775C0.5705 26.2563 0 24.9878 0 23.5883C0 22.1886 0.5705 20.9165 1.49175 19.9989C2.22163 19.269 3.17125 18.7588 4.22713 18.578C4.41488 17.189 5.05625 15.9454 5.99875 15.0028C7.129 13.8725 8.69162 13.1745 10.4136 13.1745C11.4731 13.1745 12.4722 13.4438 13.3545 13.915C14.0206 14.2729 14.6159 14.7441 15.1085 15.3075C15.2076 15.272 15.3069 15.2368 15.4061 15.2048C15.7817 15.0914 16.1715 15.0276 16.5683 15.0276C17.6666 15.0276 18.6588 15.474 19.378 16.1934C20.0053 16.8206 20.4269 17.6569 20.5225 18.5888C21.5571 18.7765 22.4819 19.2833 23.1976 19.999C24.1189 20.9166 24.6894 22.1888 24.6894 23.5884C24.6894 24.988 24.1189 26.2565 23.1976 27.1778C22.2764 28.099 21.0044 28.6695 19.6084 28.6695H11.0763C10.5731 28.6695 10.1656 28.262 10.1656 27.7589C10.1656 27.2558 10.5731 26.8483 11.0763 26.8483H19.6084C20.5013 26.8483 21.3163 26.4833 21.908 25.8916C22.4996 25.2999 22.8682 24.4849 22.8682 23.5885C22.8682 22.6921 22.4998 21.8771 21.908 21.2854C21.0824 20.4599 20.5047 20.4528 19.4844 20.3181C18.9884 20.2508 18.6376 19.7938 18.7049 19.2941C18.7934 18.635 18.5631 17.9548 18.0919 17.4799C17.7021 17.0903 17.1635 16.8493 16.5683 16.8493C16.1076 16.8493 15.7356 16.9698 15.3529 17.2214C14.9347 17.4978 14.3714 17.3844 14.095 16.9663C13.6911 16.3604 13.1419 15.8608 12.5005 15.5135C11.884 15.184 11.1719 14.9961 10.4136 14.9961C9.19112 14.9961 8.08925 15.4921 7.2885 16.2895C6.48762 17.0904 5.99512 18.1958 5.99512 19.4183C5.99512 19.9179 5.58413 20.3289 5.0845 20.3289C4.18812 20.3289 3.37313 20.6938 2.78137 21.2855C2.18975 21.8773 1.82113 22.6923 1.82113 23.5886C1.82113 24.485 2.18962 25.3 2.78137 25.8918C3.37313 26.4835 4.18812 26.8484 5.0845 26.8484H6.82438V26.848ZM9.542 45.1421C9.79 44.7063 10.3464 44.5575 10.7786 44.8055C10.9275 44.8905 11.0409 45.011 11.1187 45.1493L14.0739 50.2694C18.2939 42.9631 22.5104 35.6604 26.7304 28.354C26.9784 27.9216 27.5311 27.7694 27.967 28.0209C28.3992 28.2689 28.5516 28.8253 28.3001 29.2575L26.277 32.7654L32.0773 36.8685L37.8775 32.7654L32.0773 22.7165L30.4261 25.576C30.1781 26.0119 29.6219 26.1606 29.1896 25.9126C28.7537 25.661 28.605 25.1083 28.853 24.6725L31.1667 20.665V11.502V2.098C31.1667 1.59488 31.5742 1.18738 32.0774 1.18738H49.7051C50.2082 1.18738 50.6157 1.59488 50.6157 2.098V5.88938H58.5173C59.0202 5.88938 59.4277 6.29688 59.4277 6.8C59.4277 7.03388 59.3392 7.24638 59.1939 7.40938L56.1147 11.5019L59.2435 15.6583C59.5446 16.0586 59.4631 16.6256 59.0629 16.9268C58.9034 17.0438 58.7156 17.111 58.5173 17.111H40.8926C40.3895 17.111 39.982 16.7035 39.982 16.2004V12.4126H32.9876V20.6615C37.5194 28.51 42.0512 36.3548 46.5795 44.2033L49.4637 39.2108C49.7118 38.7749 50.2681 38.626 50.7004 38.8741C50.8491 38.9591 50.9625 39.0796 51.0405 39.2179C55.3171 46.6269 59.5974 54.0395 63.8776 61.4486C64.1291 61.8809 63.9804 62.4373 63.5445 62.6888C63.4027 62.7738 63.2469 62.8128 63.091 62.8128C42.363 62.8128 21.6385 62.8128 0.910625 62.8128C0.4075 62.8128 0 62.4053 0 61.9021C0 61.7144 0.05675 61.5406 0.156 61.3954C3.28462 55.9775 6.41325 50.5598 9.542 45.1421ZM46.824 47.4099L50.2504 49.8335L53.6768 47.4099L50.2504 41.4749C49.1059 43.4555 47.965 45.4326 46.824 47.4099ZM41.8032 12.4126V15.2899H56.6955L54.2649 12.0584C54.0204 11.743 54.0026 11.293 54.2542 10.9564L56.6955 7.71075H50.6152V11.502C50.6152 12.0051 50.2077 12.4126 49.7046 12.4126H41.8032ZM32.9876 10.5913H40.8926H48.794V3.00863H32.9876V10.5913Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                <h6 class="mt-16">First advantage title</h6>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-12"><svg width="58" height="64" viewBox="0 0 58 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.6774 10.7115V6.88475C10.6774 4.989 11.4499 3.267 12.6971 2.02325C13.9444 0.776 15.6665 0 17.5585 0H41.4865C43.3821 0 45.1006 0.776 46.3479 2.02338C47.5951 3.267 48.3711 4.98912 48.3711 6.88487V13.8581C48.3711 14.3755 47.9495 14.7971 47.4321 14.7971C46.9148 14.7971 46.4966 14.3755 46.4966 13.8581V6.88475C46.4966 5.5065 45.9298 4.2555 45.0226 3.3485C44.1155 2.43788 42.8648 1.87437 41.4865 1.87437H41.0153V4.5815C41.0153 6.332 39.5873 7.7635 37.8333 7.7635H21.2116C19.4578 7.7635 18.0298 6.332 18.0298 4.5815V1.87437H17.5585C16.1836 1.87437 14.9294 2.43788 14.0223 3.3485C13.1151 4.2555 12.5518 5.5065 12.5518 6.88475V10.7115H25.049C25.9314 10.7115 26.7321 11.073 27.3133 11.654C27.8908 12.2351 28.2523 13.036 28.2523 13.9146V17.4333C28.2523 17.9541 27.8305 18.3722 27.3133 18.3722C26.7959 18.3722 26.3778 17.9541 26.3778 17.4333V13.9146C26.3778 13.5533 26.2254 13.2201 25.9845 12.9792C25.7436 12.7382 25.4141 12.5895 25.0491 12.5895H3.34277C2.9779 12.5895 2.64827 12.7384 2.4074 12.9792C2.16652 13.2203 2.01415 13.5534 2.01415 13.9146V25.2003C2.01415 25.5651 2.16652 25.8948 2.4074 26.1356C2.6484 26.3765 2.9779 26.5289 3.34277 26.5289H16.1413C16.6585 26.5289 17.0766 26.9471 17.0766 27.4644V30.8517L21.1195 26.8054C21.2895 26.6354 21.527 26.5289 21.7891 26.5289H25.049C25.414 26.5289 25.7435 26.3764 25.9844 26.1356C26.2254 25.8946 26.3776 25.5651 26.3776 25.2003V21.6817C26.3776 21.1644 26.7958 20.7428 27.3131 20.7428C27.8304 20.7428 28.2521 21.1644 28.2521 21.6817V25.2003C28.2521 26.0825 27.8906 26.8834 27.3131 27.4645C26.732 28.042 25.9313 28.4035 25.0489 28.4035H22.1753L16.8036 33.7751C16.4386 34.1436 15.8434 34.1436 15.4785 33.7751C15.2943 33.5945 15.2021 33.3535 15.2021 33.1125V28.4035H12.5518V37.7366C12.5518 38.254 12.1301 38.6756 11.6128 38.6756C11.0954 38.6756 10.6774 38.254 10.6774 37.7366V28.4035H3.34277C2.46052 28.4035 1.65977 28.042 1.07865 27.4645C0.501024 26.8834 0.139648 26.0824 0.139648 25.2003V13.9146C0.139648 13.036 0.501024 12.2351 1.07865 11.654C1.65977 11.073 2.46052 10.7115 3.34277 10.7115H10.6774ZM36.2318 33.7326C35.7144 33.7326 35.2964 33.3145 35.2964 32.7972C35.2964 32.2799 35.7145 31.8582 36.2318 31.8582H51.3759C51.8933 31.8582 52.3149 32.2799 52.3149 32.7972C52.3149 33.3146 51.8933 33.7326 51.3759 33.7326H36.2318ZM36.2318 38.5765C35.7144 38.5765 35.2964 38.1582 35.2964 37.6411C35.2964 37.1236 35.7145 36.7019 36.2318 36.7019H43.8039C44.3211 36.7019 44.7429 37.1236 44.7429 37.6411C44.7429 38.1584 44.3211 38.5765 43.8039 38.5765H36.2318ZM6.6239 18.0748C6.10652 18.0748 5.6849 17.653 5.6849 17.1357C5.6849 16.6184 6.10652 16.2004 6.6239 16.2004H21.768C22.2854 16.2004 22.707 16.6185 22.707 17.1357C22.707 17.653 22.2854 18.0748 21.768 18.0748H6.6239ZM6.6239 22.9184C6.10652 22.9184 5.6849 22.4967 5.6849 21.9794C5.6849 21.462 6.10652 21.044 6.6239 21.044H21.768C22.2854 21.044 22.707 21.4621 22.707 21.9794C22.707 22.4967 22.2854 22.9184 21.768 22.9184H6.6239ZM31.622 33.0949C31.622 33.6123 31.2039 34.0339 30.6865 34.0339C30.1693 34.0339 29.7475 33.6123 29.7475 33.0949V29.5765C29.7475 28.6941 30.109 27.8934 30.69 27.3124C31.2676 26.7347 32.0684 26.3732 32.9506 26.3732H46.4966V18.1066C46.4966 17.5858 46.9148 17.1676 47.4321 17.1676C47.9494 17.1676 48.3711 17.5858 48.3711 18.1066V26.3732H54.657C55.5393 26.3732 56.34 26.7347 56.9211 27.3124C57.4988 27.8934 57.8601 28.6943 57.8601 29.5765V40.8585C57.8601 41.7408 57.4988 42.5416 56.9211 43.1226C56.34 43.7036 55.5393 44.0616 54.657 44.0616H48.3711V53.2991V57.1189C48.3711 59.0111 47.5951 60.7331 46.3479 61.9805C45.1006 63.2275 43.3821 64 41.4865 64H17.5585C15.6664 64 13.9444 63.2275 12.6971 61.9804C11.4499 60.733 10.6774 59.011 10.6774 57.1188V53.299V41.985C10.6774 41.4678 11.0955 41.046 11.6128 41.046C12.1301 41.046 12.5518 41.4678 12.5518 41.985V52.36H46.4966V44.0614H43.8569V48.7741C43.8569 49.2915 43.4351 49.7095 42.9179 49.7095C42.6593 49.7095 42.4219 49.6031 42.2518 49.4331L36.8836 44.0612H32.9506C32.0684 44.0612 31.2675 43.7034 30.69 43.1222C30.109 42.5412 29.7475 41.7402 29.7475 40.8581V37.343C29.7475 36.8221 30.1692 36.404 30.6865 36.404C31.2039 36.404 31.622 36.8221 31.622 37.343V40.8581C31.622 41.2231 31.7744 41.5561 32.0153 41.7971C32.2561 42.0381 32.5856 42.1869 32.9506 42.1869H37.2699C37.5109 42.1869 37.7518 42.279 37.9325 42.4632L41.9825 46.5098V43.1259C41.9825 42.6085 42.4006 42.1869 42.9179 42.1869H54.6569C55.0218 42.1869 55.3514 42.0381 55.5959 41.7971C55.8368 41.5561 55.9856 41.2231 55.9856 40.8581V29.5761C55.9856 29.2111 55.8368 28.8815 55.5959 28.6408C55.3514 28.3963 55.0219 28.2475 54.6569 28.2475H32.9506C32.5856 28.2475 32.2561 28.3964 32.0153 28.6408C31.7743 28.8816 31.622 29.2112 31.622 29.5761V33.0949ZM25.3715 59.1174C24.8541 59.1174 24.4361 58.6992 24.4361 58.1819C24.4361 57.6645 24.8543 57.2429 25.3715 57.2429H33.6735C34.1908 57.2429 34.6089 57.6645 34.6089 58.1819C34.6089 58.6994 34.1908 59.1174 33.6735 59.1174H25.3715ZM39.1408 1.87437H19.9043V4.5815C19.9043 5.29725 20.4959 5.88912 21.2116 5.88912H37.8333C38.5525 5.88912 39.1408 5.29725 39.1408 4.5815V1.87437ZM46.4968 54.2345H12.5519V57.1188C12.5519 58.4935 13.1153 59.7445 14.0224 60.6551C14.9294 61.5621 16.1838 62.1256 17.5586 62.1256H41.4866C42.8649 62.1256 44.1158 61.5621 45.0228 60.6551C45.9299 59.7445 46.4968 58.4935 46.4968 57.1188V54.2345Z" fill="#13AD89"/>
+</svg>
+
+                <h6 class="mt-16">Second advantage title</h6>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-12"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.42287 39.2602C3.632 39.8271 3.9615 40.3374 4.38312 40.7555C5.13075 41.5031 6.1585 41.9672 7.29225 41.9672C8.42263 41.9672 9.45375 41.5031 10.2013 40.7555C10.9489 40.008 11.413 38.9769 11.413 37.8465V35.554C10.545 35.6284 9.78312 35.4406 9.18787 35.1925C9.13462 35.4511 9.0745 35.7027 8.9965 35.9507C8.70238 36.9074 8.20988 37.7791 7.43038 38.4062C6.64025 39.0441 5.5915 39.4126 4.20237 39.3416C3.95438 39.331 3.69562 39.3027 3.42287 39.2602ZM27.7091 33.1197H35.9509V30.5295H29.6047C29.0839 30.5295 28.609 30.7457 28.2654 31.0894C27.9216 31.4331 27.7091 31.9044 27.7091 32.4252V33.1197ZM35.9507 34.9941H27.709V37.8464C27.709 38.9767 28.1731 40.0079 28.9207 40.7554C29.6682 41.503 30.6994 41.9671 31.8298 41.9671C32.9635 41.9671 33.9946 41.503 34.7389 40.7554C35.4864 40.0079 35.9506 38.9767 35.9506 37.8464V34.9941H35.9507ZM61.6401 41.2516C62.1432 41.5174 62.5861 41.8789 62.9511 42.3075C63.6066 43.08 64 44.0756 64 45.1562V51.4775C64 51.9949 63.5819 52.4129 63.0646 52.4129C62.5474 52.4129 62.1256 51.9947 62.1256 51.4775V45.1562C62.1256 44.5327 61.8988 43.9586 61.5233 43.5157C61.1901 43.1224 60.7401 42.8319 60.2264 42.6937C59.2379 43.4165 58.0223 43.8417 56.7114 43.8417C55.3544 43.8417 54.0999 43.3882 53.09 42.6194C52.8988 42.6406 52.7144 42.6939 52.5373 42.7754C52.2962 42.8886 52.0766 43.0624 51.8994 43.2961L46.8643 49.9647C46.6871 50.1986 46.4107 50.3404 46.1167 50.3404H39.6644C39.186 50.3404 38.7537 50.5316 38.442 50.8434C38.1301 51.1587 37.9352 51.591 37.9352 52.0659C37.9352 52.5441 38.1301 52.9765 38.442 53.2882C38.7537 53.6 39.186 53.795 39.6644 53.795H47.371C47.6795 53.795 47.9167 53.7631 48.211 53.6142C48.7566 53.3414 49.2669 52.5124 49.6389 52.0162L52.9733 47.6049C53.285 47.1904 53.8696 47.1087 54.2841 47.4206C54.6951 47.7324 54.7766 48.3205 54.4649 48.7316L51.2936 52.9339V61.1047H62.1256V55.7224C62.1256 55.205 62.5472 54.787 63.0646 54.787C63.582 54.787 64 55.2051 64 55.7224V62.0436C64 62.561 63.5819 62.979 63.0646 62.979C42.3536 62.979 21.6464 62.979 0.939 62.979C0.42175 62.979 0 62.5609 0 62.0436V55.7224C0 55.205 0.42175 54.787 0.939 54.787C1.45638 54.787 1.87437 55.2051 1.87437 55.7224V61.1047H12.71V52.9339L9.53525 48.7316C9.2235 48.3205 9.305 47.7324 9.71963 47.4206C10.1306 47.1087 10.7188 47.1902 11.0306 47.6049L14.2904 51.9206C14.588 52.3139 14.8858 52.7106 15.1833 53.1076C15.3533 53.3307 15.5624 53.5009 15.7928 53.6142C16.0514 53.7454 16.2924 53.795 16.5759 53.795H24.3393C24.8141 53.795 25.2464 53.6 25.5616 53.2882C25.8735 52.9765 26.0648 52.5441 26.0648 52.0659C26.0648 51.591 25.8735 51.1587 25.5616 50.8434C25.2464 50.5316 24.8141 50.3404 24.3393 50.3404H17.8834C17.5999 50.3404 17.32 50.2092 17.1359 49.9647L12.1007 43.2961C11.8136 42.917 11.3849 42.6726 10.9102 42.6194C9.90387 43.3847 8.64962 43.8417 7.2925 43.8417C5.9815 43.8417 4.7625 43.4166 3.774 42.6974C3.27087 42.8285 2.82438 43.1155 2.49125 43.4981C2.1085 43.9445 1.87462 44.5221 1.87462 45.1564V51.4776C1.87462 51.995 1.4565 52.413 0.93925 52.413C0.422 52.413 0.00025 51.9949 0.00025 51.4776V45.1564C0.00025 44.0615 0.40775 43.0517 1.07738 42.2757C1.43888 41.8612 1.87463 41.5104 2.36363 41.2517C1.66563 40.249 1.29712 39.0655 1.29712 37.8466V32.4254C1.29712 31.3871 1.71875 30.4446 2.40263 29.7609C3.08663 29.0806 4.0255 28.6554 5.06362 28.6554H9.5175C10.5557 28.6554 11.4983 29.0805 12.182 29.7609C12.866 30.4447 13.2876 31.3873 13.2876 32.4254V37.8466C13.2876 39.0477 12.9297 40.1711 12.3166 41.11C12.8234 41.3651 13.252 41.7159 13.5957 42.1695L18.3475 48.4624H22.0998V44.6605C22.0998 43.5834 22.6702 42.6089 23.595 41.7832C24.3109 41.1455 25.2534 40.5891 26.2951 40.1499C25.9975 39.4376 25.8346 38.6616 25.8346 37.8466V34.0587V32.4252C25.8346 31.387 26.2598 30.4445 26.9403 29.7607C27.6241 29.0805 28.5666 28.6552 29.6047 28.6552H36.8898C37.4073 28.6552 37.8289 29.0769 37.8289 29.5942V34.0589V37.8466C37.8289 38.6155 37.6801 39.3526 37.4144 40.0329C38.534 40.4722 39.5474 41.0391 40.3129 41.6981C41.2943 42.5415 41.9002 43.5477 41.9002 44.6604V48.4622H45.6525L50.4043 42.1694C50.7551 41.7086 51.1944 41.3544 51.687 41.1135C51.0704 40.171 50.7125 39.0477 50.7125 37.8465V32.4252C50.7125 31.387 51.1378 30.4445 51.8181 29.7607C52.502 29.0805 53.4445 28.6552 54.4826 28.6552H58.9367C59.9749 28.6552 60.9175 29.0804 61.6012 29.7607C62.2815 30.4446 62.7067 31.3871 62.7067 32.4252V37.8465C62.7066 39.0652 62.3346 40.2487 61.6401 41.2516ZM60.5771 39.2602C60.3079 39.3027 60.0456 39.331 59.7976 39.3416C58.4121 39.4125 57.3633 39.044 56.5731 38.4062C55.79 37.7791 55.2975 36.9075 55.0034 35.9507C54.9289 35.7027 54.8652 35.4511 54.8155 35.1925C54.2167 35.4405 53.4585 35.6283 52.5869 35.554V37.8465C52.5869 38.9769 53.051 40.008 53.7986 40.7555C54.5461 41.5031 55.5774 41.9672 56.7113 41.9672C57.8415 41.9672 58.8728 41.5031 59.6204 40.7555C60.0386 40.3374 60.368 39.8271 60.5771 39.2602ZM52.5869 33.676C53.8376 33.8531 54.7518 33.1267 54.9147 32.985C55.0991 32.8291 55.2726 32.7335 55.5243 32.7227C56.0416 32.698 56.4774 33.0949 56.5021 33.6121C56.5341 34.2216 56.619 34.8382 56.7926 35.4015C56.984 36.0286 57.2851 36.5814 57.7424 36.9499C58.1924 37.3114 58.8267 37.5169 59.709 37.4742C60.0491 37.4565 60.4211 37.4035 60.8321 37.3112V32.425C60.8321 31.9041 60.616 31.4329 60.2723 31.0891C59.9286 30.7455 59.4572 30.5292 58.9365 30.5292H54.4825C53.9616 30.5292 53.4902 30.7455 53.1466 31.0891C52.8029 31.4329 52.5869 31.9041 52.5869 32.425V33.676ZM11.4131 33.676V32.4251C11.4131 31.9042 11.2006 31.433 10.8569 31.0892C10.5133 30.7456 10.0384 30.5294 9.5175 30.5294H5.06337C4.54612 30.5294 4.07125 30.7456 3.7275 31.0892C3.38387 31.433 3.17125 31.9042 3.17125 32.4251V37.3114C3.57875 37.4035 3.95075 37.4566 4.291 37.4744C5.17338 37.517 5.80763 37.3114 6.2575 36.95C6.71463 36.5816 7.01575 36.0288 7.21075 35.4016C7.38438 34.8382 7.46937 34.2217 7.49775 33.6122C7.5225 33.0949 7.96187 32.6981 8.47563 32.7229C8.71663 32.7336 8.90075 32.8221 9.078 32.978C9.20925 33.0949 10.1376 33.8566 11.4131 33.676ZM27.2981 41.7619C26.32 42.141 25.4555 42.6229 24.8389 43.1757C24.3039 43.6505 23.9743 44.1607 23.9743 44.6604V48.4622H24.3393C25.3315 48.4622 26.235 48.8661 26.887 49.5181C27.539 50.1701 27.9429 51.0701 27.9429 52.0659C27.9429 52.693 27.7799 53.2812 27.5 53.795H36.5C36.2201 53.2812 36.0606 52.693 36.0606 52.0659C36.0606 51.0701 36.4645 50.1701 37.1166 49.5181C37.7686 48.8661 38.6685 48.4622 39.6642 48.4622H40.0257V44.6604C40.0257 44.143 39.6714 43.6115 39.0974 43.119C38.4241 42.5415 37.4886 42.0419 36.4469 41.6627C36.3264 41.808 36.1989 41.9497 36.0677 42.0809C34.98 43.1686 33.4811 43.8419 31.83 43.8419C30.1822 43.8419 28.68 43.1686 27.5958 42.0809C27.4929 41.9779 27.3936 41.8717 27.2981 41.7619ZM7.81313 7.96212C7.29575 7.96212 6.87775 7.5405 6.87775 7.02312C6.87775 6.50575 7.29588 6.08775 7.81313 6.08775H25.1684C25.6857 6.08775 26.1039 6.50587 26.1039 7.02312C26.1039 7.5405 25.6856 7.96212 25.1684 7.96212H7.81313ZM7.81313 17.8267C7.29575 17.8267 6.87775 17.4051 6.87775 16.8877C6.87775 16.3704 7.29588 15.9487 7.81313 15.9487H16.4909C17.0083 15.9487 17.4299 16.3704 17.4299 16.8877C17.4299 17.4051 17.0083 17.8267 16.4909 17.8267H7.81313ZM7.81313 12.8945C7.29575 12.8945 6.87775 12.4727 6.87775 11.9555C6.87775 11.4381 7.29588 11.0201 7.81313 11.0201H25.1684C25.6857 11.0201 26.1039 11.4382 26.1039 11.9555C26.1039 12.4727 25.6856 12.8945 25.1684 12.8945H7.81313ZM26.1286 22.8901C26.2598 23.2551 26.4688 23.581 26.7346 23.8467C27.2095 24.3251 27.8685 24.6227 28.6019 24.6227H34.1118C34.6291 24.6227 35.0471 25.0409 35.0471 25.5617C35.0471 26.0791 34.629 26.4971 34.1118 26.4971H28.6019C27.3511 26.4971 26.2243 25.987 25.4093 25.1649C24.7999 24.552 24.3675 23.7654 24.1833 22.8901H11.112L6.86713 27.135C6.69712 27.3051 6.46325 27.4114 6.201 27.4114C5.68363 27.4114 5.262 26.9932 5.262 26.476V22.8122C4.07137 22.6137 3.00475 22.0434 2.18637 21.2212C1.15525 20.1936 0.5175 18.7727 0.5175 17.2066V6.70437C0.5175 5.14175 1.15537 3.72087 2.18637 2.68987C3.21387 1.66225 4.63475 1.02087 6.201 1.02087H26.7809C28.3469 1.02087 29.7679 1.66225 30.7954 2.68987C31.8265 3.72087 32.4642 5.14175 32.4642 6.70437V8.44062H48.3882C49.6319 8.44062 50.7588 8.94737 51.5773 9.76587C52.3958 10.5844 52.9025 11.7111 52.9025 12.9549V21.9832C52.9025 23.227 52.3958 24.3537 51.5773 25.1722C50.9713 25.7782 50.1919 26.214 49.3237 26.3984V30.0834C49.3237 30.3207 49.2351 30.5616 49.0509 30.746C48.6859 31.1109 48.0906 31.1109 47.7255 30.746L43.4771 26.4975H38.357C37.8396 26.4975 37.418 26.0794 37.418 25.5621C37.418 25.0412 37.8396 24.6231 38.357 24.6231H43.8669C44.1291 24.6231 44.3629 24.7295 44.533 24.903L47.4491 27.8191V25.562C47.4491 25.0411 47.8707 24.623 48.3882 24.623C49.111 24.623 49.7736 24.3254 50.252 23.847C50.7304 23.3687 51.028 22.7096 51.028 21.9832V12.9549C51.028 12.2285 50.7304 11.5695 50.252 11.0911C49.7736 10.6127 49.111 10.3151 48.3882 10.3151H32.4641V17.2069C32.4641 18.773 31.8264 20.1939 30.7952 21.2215C29.7676 22.2525 28.3468 22.8904 26.7808 22.8904H26.1286V22.8901ZM10.7221 21.0157H26.7808C27.8296 21.0157 28.7791 20.587 29.4701 19.8961C30.161 19.2051 30.5898 18.252 30.5898 17.2066V6.70437C30.5898 5.65912 30.161 4.706 29.4701 4.015C28.7793 3.324 27.8296 2.89525 26.7808 2.89525H6.20087C5.152 2.89525 4.20237 3.324 3.51137 4.015C2.8205 4.70587 2.39162 5.659 2.39162 6.70437V17.2067C2.39162 18.252 2.8205 19.2051 3.51137 19.8962C4.20225 20.5871 5.152 21.0159 6.20087 21.0159C6.71825 21.0159 7.13625 21.4375 7.13625 21.9549V24.212L10.0595 21.2924C10.2439 21.1079 10.4812 21.0157 10.7221 21.0157ZM49.4191 55.6692H14.5845V61.1046H49.4193V55.6692H49.4191Z" fill="#13AD89"/>
+</svg>
+
+                <h6 class="mt-16">Third advantage long title</h6>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-12"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M57.1224 13.5659V10.1006C57.1224 9.68614 56.9488 9.30689 56.6759 9.03414C56.3995 8.75776 56.0239 8.58776 55.6094 8.58776H52.4984C52.0801 8.58776 51.7046 8.75776 51.4282 9.03414C51.1554 9.30701 50.9852 9.68614 50.9852 10.1006V13.566H57.1224V13.5659ZM17.9329 30.4143C17.568 30.0459 17.568 29.454 17.9329 29.089C18.2979 28.7206 18.8931 28.7206 19.2581 29.089L20.1121 29.943L22.4826 27.569C22.8476 27.204 23.4429 27.204 23.8079 27.569C24.1764 27.9375 24.1764 28.5293 23.8079 28.8978L20.7749 31.9309C20.4097 32.2959 19.8145 32.2959 19.4495 31.9309L17.9329 30.4143ZM53.1149 19.5966C53.1149 19.0793 53.533 18.6576 54.0539 18.6576C54.5713 18.6576 54.9893 19.0793 54.9893 19.5966V39.2726C54.9893 39.7899 54.5711 40.2116 54.0539 40.2116C53.533 40.2116 53.1149 39.7899 53.1149 39.2726V19.5966ZM38.3355 51.3164H44.1041V47.2946H38.3355V51.3164ZM45.0395 53.1908C34.8489 53.1908 24.6545 53.1908 14.4639 53.1908C13.9465 53.1908 13.5249 52.769 13.5249 52.2516V46.3556C13.5249 45.8383 13.9465 45.4203 14.4639 45.4203H21.1715V40.0769C21.1715 39.5596 21.5896 39.1416 22.1069 39.1416H29.7534C30.2707 39.1416 30.6889 39.5598 30.6889 40.0769V41.7423H37.3964C37.9137 41.7423 38.3354 42.1639 38.3354 42.6813V45.4203H45.0394C45.5568 45.4203 45.9784 45.8384 45.9784 46.3556V52.2516C45.9785 52.769 45.5569 53.1908 45.0395 53.1908ZM30.689 51.3164H36.4576V43.6203H30.689V51.3164ZM23.046 51.3164H28.8145V42.6813V41.016H23.046V51.3164ZM15.3994 51.3164H21.1716V47.2946H15.3994V51.3164ZM11.445 18.6578H49.1074V14.5014V10.1006C49.1074 9.16876 49.49 8.32201 50.103 7.70889C50.716 7.09589 51.5629 6.71314 52.4984 6.71314H55.6094C56.5412 6.71314 57.3881 7.09589 58.0011 7.70889C58.6141 8.32189 58.9967 9.16876 58.9967 10.1006V14.5014V18.6578H63.0645C63.5819 18.6578 63.9999 19.0794 63.9999 19.5968V56.3513C63.9999 56.8686 63.5817 57.2868 63.0645 57.2868H37.1095C36.5921 57.2868 36.1741 56.8685 36.1741 56.3513C36.1741 55.834 36.5923 55.4123 37.1095 55.4123H62.1256V20.5321H58.9969V27.3105C58.9969 27.8279 58.5751 28.2495 58.0579 28.2495C57.5405 28.2495 57.1224 27.8279 57.1224 27.3105V19.5968V15.4405H50.9852V19.5968V43.429H57.1224V31.5589C57.1224 31.0415 57.5405 30.6199 58.0579 30.6199C58.5751 30.6199 58.9969 31.0415 58.9969 31.5589V44.3644C58.9969 44.5911 58.9366 44.7046 58.8374 44.8959L54.8901 52.6699C54.8016 52.8435 54.6599 52.9923 54.472 53.088C54.0114 53.3219 53.4515 53.134 53.2176 52.6735L49.2561 44.8783C49.164 44.6905 49.1074 44.5843 49.1074 44.3645V20.5321H11.445V27.6258C11.445 28.1431 11.0269 28.5649 10.5095 28.5649C9.99212 28.5649 9.5705 28.1431 9.5705 27.6258V19.5968V9.34589C8.76613 8.84289 7.85913 8.58776 6.9095 8.58776C5.5205 8.58776 4.26263 9.15114 3.34838 10.0618C2.43775 10.9759 1.87425 12.2338 1.87425 13.6228V45.6471C1.92388 45.5939 1.9735 45.5408 2.023 45.4913C3.27387 44.2404 5.003 43.468 6.90938 43.468C7.67125 43.468 8.40825 43.5956 9.10625 43.8259C9.26225 43.879 9.41813 43.9393 9.57038 44.003V31.8744C9.57038 31.357 9.992 30.9354 10.5094 30.9354C11.0267 30.9354 11.4449 31.357 11.4449 31.8744V45.6118C11.4449 45.8066 11.3811 46.005 11.2535 46.1753C10.9452 46.5863 10.357 46.6676 9.9425 46.3559C9.51375 46.03 9.02825 45.7713 8.511 45.6011C8.015 45.4346 7.47638 45.3425 6.9095 45.3425C5.5205 45.3425 4.26263 45.906 3.34838 46.8166C2.43775 47.7271 1.87425 48.9886 1.87425 50.3775C1.87425 51.7701 2.43763 53.0279 3.34838 53.9385C4.2625 54.8491 5.52038 55.4125 6.9095 55.4125H32.8645C33.3819 55.4125 33.7999 55.8343 33.7999 56.3515C33.7999 56.8689 33.3817 57.287 32.8645 57.287H6.9095C5.00313 57.287 3.274 56.5145 2.02312 55.2638C0.772375 54.0129 0 52.2873 0 50.3774V13.6226C0 11.7163 0.772375 9.98714 2.02312 8.73639C3.274 7.48551 5.00313 6.71301 6.9095 6.71301C8.387 6.71301 9.83975 7.19489 11.0267 8.07376C11.2784 8.24376 11.4449 8.53076 11.4449 8.85689V18.6578H11.445ZM56.5341 45.3034H51.57L54.0539 50.1896L56.5341 45.3034ZM44.0049 24.3376C44.5223 24.3376 44.9403 24.7593 44.9403 25.2766C44.9403 25.794 44.5221 26.212 44.0049 26.212H31.3161C30.7988 26.212 30.3808 25.7939 30.3808 25.2766C30.3808 24.7593 30.7989 24.3376 31.3161 24.3376H44.0049ZM38.7289 33.288C39.2497 33.288 39.6679 33.7061 39.6679 34.2234C39.6679 34.7406 39.2497 35.1624 38.7289 35.1624H31.3162C30.7989 35.1624 30.3809 34.7408 30.3809 34.2234C30.3809 33.706 30.799 33.288 31.3162 33.288H38.7289ZM44.0049 28.8128C44.5223 28.8128 44.9403 29.231 44.9403 29.7518C44.9403 30.2691 44.5221 30.6873 44.0049 30.6873H31.3161C30.7988 30.6873 30.3808 30.269 30.3808 29.7518C30.3808 29.231 30.7989 28.8128 31.3161 28.8128H44.0049ZM15.5021 23.4411H26.242C26.7594 23.4411 27.1774 23.8628 27.1774 24.3801V35.1199C27.1774 35.6373 26.7593 36.0589 26.242 36.0589H15.5021C14.9812 36.0589 14.5631 35.6373 14.5631 35.1199V24.3801C14.5631 23.8628 14.9812 23.4411 15.5021 23.4411ZM25.3031 25.3191H16.4376V34.1845H25.3031V25.3191Z" fill="#13AD89"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                <h6 class="mt-16">Last advantage title</h6>
+              </div>
+            </div>
+          </div>
+          <div class="two-column">
+            <div class="text">
+              <h3>Section title</h3>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+              <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
+            </div>
+            <div class="image" style="background-image: url(img/about-us-page/two-column/1.jpg)"></div>
+          </div>
+          <div class="two-column mt-96">
+            <div class="image" style="background-image: url(img/about-us-page/two-column/1.jpg)"></div>
+            <div class="text">
+              <h3>Section title</h3>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+              <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer mt-96">
+      <div class="container">
+        <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
+          <div class="flex-grow-1">
+            <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a><a class="active" href="#">Order a photographer</a><a href="#">Contact a specialist</a><a href="#">Legal advice</a><a href="#">Package of documents</a><a href="#">Closed database</a></div>
+            <div class="group-links"><a href="#">About us</a><a href="#">Contact us</a></div>
+            <div class="group-links mobile-top-line"><a href="#">Ad policies</a><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="copyright-meta">
+            <div class="copyright">Amizbiz &copy; 2020</div>
+            <div class="meta-language">
+              <div class="d-flex">
+                <div>Разработка сайта</div>
+                <div class="ml-2"><img src="img/meta.svg" alt="meta logo"/>
+                </div>
+              </div>
+              <div class="dropdown language ml-4">
+                <button class="dropdown-toggle" type="button">English</button>
+                <ul class="dropdown-menu top">
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-1">
+                    <label class="text" for="language-footer-1">English</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-2">
+                    <label class="text" for="language-footer-2">France</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-3">
+                    <label class="text" for="language-footer-3">Italian</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

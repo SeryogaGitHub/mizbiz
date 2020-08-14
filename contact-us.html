@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact us</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
+      <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <form class="main-filter">
+        <div class="scroll-horizontal">
+          <div class="d-flex align-items-center">
+            <ul class="nav-tabs">
+              <li><a class="nav-item active" href="#filter-residential-popup">Residential</a></li>
+              <li><a class="nav-item" href="#filter-comercial-popup">Comercial</a></li>
+              <li><a class="nav-item" href="#filter-yachts-popup">Yachts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="active" id="filter-residential-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio-popup" checked id="radiobox-1-popup">
+                      <label for="radiobox-1-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio-popup" id="radiobox-2-popup">
+                      <label for="radiobox-2-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-1-popup">
+                    <label for="checkbox-1-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" checked id="property-type-1-popup">
+                    <label for="property-type-1-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-2-popup">
+                    <label for="property-type-2-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-3-popup">
+                    <label for="property-type-3-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-1-popup">
+                      <label for="rooms-amount-1-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-2-popup">
+                      <label for="rooms-amount-2-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-3-popup">
+                      <label for="rooms-amount-3-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-4-popup">
+                      <label for="rooms-amount-4-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-5-popup">
+                      <label for="rooms-amount-5-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location-popup"></label>
+                <input type="text" placeholder="Location" id="location-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-comercial-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" checked id="radiobox-12-popup">
+                      <label for="radiobox-12-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" id="radiobox-22-popup">
+                      <label for="radiobox-22-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox2-popup" id="checkbox-12-popup">
+                    <label for="checkbox-12-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" checked id="property-type-12-popup">
+                    <label for="property-type-12-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-22-popup">
+                    <label for="property-type-22-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-32-popup">
+                    <label for="property-type-32-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
+                      <label for="rooms-amount-12-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
+                      <label for="rooms-amount-22-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
+                      <label for="rooms-amount-32-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
+                      <label for="rooms-amount-42-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
+                      <label for="rooms-amount-52-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end2-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start2-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end2-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location2-popup"></label>
+                <input type="text" placeholder="Location" id="location2-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-yachts-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" checked id="radiobox-13-popup">
+                      <label for="radiobox-13-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" id="radiobox-23-popup">
+                      <label for="radiobox-23-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-13-popup">
+                    <label for="checkbox-13-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" checked id="property-type-13-popup">
+                    <label for="property-type-13-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-23-popup">
+                    <label for="property-type-23-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-33-popup">
+                    <label for="property-type-33-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
+              </div>
+              <div class="dropdown price-value mt-16">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start3-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end3-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start3-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end3-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location3-popup"></label>
+                <input type="text" placeholder="Location" id="location3-popup">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn" type="reset">Search</button>
+        </div>
+        <div class="text-center mt-16">
+          <button class="reset-form" type="reset">Reset form</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup-container mfp-hide mfp-with-anim" id="mobile-menu">
+      <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <ul class="main-nav">
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Closed base</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="dropdown language">
+        <button class="dropdown-toggle" type="button">EN</button>
+        <ul class="dropdown-menu">
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-1-popup">
+            <label class="text" for="language-1-popup">EN</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-2-popup">
+            <label class="text" for="language-2-popup">FR</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-3-popup">
+            <label class="text" for="language-3-popup">IT</label>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center"><a class="btn book" herf="#">Place an offer</a></div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
+              <div class="wrap-logo"><a class="logo" href="/"><img src="img/logo.svg" alt="logo"/></a></div>
+              <div><a class="btn book" herf="#">Place an offer</a></div>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center"><a class="mobile-search popup btn search" href="#search-filter"></a>
+            <nav>
+              <ul class="main-nav">
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Closed base</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="dropdown user-dropdown">
+              <button class="dropdown-toggle" type="button">
+                <div class="person" style="background-image: url(img/person.jpg)"></div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="link-icon" href="#">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Favorite</a></li>
+                <li><a class="link-icon active" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.33334 2H5.33334C6.04059 2 6.71886 2.28095 7.21896 2.78105C7.71906 3.28115 8.00001 3.95942 8.00001 4.66667V14C8.00001 13.4696 7.7893 12.9609 7.41422 12.5858C7.03915 12.2107 6.53044 12 6.00001 12H1.33334V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6667 2H10.6667C9.95942 2 9.28115 2.28095 8.78105 2.78105C8.28095 3.28115 8 3.95942 8 4.66667V14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12H14.6667V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    My offers</a></li>
+                <li><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3333 14V12.6667C13.3333 11.9594 13.0524 11.2811 12.5523 10.781C12.0522 10.281 11.3739 10 10.6667 10H5.33332C4.62608 10 3.9478 10.281 3.4477 10.781C2.94761 11.2811 2.66666 11.9594 2.66666 12.6667V14" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00001 7.33333C9.47277 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.47277 2 8.00001 2C6.52725 2 5.33334 3.19391 5.33334 4.66667C5.33334 6.13943 6.52725 7.33333 8.00001 7.33333Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Profile</a></li>
+                <li class="profile"><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6667 11.3333L14 8L10.6667 4.66666" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 8H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Log out</a></li>
+              </ul>
+            </div>
+            <div class="dropdown language">
+              <button class="dropdown-toggle" type="button">EN</button>
+              <ul class="dropdown-menu">
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-1">
+                  <label class="text" for="language-1">EN</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-2">
+                  <label class="text" for="language-2">FR</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-3">
+                  <label class="text" for="language-3">IT</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <div class="contact-us">
+          <div class="form-container">
+            <h3>Contact us</h3>
+            <p class="mb-32 description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus vestibulum ac diam sit amet quam vehicula elementum.</p>
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Email" value="email@mail.com">
+              <textarea placeholder="Your message"></textarea>
+              <div class="btn-group">
+                <button class="btn">Send</button>
+                <div class="chekcbox">
+                  <input type="checkbox" name="deal-type-checkbox" id="checkbox-form-1">
+                  <label for="checkbox-form-1">I agree to<a class="link-underline" href="#">the terms</a>of processing personal data</label>
+                </div>
+              </div>
+              <p class="mt-16 info">This site is protected by reCAPTCHA and the<a class="link" href="#">Google Privacy Policy</a>and<a class="link" href="#">Terms of Service</a>apply.</p>
+            </form>
+          </div>
+          <div class="contact-info"><a href="mailto:mail@example.com">
+              <div class="icons"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.66732 6.66667H33.334C35.1673 6.66667 36.6673 8.16667 36.6673 10V30C36.6673 31.8333 35.1673 33.3333 33.334 33.3333H6.66732C4.83398 33.3333 3.33398 31.8333 3.33398 30V10C3.33398 8.16667 4.83398 6.66667 6.66732 6.66667Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.6673 10L20.0007 21.6667L3.33398 10" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+              </div>
+              <h6>mail@example.com</h6></a><a href="tel:+590690123456">
+              <div class="icons"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.0672 6.66683C19.3695 6.92092 20.5664 7.55784 21.5046 8.49608C22.4429 9.43431 23.0798 10.6312 23.3339 11.9335M18.0672 1.3335C20.7729 1.63408 23.296 2.84573 25.2222 4.76951C27.1484 6.69328 28.3632 9.21484 28.6672 11.9202M27.3339 22.5602V26.5602C27.3354 26.9315 27.2593 27.2991 27.1106 27.6393C26.9618 27.9795 26.7436 28.2849 26.47 28.536C26.1964 28.787 25.8733 28.9781 25.5216 29.0971C25.1698 29.2161 24.7971 29.2603 24.4272 29.2268C20.3243 28.781 16.3832 27.379 12.9206 25.1335C9.699 23.0864 6.96768 20.3551 4.92056 17.1335C2.6672 13.6551 1.26489 9.69482 0.827229 5.5735C0.793909 5.20479 0.837728 4.83318 0.955896 4.48233C1.07406 4.13148 1.26399 3.80908 1.51358 3.53566C1.76318 3.26223 2.06697 3.04378 2.40562 2.89419C2.74426 2.74461 3.11035 2.66718 3.48056 2.66683H7.48056C8.12764 2.66046 8.75495 2.8896 9.24558 3.31154C9.7362 3.73348 10.0567 4.31942 10.1472 4.96016C10.3161 6.24025 10.6292 7.49713 11.0806 8.70683C11.26 9.18406 11.2988 9.70272 11.1924 10.2013C11.0861 10.7 10.839 11.1576 10.4806 11.5202L8.78723 13.2135C10.6853 16.5516 13.4492 19.3154 16.7872 21.2135L18.4806 19.5202C18.8431 19.1617 19.3008 18.9146 19.7994 18.8083C20.298 18.7019 20.8167 18.7408 21.2939 18.9202C22.5036 19.3716 23.7605 19.6847 25.0406 19.8535C25.6883 19.9449 26.2798 20.2711 26.7026 20.7702C27.1254 21.2692 27.3501 21.9063 27.3339 22.5602Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+              </div>
+              <h6>+590 690 12 34 56</h6></a>
+            <div>
+              <div class="icons"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.3327 16.9697C33.3327 27.5757 19.9993 36.6666 19.9993 36.6666C19.9993 36.6666 6.66602 27.5757 6.66602 16.9697C6.66602 13.3531 8.07077 9.88463 10.5713 7.32731C13.0717 4.77 16.4631 3.33331 19.9993 3.33331C23.5356 3.33331 26.927 4.77 29.4274 7.32731C31.9279 9.88463 33.3327 13.3531 33.3327 16.9697Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 21.6667C22.7614 21.6667 25 19.4281 25 16.6667C25 13.9053 22.7614 11.6667 20 11.6667C17.2386 11.6667 15 13.9053 15 16.6667C15 19.4281 17.2386 21.6667 20 21.6667Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+              </div>
+              <h6>Pharmacie Les Champs 84, Ave. des Champs-Elysées</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer mt-96">
+      <div class="container">
+        <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
+          <div class="flex-grow-1">
+            <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a><a class="active" href="#">Order a photographer</a><a href="#">Contact a specialist</a><a href="#">Legal advice</a><a href="#">Package of documents</a><a href="#">Closed database</a></div>
+            <div class="group-links"><a href="#">About us</a><a href="#">Contact us</a></div>
+            <div class="group-links mobile-top-line"><a href="#">Ad policies</a><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="copyright-meta">
+            <div class="copyright">Amizbiz &copy; 2020</div>
+            <div class="meta-language">
+              <div class="d-flex">
+                <div>Разработка сайта</div>
+                <div class="ml-2"><img src="img/meta.svg" alt="meta logo"/>
+                </div>
+              </div>
+              <div class="dropdown language ml-4">
+                <button class="dropdown-toggle" type="button">English</button>
+                <ul class="dropdown-menu top">
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-1">
+                    <label class="text" for="language-footer-1">English</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-2">
+                    <label class="text" for="language-footer-2">France</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-3">
+                    <label class="text" for="language-footer-3">Italian</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

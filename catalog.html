@@ -631,26 +631,28 @@
           </form>
           <div class="text-center"><a class="btn search popup" href="#search-filter">Search options</a></div>
         </section>
-        <section>
-          <div class="text-center">
-            <ul class="list-map-nav nav-tabs">
-              <li><a class="nav-item active" href="#filter-list">
-                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </div>
+      <section>
+        <div class="container text-center">
+          <ul class="list-map-nav nav-tabs">
+            <li><a class="nav-item active" href="#filter-list">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.6665 12.3333H14.6665" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M4 7H14.6667" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1.33325 1.66666H14.6666" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-                  List</a></li>
-              <li><a class="nav-item" href="#filter-map">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                List</a></li>
+            <li><a class="nav-item" href="#filter-map">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.3334 6.78789C13.3334 11.0303 8.00008 14.6667 8.00008 14.6667C8.00008 14.6667 2.66675 11.0303 2.66675 6.78789C2.66675 5.34125 3.22865 3.95387 4.22884 2.93094C5.22904 1.90802 6.58559 1.33334 8.00008 1.33334C9.41457 1.33334 10.7711 1.90802 11.7713 2.93094C12.7715 3.95387 13.3334 5.34125 13.3334 6.78789Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M8 8.66666C9.10457 8.66666 10 7.77123 10 6.66666C10 5.56209 9.10457 4.66666 8 4.66666C6.89543 4.66666 6 5.56209 6 6.66666C6 7.77123 6.89543 8.66666 8 8.66666Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-                  Map</a></li>
-            </ul>
-          </div>
-          <div class="tab-content">
-            <div class="active" id="filter-list">
+                Map</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div id="filter-list">
+            <div class="container">
               <div class="row">
                 <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
                     <div class="image-numbers">
@@ -1285,11 +1287,147 @@
                 <div class="number"><a href="#">1</a><a class="active" href="#">2</a><a class="hide" href="#">3</a><a class="dots" href="#">...</a><a href="#">14</a><a href="#">15</a></div><a class="arrow" href="#"></a>
               </div>
             </div>
-            <div id="filter-map">
-              <div id="map"></div>
-              <scripts src="js/maps.js"></scripts>
-              <scripts src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS_ul_E1Rq6o8pOy0Mg1l30anG7gR6rhI&amp;callback=initMap" defer></scripts>
-              <div class="row banners">
+          </div>
+          <div class="active" id="filter-map">
+            <div class="map" id="map-location"></div>
+            <div id="map-content">
+              <div class="object-item" data-lat="25.771162" data-lng="-80.224623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 200 000</div>
+                      <div class="tags">
+                        <div class="tag">Two</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.680682" data-lng="-80.232623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/4.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 99 000</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.550682" data-lng="-80.152623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/3.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 99 000</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.490682" data-lng="-80.012623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/2.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 99 000</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.730162" data-lng="-80.111623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/3.jpg)">
+                    <button class="like"></button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">9</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4000
+                        <div class="month">/ month</div>
+                      </div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script src="js/maps.js"></script>
+            <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&amp;callback=initMap&amp;libraries=&amp;v=weekly" type="text/javascript"></script>
+            <div class="container">
+              <div class="row banners mt-96">
                 <div class="col-sm-6">
                   <div class="item"><img src="img/banners/2.jpg" alt="banner  2"/>
                   </div>
@@ -1301,8 +1439,8 @@
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="main-footer mt-96">
       <div class="container">

@@ -93,8 +93,11 @@
 // }
 var map;
 var mapSearch;
+var mapLocation;
+var popup, Popup;
 var $map = document.getElementById('map');
 var $mapSearch = document.getElementById('map-search');
+var $mapLocation = document.getElementById('map-location');
 var styleMap = [{
   "featureType": "administrative",
   "elementType": "all",
@@ -172,7 +175,7 @@ function initMap() {
     lat: 25.740662,
     lng: -80.215623
   };
-  console.log($map);
+  var image = 'img/icons/map-marker.svg';
 
   if ($map) {
     map = new google.maps.Map($map, {
@@ -180,7 +183,6 @@ function initMap() {
       zoom: 12,
       styles: styleMap
     });
-    var image = 'img/icons/map-marker.svg';
     var beachMarker = new google.maps.Marker({
       position: location,
       map: map,
@@ -200,7 +202,7 @@ function initMap() {
     mapSearch.addListener("bounds_changed", function () {
       searchBox.setBounds(mapSearch.getBounds());
     });
-    var markers = []; // Listen for the event fired when the user selects a prediction and retrieve
+    var _markers = []; // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
 
     searchBox.addListener("places_changed", function () {
@@ -211,10 +213,11 @@ function initMap() {
       } // Clear out the old markers.
 
 
-      markers.forEach(function (marker) {
+      _markers.forEach(function (marker) {
         marker.setMap(null);
       });
-      markers = []; // For each place, get the icon, name and location.
+
+      _markers = []; // For each place, get the icon, name and location.
 
       var bounds = new google.maps.LatLngBounds();
       places.forEach(function (place) {
@@ -231,7 +234,7 @@ function initMap() {
           scaledSize: new google.maps.Size(25, 25)
         }; // Create a marker for each place.
 
-        markers.push(new google.maps.Marker({
+        _markers.push(new google.maps.Marker({
           mapSearch: mapSearch,
           icon: icon,
           title: place.name,
@@ -246,6 +249,43 @@ function initMap() {
         }
       });
       mapSearch.fitBounds(bounds);
+    });
+  }
+
+  if ($mapLocation) {
+    var mapLocation = new google.maps.Map($mapLocation, {
+      center: location,
+      zoom: 12,
+      styles: styleMap
+    });
+    var mapContent = document.querySelectorAll('#map-content .object-item');
+    var locations = [];
+    var content = [];
+    mapContent.forEach(function (item) {
+      console.log(item.dataset.lat);
+      locations.push({
+        lat: +item.dataset.lat,
+        lng: +item.dataset.lng
+      });
+      content.push(item);
+    });
+    var markers = locations.map(function (location, i) {
+      return new google.maps.Marker({
+        position: location,
+        icon: image
+      });
+    }); // Add a marker clusterer to manage the markers.
+
+    var markerCluster = new MarkerClusterer(mapLocation, markers, {
+      imagePath: "img/maps/"
+    });
+    markers.forEach(function (item, index) {
+      var infowindow = new google.maps.InfoWindow({
+        content: content[index]
+      });
+      item.addListener("click", function () {
+        infowindow.open(mapLocation, item);
+      });
     });
   }
 }

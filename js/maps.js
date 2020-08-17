@@ -262,7 +262,6 @@ function initMap() {
     var locations = [];
     var content = [];
     mapContent.forEach(function (item) {
-      console.log(item.dataset.lat);
       locations.push({
         lat: +item.dataset.lat,
         lng: +item.dataset.lng
@@ -274,8 +273,7 @@ function initMap() {
         position: location,
         icon: image
       });
-    }); // Add a marker clusterer to manage the markers.
-
+    });
     var markerCluster = new MarkerClusterer(mapLocation, markers, {
       imagePath: "img/maps/"
     });
@@ -284,6 +282,12 @@ function initMap() {
         content: content[index]
       });
       item.addListener("click", function () {
+        var el = document.querySelector('.gm-style-iw-a');
+
+        if (el) {
+          el.remove();
+        }
+
         infowindow.open(mapLocation, item);
       });
     });

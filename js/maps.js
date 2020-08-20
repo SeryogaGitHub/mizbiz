@@ -98,6 +98,12 @@ var popup, Popup;
 var $map = document.getElementById('map');
 var $mapSearch = document.getElementById('map-search');
 var $mapLocation = document.getElementById('map-location');
+var $locationAutocomplete = document.querySelector('.location-autocomplete');
+var $locationAutocomplete2 = document.querySelector('.location-autocomplete-2');
+var $locationAutocomplete3 = document.querySelector('.location-autocomplete-3');
+var $locationAutocomplete4 = document.querySelector('.location-autocomplete-4');
+var $locationAutocomplete5 = document.querySelector('.location-autocomplete-5');
+var $locationAutocomplete6 = document.querySelector('.location-autocomplete-6');
 var styleMap = [{
   "featureType": "administrative",
   "elementType": "all",
@@ -188,6 +194,18 @@ function initMap() {
       map: map,
       icon: image
     });
+  }
+
+  if ($locationAutocomplete || $locationAutocomplete2 || $locationAutocomplete3 || $locationAutocomplete4 || $locationAutocomplete5 || $locationAutocomplete6) {
+    var options = {
+      types: ['(cities)']
+    };
+    var autocomplete = new google.maps.places.Autocomplete($locationAutocomplete, options);
+    var autocomplete2 = new google.maps.places.Autocomplete($locationAutocomplete2, options);
+    var autocomplete3 = new google.maps.places.Autocomplete($locationAutocomplete3, options);
+    var autocomplete4 = new google.maps.places.Autocomplete($locationAutocomplete4, options);
+    var autocomplete5 = new google.maps.places.Autocomplete($locationAutocomplete5, options);
+    var autocomplete6 = new google.maps.places.Autocomplete($locationAutocomplete6, options);
   }
 
   if ($mapSearch) {

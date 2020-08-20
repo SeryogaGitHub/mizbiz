@@ -203,7 +203,14 @@ $(function () {
     mainClass: 'mfp-zoom-in',
     callbacks: {
       afterClose: function afterClose() {
-        $('body').removeClass("popup-color");
+        var $body = $('body');
+        $body.removeClass("popup-color");
+      },
+      beforeOpen: function beforeOpen() {
+        $('body').css('overflow', 'hidden');
+      },
+      beforeClose: function beforeClose() {
+        $('body').css('overflow', 'auto');
       }
     }
   });
@@ -286,5 +293,13 @@ $(function () {
     var $this = $(this);
     var parent = $this.parents(".textarea-count");
     parent.find('.count').text($this.val().length);
+  });
+  /*******************
+   toggle like
+   */
+
+  $('.object-item .like').on("click", function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
   });
 });

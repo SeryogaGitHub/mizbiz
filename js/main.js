@@ -74,7 +74,6 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
-    focusOnSelect: true,
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.625 12.25L16.875 7l-5.25-5.25M1.125 7h15.75" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.625 12.25L16.875 7l-5.25-5.25M1.125 7h15.75" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
     responsive: [{
@@ -191,6 +190,17 @@ $(function () {
    *     popup     *
    ***************/
 
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+
+    }
+  });
   $('.popup').magnificPopup({
     type: 'inline',
     fixedContentPos: false,

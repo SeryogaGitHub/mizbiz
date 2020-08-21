@@ -11,6 +11,7 @@
     <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
       <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <form class="main-filter">
+        <div class="shadow"></div>
         <div class="scroll-horizontal">
           <div class="d-flex align-items-center">
             <ul class="nav-tabs">
@@ -148,35 +149,10 @@
                   </div>
                 </div>
               </div>
-              <div class="dropdown search-checked-input">
-                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                <ul class="dropdown-menu rooms-amount inner">
-                  <label class="description">Rooms amount</label>
-                  <div class="wrap">
-                    <div class="items-line checked-item">
-                      <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
-                      <label for="rooms-amount-12-popup">1</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
-                      <label for="rooms-amount-22-popup">2</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
-                      <label for="rooms-amount-32-popup">3</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
-                      <label for="rooms-amount-42-popup">4</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
-                      <label for="rooms-amount-52-popup">5+</label>
-                    </div>
-                  </div>
-                </ul>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
               </div>
-              <div class="dropdown price-value">
+              <div class="dropdown price-value mt-16">
                 <div class="dropdown-toggle d-flex align-items-center">
                   <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
                   <div class="line">-</div>
@@ -237,7 +213,7 @@
                 </div>
               </div>
               <div class="area">
-                <input type="number" placeholder="Area">m<sup>2</sup>
+                <input type="number" placeholder="Long">m
               </div>
               <div class="dropdown price-value mt-16">
                 <div class="dropdown-toggle d-flex align-items-center">
@@ -377,12 +353,12 @@
               <div class="tags mr-4"><a class="tag" href="#">Paris</a><a class="tag" href="#">Rue de Rivoli</a></div><a class="location-link go-to" href=".map-anchor">Show on map</a>
             </div>
             <div class="sliders-product">
-              <div class="single-slider choose-slider">
+              <div class="single-slider choose-slider popup-gallery">
                 <div>
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/1.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/1.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -401,7 +377,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/2.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/2.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -420,7 +396,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/3.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/3.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -439,7 +415,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/4.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/4.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -458,7 +434,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/5.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/5.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -477,7 +453,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/6.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/6.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -496,7 +472,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/3.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/3.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -515,7 +491,7 @@
                   <div class="object-item single">
                     <div class="image-numbers">
                       <div class="image" style="background-image: url(img/object-item/5.jpg)">
-                        <div class="overlay"></div>
+                        <div class="overlay"></div><a class="image-popup" href="img/object-item/5.jpg"></a>
                         <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -824,8 +800,6 @@
               </div>
             </div>
             <div class="map map-anchor mb-32" id="map"></div>
-            <script src="js/maps.js"></script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&amp;callback=initMap" type="text/javascript"></script>
             <h6 class="mt-32">General information</h6>
             <table class="hide-mobile">
               <tr>
@@ -957,6 +931,9 @@
         </div>
       </div>
     </main>
+    <script src="js/maps.js"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&amp;callback=initMap&amp;libraries=&amp;v=weekly&amp;libraries=places" type="text/javascript"></script>
     <footer class="main-footer mt-96">
       <div class="container">
         <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>

@@ -11,6 +11,7 @@
     <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
       <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
       <form class="main-filter">
+        <div class="shadow"></div>
         <div class="scroll-horizontal">
           <div class="d-flex align-items-center">
             <ul class="nav-tabs">
@@ -148,35 +149,10 @@
                   </div>
                 </div>
               </div>
-              <div class="dropdown search-checked-input">
-                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
-                <ul class="dropdown-menu rooms-amount inner">
-                  <label class="description">Rooms amount</label>
-                  <div class="wrap">
-                    <div class="items-line checked-item">
-                      <input name="property-type-popup" type="checkbox" id="rooms-amount-12-popup">
-                      <label for="rooms-amount-12-popup">1</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount" type="checkbox" id="rooms-amount-22-popup">
-                      <label for="rooms-amount-22-popup">2</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-32-popup">
-                      <label for="rooms-amount-32-popup">3</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-42-popup">
-                      <label for="rooms-amount-42-popup">4</label>
-                    </div>
-                    <div class="items-line checked-item">
-                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-52-popup">
-                      <label for="rooms-amount-52-popup">5+</label>
-                    </div>
-                  </div>
-                </ul>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
               </div>
-              <div class="dropdown price-value">
+              <div class="dropdown price-value mt-16">
                 <div class="dropdown-toggle d-flex align-items-center">
                   <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
                   <div class="line">-</div>
@@ -237,7 +213,7 @@
                 </div>
               </div>
               <div class="area">
-                <input type="number" placeholder="Area">m<sup>2</sup>
+                <input type="number" placeholder="Long">m
               </div>
               <div class="dropdown price-value mt-16">
                 <div class="dropdown-toggle d-flex align-items-center">
@@ -368,6 +344,9 @@
         </div>
       </div>
     </main>
+    <script src="js/maps.js"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&amp;callback=initMap&amp;libraries=&amp;v=weekly&amp;libraries=places" type="text/javascript"></script>
     <footer class="main-footer mt-96">
       <div class="container">
         <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
